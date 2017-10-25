@@ -19,7 +19,7 @@ class AllocationSearch extends Allocation
     {
         return [
             [['id', 'downcount', 'isshare', 'lid', 'status', 'oid'], 'integer'],
-            [['createtime', 'publictime', 'filelinks', 'filecontent'], 'safe'],
+            [['filename', 'createtime', 'publictime', 'filelinks', 'filecontent'], 'safe'],
         ];
     }
 
@@ -69,7 +69,8 @@ class AllocationSearch extends Allocation
             'oid' => $this->oid,
         ]);
 
-        $query->andFilterWhere(['like', 'filelinks', $this->filelinks])
+        $query->andFilterWhere(['like', 'filename', $this->filename])
+            ->andFilterWhere(['like', 'filelinks', $this->filelinks])
             ->andFilterWhere(['like', 'filecontent', $this->filecontent]);
 
         return $dataProvider;

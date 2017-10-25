@@ -48,11 +48,11 @@ class Adviser extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'xingming' => 'Xingming',
-            'idnumber' => 'Idnumber',
-            'mobliephone' => 'Mobliephone',
+            'xingming' => '真实姓名',
+            'idnumber' => '从业资格证',
+            'mobliephone' => '手机',
             'email' => 'Email',
-            'dept' => 'Dept',
+            'dept' => '所属营业部',
         ];
     }
 

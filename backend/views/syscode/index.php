@@ -16,14 +16,12 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('新增系统代码', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('新增代码', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-
             'id',
             'majorcode',
             'minicode',

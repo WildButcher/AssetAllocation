@@ -8,16 +8,18 @@ use Yii;
  * This is the model class for table "allocation".
  *
  * @property string $id
+ * @property string $filename
  * @property string $createtime
  * @property string $publictime
- * @property integer $downcount
+ * @property string $downcount
  * @property string $filelinks
  * @property string $filecontent
- * @property integer $isshare
+ * @property string $isshare
  * @property string $lid
  * @property string $status
  * @property string $oid
  *
+ * @property Syscode $isshare0
  * @property Adviser $o
  * @property Syscode $status0
  * @property Products $l
@@ -38,14 +40,15 @@ class Allocation extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['createtime', 'isshare', 'lid', 'status', 'oid'], 'required'],
+            [['filename', 'isshare', 'status', 'oid'], 'required'],
             [['createtime', 'publictime'], 'safe'],
             [['downcount', 'isshare', 'lid', 'status', 'oid'], 'integer'],
             [['filecontent'], 'string'],
-            [['filelinks'], 'string', 'max' => 255],
+            [['filename', 'filelinks'], 'string', 'max' => 255],
+            [['isshare'], 'exist', 'skipOnError' => true, 'targetClass' => Syscode::className(), 'targetAttribute' => ['isshare' => 'id']],
             [['oid'], 'exist', 'skipOnError' => true, 'targetClass' => Adviser::className(), 'targetAttribute' => ['oid' => 'id']],
             [['status'], 'exist', 'skipOnError' => true, 'targetClass' => Syscode::className(), 'targetAttribute' => ['status' => 'id']],
-            [['lid'], 'exist', 'skipOnError' => true, 'targetClass' => Products::className(), 'targetAttribute' => ['lid' => 'id']],
+        	[['lid'], 'exist', 'skipOnError' => true, 'targetClass' => Altemplate::className(), 'targetAttribute' => ['lid' => 'id']],
         ];
     }
 
@@ -55,17 +58,26 @@ class Allocation extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'createtime' => 'Createtime',
-            'publictime' => 'Publictime',
-            'downcount' => 'Downcount',
-            'filelinks' => 'Filelinks',
-            'filecontent' => 'Filecontent',
-            'isshare' => 'Isshare',
-            'lid' => 'Lid',
-            'status' => 'Status',
-            'oid' => 'Oid',
+        		'id' => 'ID',
+        		'filename' => '资产配置名称',
+        		'createtime' => '建立时间',
+        		'publictime' => '发布时间',
+        		'downcount' => '下载次数',
+        		'filelinks' => '链接地址',
+        		'filecontent' => '文件内容',
+        		'isshare' => '是否共享',
+        		'lid' => '继承模板',
+        		'oid' => '所属投顾',
+        		'status' => '状态',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getIsshare0()
+    {
+        return $this->hasOne(Syscode::className(), ['id' => 'isshare']);
     }
 
     /**
@@ -89,6 +101,6 @@ class Allocation extends \yii\db\ActiveRecord
      */
     public function getL()
     {
-        return $this->hasOne(Products::className(), ['id' => 'lid']);
+    	return $this->hasOne(Altemplate::className(), ['id' => 'lid']);
     }
 }

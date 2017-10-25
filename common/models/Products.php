@@ -8,6 +8,7 @@ use Yii;
  * This is the model class for table "products".
  *
  * @property string $id
+ * @property string $pname
  * @property double $rate
  * @property integer $buypoint
  * @property integer $term
@@ -34,10 +35,11 @@ class Products extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['rate', 'buypoint', 'term', 'profit', 'createtime', 'status'], 'required'],
+            [['pname', 'rate', 'buypoint', 'term', 'profit', 'status'], 'required'],
             [['rate', 'profit'], 'number'],
             [['buypoint', 'term', 'status'], 'integer'],
             [['createtime'], 'safe'],
+            [['pname'], 'string', 'max' => 255],
             [['status'], 'exist', 'skipOnError' => true, 'targetClass' => Syscode::className(), 'targetAttribute' => ['status' => 'id']],
         ];
     }
@@ -49,12 +51,13 @@ class Products extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
+            'pname' => '理财产品名称',
             'rate' => '年化利率',
-            'buypoint' => '起购金额',
-            'term' => '产品期限',
-            'profit' => '到期获利',
-            'createtime' => '创建时间',
-            'status' => '产品状态',
+            'buypoint' => '购买起点',
+            'term' => '持有周期',
+            'profit' => '到期利润',
+            'createtime' => '建立时间',
+            'status' => '状态',
         ];
     }
 

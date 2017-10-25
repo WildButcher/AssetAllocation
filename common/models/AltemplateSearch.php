@@ -19,7 +19,7 @@ class AltemplateSearch extends Altemplate
     {
         return [
             [['id', 'isshare', 'oid', 'status'], 'integer'],
-            [['createtime', 'filecontent'], 'safe'],
+            [['templatename', 'createtime', 'filecontent'], 'safe'],
         ];
     }
 
@@ -66,7 +66,8 @@ class AltemplateSearch extends Altemplate
             'status' => $this->status,
         ]);
 
-        $query->andFilterWhere(['like', 'filecontent', $this->filecontent]);
+        $query->andFilterWhere(['like', 'templatename', $this->templatename])
+            ->andFilterWhere(['like', 'filecontent', $this->filecontent]);
 
         return $dataProvider;
     }

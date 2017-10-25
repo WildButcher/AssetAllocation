@@ -19,8 +19,8 @@ class ProductsSearch extends Products
     {
         return [
             [['id', 'buypoint', 'term', 'status'], 'integer'],
+            [['pname', 'createtime'], 'safe'],
             [['rate', 'profit'], 'number'],
-            [['createtime'], 'safe'],
         ];
     }
 
@@ -68,6 +68,8 @@ class ProductsSearch extends Products
             'createtime' => $this->createtime,
             'status' => $this->status,
         ]);
+
+        $query->andFilterWhere(['like', 'pname', $this->pname]);
 
         return $dataProvider;
     }

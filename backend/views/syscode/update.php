@@ -5,10 +5,10 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\Syscode */
 
-$this->title = 'Update Syscode: ' . $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Syscodes', 'url' => ['index']];
+$this->title = '更新系统代码: ' . $model->id;
+$this->params['breadcrumbs'][] = ['label' => '系统代码管理', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->params['breadcrumbs'][] = '修改';
 ?>
 <div class="syscode-update">
 

@@ -4,11 +4,11 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\AltemplateSearch */
+/* @var $model common\models\AdviserSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="altemplate-search">
+<div class="adviser-search">
 
     <?php $form = ActiveForm::begin([
         'action' => ['index'],
@@ -17,17 +17,15 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id') ?>
 
-    <?= $form->field($model, 'templatename') ?>
+    <?= $form->field($model, 'xingming') ?>
 
-    <?= $form->field($model, 'createtime') ?>
+    <?= $form->field($model, 'idnumber') ?>
 
-    <?= $form->field($model, 'filecontent') ?>
+    <?= $form->field($model, 'mobliephone') ?>
 
-    <?= $form->field($model, 'isshare') ?>
+    <?= $form->field($model, 'email') ?>
 
-    <?php // echo $form->field($model, 'oid') ?>
-
-    <?php // echo $form->field($model, 'status') ?>
+    <?php // echo $form->field($model, 'dept') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2017-10-21 20:51:49
+Date: 2017-10-22 21:23:34
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -40,12 +40,13 @@ CREATE TABLE `adviser` (
 DROP TABLE IF EXISTS `allocation`;
 CREATE TABLE `allocation` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `filename` varchar(255) NOT NULL,
   `createtime` timestamp NOT NULL ON UPDATE CURRENT_TIMESTAMP,
   `publictime` datetime DEFAULT NULL,
   `downcount` int(11) DEFAULT NULL,
   `filelinks` varchar(255) DEFAULT NULL,
   `filecontent` longtext,
-  `isshare` tinyint(4) NOT NULL,
+  `isshare` bigint(20) unsigned NOT NULL,
   `lid` bigint(20) unsigned NOT NULL,
   `status` bigint(20) unsigned NOT NULL,
   `oid` bigint(20) unsigned NOT NULL,
@@ -57,7 +58,6 @@ CREATE TABLE `allocation` (
   KEY `isshare` (`isshare`) USING BTREE,
   KEY `oid` (`oid`),
   CONSTRAINT `al_oid` FOREIGN KEY (`oid`) REFERENCES `adviser` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `al_status` FOREIGN KEY (`status`) REFERENCES `syscode` (`id`),
   CONSTRAINT `lid` FOREIGN KEY (`lid`) REFERENCES `products` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -71,16 +71,17 @@ CREATE TABLE `allocation` (
 DROP TABLE IF EXISTS `altemplate`;
 CREATE TABLE `altemplate` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `templatename` varchar(255) NOT NULL,
   `createtime` timestamp NOT NULL ON UPDATE CURRENT_TIMESTAMP,
   `filecontent` longtext,
-  `isshare` tinyint(1) unsigned NOT NULL,
+  `isshare` bigint(20) unsigned NOT NULL,
   `oid` bigint(20) unsigned NOT NULL,
   `status` bigint(20) unsigned NOT NULL,
   PRIMARY KEY (`id`),
   KEY `oid` (`oid`),
   KEY `status` (`status`),
-  CONSTRAINT `alt_status` FOREIGN KEY (`status`) REFERENCES `syscode` (`id`),
-  CONSTRAINT `oid` FOREIGN KEY (`oid`) REFERENCES `adviser` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+  KEY `isshare` (`isshare`),
+  CONSTRAINT `alt_oid` FOREIGN KEY (`oid`) REFERENCES `adviser` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
@@ -117,8 +118,7 @@ CREATE TABLE `products` (
   `status` bigint(20) unsigned NOT NULL,
   PRIMARY KEY (`id`),
   KEY `status` (`status`) USING BTREE,
-  KEY `id` (`id`),
-  CONSTRAINT `p_status` FOREIGN KEY (`status`) REFERENCES `syscode` (`id`)
+  KEY `id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
@@ -136,11 +136,16 @@ CREATE TABLE `syscode` (
   `meaning` varchar(50) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `id` (`id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of syscode
 -- ----------------------------
+INSERT INTO `syscode` VALUES ('5', 'whether', '00', '否');
+INSERT INTO `syscode` VALUES ('6', 'whether', '01', '是');
+INSERT INTO `syscode` VALUES ('7', 'status', '00', '停用');
+INSERT INTO `syscode` VALUES ('8', 'status', '01', '启用');
+INSERT INTO `syscode` VALUES ('9', 'status', '02', '发布');
 
 -- ----------------------------
 -- Table structure for user

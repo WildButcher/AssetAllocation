@@ -1,8 +1,10 @@
 <?php
+
 namespace backend\tests;
 
 /**
  * Inherited Methods
+ * 
  * @method void wantToTest($text)
  * @method void wantTo($text)
  * @method void execute($callable)
@@ -13,13 +15,12 @@ namespace backend\tests;
  * @method void lookForwardTo($achieveValue)
  * @method void comment($description)
  * @method \Codeception\Lib\Friend haveFriend($name, $actorClass = NULL)
- *
- * @SuppressWarnings(PHPMD)
+ *        
+ *         @SuppressWarnings(PHPMD)
  */
-class UnitTester extends \Codeception\Actor
-{
-    use _generated\UnitTesterActions;
-   /**
-    * Define custom actions here
-    */
+class UnitTester extends \Codeception\Actor {
+	use _generated\UnitTesterActions;
+/**
+ * Define custom actions here
+ */
 }
