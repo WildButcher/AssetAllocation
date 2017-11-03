@@ -1,0 +1,277 @@
+2017-10-22 15:08:09 [::1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: G:\myFile\workspace\ms\frontend\views\layouts\main.php' in G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\View.php:229
+Stack trace:
+#0 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('G:\\myFile\\works...', Array, Object(frontend\controllers\SiteController))
+#1 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<div class="sit...')
+#2 G:\myFile\workspace\ms\frontend\controllers\SiteController.php(75): yii\base\Controller->render('index')
+#3 [internal function]: frontend\controllers\SiteController->actionIndex()
+#4 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#7 G:\myFile\workspace\ms\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#8 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 G:\myFile\workspace\ms\frontend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2017-10-22 15:08:09 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf-frontend' => '527e9fdcefffaff9df9ed5d2f96e9250e4fc8bc548b9843fe012fb34f97d88aba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¦zéæ·vŸˆwtDÐã’<tTõ„Ì=DûgD :¿v\";}'
+    'advanced-frontend' => 'ee9cmmkh35hh8jfp81le5a9g51'
+    '_csrf-backend' => '3096412fcb300bbd7c059f8d020d6eaf910f257727128e478caedf2e72849352a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"¡Ú¶gî\0ó–çtÖø/ux‰ ŠêŸt:Ç‰ÙY\";}'
+    '_identity-frontend' => '6d2b04f823fd9a73fdf9f5f382dd82192cdd65f51e81ef868dd1266647b8cd03a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+    'advanced-backend' => '2r40jooinpdt3plm6n0hbtgu77'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3637.220 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=527e9fdcefffaff9df9ed5d2f96e9250e4fc8bc548b9843fe012fb34f97d88aba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%A6z%E9%E6%B7v%1A%9F%88wtD%D0%E3%92%3CtT%F5%84%CC%0B%3DD%FBgD+%3A%8D%BFv%22%3B%7D; advanced-frontend=ee9cmmkh35hh8jfp81le5a9g51; _csrf-backend=3096412fcb300bbd7c059f8d020d6eaf910f257727128e478caedf2e72849352a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%A1%1D%DA%B6g%EE%00%F3%96%E7t%D6%F8%2Fux%89%17%A0%8A%1D%EA%9Ft%3A%C7%07%1F%89%D9Y%03%22%3B%7D; _identity-frontend=6d2b04f823fd9a73fdf9f5f382dd82192cdd65f51e81ef868dd1266647b8cd03a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D; advanced-backend=2r40jooinpdt3plm6n0hbtgu77'
+    'PATH' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\wamp\\www;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'G:/myFile/workspace/ms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/myFile/workspace/ms'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/myFile/workspace/ms/frontend/web/index.php'
+    'REMOTE_PORT' => '3473'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1508677689.408
+    'REQUEST_TIME' => 1508677689
+]
+2017-10-22 15:08:29 [::1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: G:\myFile\workspace\ms\frontend\views\layouts\main.php' in G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\View.php:229
+Stack trace:
+#0 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('G:\\myFile\\works...', Array, Object(frontend\controllers\SiteController))
+#1 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<div class="sit...')
+#2 G:\myFile\workspace\ms\frontend\controllers\SiteController.php(75): yii\base\Controller->render('index')
+#3 [internal function]: frontend\controllers\SiteController->actionIndex()
+#4 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#7 G:\myFile\workspace\ms\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#8 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 G:\myFile\workspace\ms\frontend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2017-10-22 15:08:29 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf-frontend' => '527e9fdcefffaff9df9ed5d2f96e9250e4fc8bc548b9843fe012fb34f97d88aba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¦zéæ·vŸˆwtDÐã’<tTõ„Ì=DûgD :¿v\";}'
+    'advanced-frontend' => 'ee9cmmkh35hh8jfp81le5a9g51'
+    '_csrf-backend' => '3096412fcb300bbd7c059f8d020d6eaf910f257727128e478caedf2e72849352a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"¡Ú¶gî\0ó–çtÖø/ux‰ ŠêŸt:Ç‰ÙY\";}'
+    'advanced-backend' => '2r40jooinpdt3plm6n0hbtgu77'
+    '_identity-frontend' => '6d2b04f823fd9a73fdf9f5f382dd82192cdd65f51e81ef868dd1266647b8cd03a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3637.220 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=527e9fdcefffaff9df9ed5d2f96e9250e4fc8bc548b9843fe012fb34f97d88aba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%A6z%E9%E6%B7v%1A%9F%88wtD%D0%E3%92%3CtT%F5%84%CC%0B%3DD%FBgD+%3A%8D%BFv%22%3B%7D; advanced-frontend=ee9cmmkh35hh8jfp81le5a9g51; _csrf-backend=3096412fcb300bbd7c059f8d020d6eaf910f257727128e478caedf2e72849352a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%A1%1D%DA%B6g%EE%00%F3%96%E7t%D6%F8%2Fux%89%17%A0%8A%1D%EA%9Ft%3A%C7%07%1F%89%D9Y%03%22%3B%7D; advanced-backend=2r40jooinpdt3plm6n0hbtgu77; _identity-frontend=6d2b04f823fd9a73fdf9f5f382dd82192cdd65f51e81ef868dd1266647b8cd03a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\wamp\\www;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'G:/myFile/workspace/ms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/myFile/workspace/ms'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/myFile/workspace/ms/frontend/web/index.php'
+    'REMOTE_PORT' => '3640'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1508677709.834
+    'REQUEST_TIME' => 1508677709
+]
+2017-10-22 15:11:09 [::1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: G:\myFile\workspace\ms\frontend\views\layouts\main.php' in G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\View.php:229
+Stack trace:
+#0 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('G:\\myFile\\works...', Array, Object(frontend\controllers\SiteController))
+#1 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<div class="sit...')
+#2 G:\myFile\workspace\ms\frontend\controllers\SiteController.php(75): yii\base\Controller->render('index')
+#3 [internal function]: frontend\controllers\SiteController->actionIndex()
+#4 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#7 G:\myFile\workspace\ms\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#8 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 G:\myFile\workspace\ms\frontend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2017-10-22 15:11:09 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf-frontend' => '527e9fdcefffaff9df9ed5d2f96e9250e4fc8bc548b9843fe012fb34f97d88aba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¦zéæ·vŸˆwtDÐã’<tTõ„Ì=DûgD :¿v\";}'
+    'advanced-frontend' => 'ee9cmmkh35hh8jfp81le5a9g51'
+    '_csrf-backend' => '3096412fcb300bbd7c059f8d020d6eaf910f257727128e478caedf2e72849352a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"¡Ú¶gî\0ó–çtÖø/ux‰ ŠêŸt:Ç‰ÙY\";}'
+    'advanced-backend' => '2r40jooinpdt3plm6n0hbtgu77'
+    '_identity-frontend' => '6d2b04f823fd9a73fdf9f5f382dd82192cdd65f51e81ef868dd1266647b8cd03a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3637.220 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=527e9fdcefffaff9df9ed5d2f96e9250e4fc8bc548b9843fe012fb34f97d88aba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%A6z%E9%E6%B7v%1A%9F%88wtD%D0%E3%92%3CtT%F5%84%CC%0B%3DD%FBgD+%3A%8D%BFv%22%3B%7D; advanced-frontend=ee9cmmkh35hh8jfp81le5a9g51; _csrf-backend=3096412fcb300bbd7c059f8d020d6eaf910f257727128e478caedf2e72849352a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%A1%1D%DA%B6g%EE%00%F3%96%E7t%D6%F8%2Fux%89%17%A0%8A%1D%EA%9Ft%3A%C7%07%1F%89%D9Y%03%22%3B%7D; advanced-backend=2r40jooinpdt3plm6n0hbtgu77; _identity-frontend=6d2b04f823fd9a73fdf9f5f382dd82192cdd65f51e81ef868dd1266647b8cd03a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\wamp\\www;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'G:/myFile/workspace/ms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/myFile/workspace/ms'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/myFile/workspace/ms/frontend/web/index.php'
+    'REMOTE_PORT' => '4962'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1508677869.561
+    'REQUEST_TIME' => 1508677869
+]
+2017-10-25 16:13:34 [::1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ms`.`allocation`, CONSTRAINT `lid` FOREIGN KEY (`lid`) REFERENCES `altemplate` (`id`))' in G:\myFile\workspace\ms\vendor\yiisoft\yii2\db\Command.php:842
+Stack trace:
+#0 G:\myFile\workspace\ms\vendor\yiisoft\yii2\db\Command.php(842): PDOStatement->execute()
+#1 G:\myFile\workspace\ms\vendor\yiisoft\yii2\db\ActiveRecord.php(296): yii\db\Command->execute()
+#2 G:\myFile\workspace\ms\vendor\yiisoft\yii2\db\ActiveRecord.php(653): yii\db\ActiveRecord::deleteAll('[<span class="s...')
+#3 G:\myFile\workspace\ms\vendor\yiisoft\yii2\db\ActiveRecord.php(613): yii\db\ActiveRecord->deleteInternal()
+#4 G:\myFile\workspace\ms\frontend\controllers\AltemplateController.php(104): yii\db\ActiveRecord->delete()
+#5 [internal function]: frontend\controllers\AltemplateController->actionDelete('<span class="st...')
+#6 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[<span class="s...')
+#7 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 G:\myFile\workspace\ms\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 G:\myFile\workspace\ms\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ms`.`allocation`, CONSTRAINT `lid` FOREIGN KEY (`lid`) REFERENCES `altemplate` (`id`))
+The SQL being executed was: DELETE FROM `altemplate` WHERE `id`='1'' in G:\myFile\workspace\ms\vendor\yiisoft\yii2\db\Schema.php:636
+Stack trace:
+#0 G:\myFile\workspace\ms\vendor\yiisoft\yii2\db\Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'DELETE FROM `al...')
+#1 G:\myFile\workspace\ms\vendor\yiisoft\yii2\db\ActiveRecord.php(296): yii\db\Command->execute()
+#2 G:\myFile\workspace\ms\vendor\yiisoft\yii2\db\ActiveRecord.php(653): yii\db\ActiveRecord::deleteAll('[<span class="s...')
+#3 G:\myFile\workspace\ms\vendor\yiisoft\yii2\db\ActiveRecord.php(613): yii\db\ActiveRecord->deleteInternal()
+#4 G:\myFile\workspace\ms\frontend\controllers\AltemplateController.php(104): yii\db\ActiveRecord->delete()
+#5 [internal function]: frontend\controllers\AltemplateController->actionDelete('<span class="st...')
+#6 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[<span class="s...')
+#7 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 G:\myFile\workspace\ms\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 G:\myFile\workspace\ms\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1451
+    [2] => Cannot delete or update a parent row: a foreign key constraint fails (`ms`.`allocation`, CONSTRAINT `lid` FOREIGN KEY (`lid`) REFERENCES `altemplate` (`id`))
+)
+
+2017-10-25 16:13:34 [::1][-][-][info][application] $_GET = [
+    'r' => 'altemplate/delete'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'YHwTnvzbaEttYenYjg5wy7dUU44prRE0GnW1py9tw5VPOSZkJMAov6jvfPZJCkfrDX0pk2oGlVBIGYLgPAk8Tw=='
+]
+
+$_COOKIE = [
+    'advanced-backend' => '6a05ven0heq8d3g2394iifo4l5'
+    '_csrf-backend' => '5276ff49193c5fc94eea6510ac0f5cd2efbd934d6b0019f9d876c05878648b78a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"¸e©¹¿dçMêCö®¯4#\\ëJb’ [±;wnž§\";}'
+    'advanced-frontend' => 'nbeb5dd9oh94pj8fvpg47ed0e5'
+    '_csrf-frontend' => 'c6efe7fe5541316ffd07f83aa50b96b1dc06b376009a9786e24126fc8cc607eea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"/E5úØ@ôÅŽ•.Ç7 º)zC«„dRl7GdÿÚ\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '107'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/frontend/web/index.php?r=altemplate%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=6a05ven0heq8d3g2394iifo4l5; _csrf-backend=5276ff49193c5fc94eea6510ac0f5cd2efbd934d6b0019f9d876c05878648b78a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%B8e%A9%B9%BF%08%17d%E7M%EAC%F6%AE%AF4%23%5C%EBJb%92%1B+%5B%B1%3Bwn%0C%9E%A7%22%3B%7D; advanced-frontend=nbeb5dd9oh94pj8fvpg47ed0e5; _csrf-frontend=c6efe7fe5541316ffd07f83aa50b96b1dc06b376009a9786e24126fc8cc607eea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%2FE5%FA%D8%1B%40%F4%C5%8E%95.%C7%047+%BA%29z%1DC%AB%84dRl7G%13d%FF%DA%22%3B%7D'
+    'PATH' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\wamp\\www;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'G:/myFile/workspace/ms'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/myFile/workspace/ms'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/myFile/workspace/ms/frontend/web/index.php'
+    'REMOTE_PORT' => '5660'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=altemplate%2Fdelete&id=1'
+    'REQUEST_URI' => '/frontend/web/index.php?r=altemplate%2Fdelete&id=1'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1508940814.531
+    'REQUEST_TIME' => 1508940814
+]

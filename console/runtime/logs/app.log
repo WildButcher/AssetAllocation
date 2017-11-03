@@ -1,0 +1,71 @@
+2017-10-19 19:40:05 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "migration".' in G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 G:\myFile\workspace\ms\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migration', Array)
+#1 G:\myFile\workspace\ms\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migration', Array)
+#2 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 G:\myFile\workspace\ms\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "migration".' in G:\myFile\workspace\ms\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 G:\myFile\workspace\ms\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migration', Array)
+#1 G:\myFile\workspace\ms\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 G:\myFile\workspace\ms\yii(27): yii\base\Application->run()
+#3 {main}
+2017-10-19 19:40:05 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'PC-20140501NDIF'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DEVMGR_SHOW_DETAILS' => '1'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Java\\jdk1.8.0_74'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\PC-20140501NDIF'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\wamp\\www;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Local\\GitHubDesktop\\bin;D:\\atom\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 30 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1e05'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'PC-20140501NDIF'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'G:\\myFile\\workspace\\ms\\'
+    'PHP_SELF' => 'G:\\myFile\\workspace\\ms\\yii'
+    'SCRIPT_NAME' => 'G:\\myFile\\workspace\\ms\\yii'
+    'SCRIPT_FILENAME' => 'G:\\myFile\\workspace\\ms\\yii'
+    'PATH_TRANSLATED' => 'G:\\myFile\\workspace\\ms\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1508434805.1016
+    'REQUEST_TIME' => 1508434805
+    'argv' => [
+        0 => 'G:\\myFile\\workspace\\ms\\yii'
+        1 => 'migration'
+    ]
+    'argc' => 2
+]
