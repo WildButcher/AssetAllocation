@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2017-10-22 21:23:34
+Date: 2017-11-03 09:29:24
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -28,11 +28,12 @@ CREATE TABLE `adviser` (
   `dept` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `id` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of adviser
 -- ----------------------------
+INSERT INTO `adviser` VALUES ('1', 'bbbcccc', '123', '123', '123', '123');
 
 -- ----------------------------
 -- Table structure for allocation
@@ -41,13 +42,13 @@ DROP TABLE IF EXISTS `allocation`;
 CREATE TABLE `allocation` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `filename` varchar(255) NOT NULL,
-  `createtime` timestamp NOT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `createtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `publictime` datetime DEFAULT NULL,
-  `downcount` int(11) DEFAULT NULL,
+  `downcount` int(11) unsigned DEFAULT '0',
   `filelinks` varchar(255) DEFAULT NULL,
   `filecontent` longtext,
   `isshare` bigint(20) unsigned NOT NULL,
-  `lid` bigint(20) unsigned NOT NULL,
+  `lid` bigint(20) unsigned DEFAULT NULL,
   `status` bigint(20) unsigned NOT NULL,
   `oid` bigint(20) unsigned NOT NULL,
   PRIMARY KEY (`id`),
@@ -57,13 +58,16 @@ CREATE TABLE `allocation` (
   KEY `createtime` (`createtime`) USING BTREE,
   KEY `isshare` (`isshare`) USING BTREE,
   KEY `oid` (`oid`),
+  CONSTRAINT `al_isshare` FOREIGN KEY (`isshare`) REFERENCES `syscode` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `al_oid` FOREIGN KEY (`oid`) REFERENCES `adviser` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `lid` FOREIGN KEY (`lid`) REFERENCES `products` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  CONSTRAINT `al_status` FOREIGN KEY (`status`) REFERENCES `syscode` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `lid` FOREIGN KEY (`lid`) REFERENCES `altemplate` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of allocation
 -- ----------------------------
+INSERT INTO `allocation` VALUES ('1', '3333', '2017-10-25 22:04:35', null, '0', null, '22', '5', '1', '8', '1');
 
 -- ----------------------------
 -- Table structure for altemplate
@@ -72,7 +76,7 @@ DROP TABLE IF EXISTS `altemplate`;
 CREATE TABLE `altemplate` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `templatename` varchar(255) NOT NULL,
-  `createtime` timestamp NOT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `createtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `filecontent` longtext,
   `isshare` bigint(20) unsigned NOT NULL,
   `oid` bigint(20) unsigned NOT NULL,
@@ -81,12 +85,15 @@ CREATE TABLE `altemplate` (
   KEY `oid` (`oid`),
   KEY `status` (`status`),
   KEY `isshare` (`isshare`),
-  CONSTRAINT `alt_oid` FOREIGN KEY (`oid`) REFERENCES `adviser` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  CONSTRAINT `alt_isshare` FOREIGN KEY (`isshare`) REFERENCES `syscode` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `alt_oid` FOREIGN KEY (`oid`) REFERENCES `adviser` (`id`),
+  CONSTRAINT `alt_status` FOREIGN KEY (`status`) REFERENCES `syscode` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of altemplate
 -- ----------------------------
+INSERT INTO `altemplate` VALUES ('1', '1111', '2017-10-25 21:29:41', '111', '6', '1', '8');
 
 -- ----------------------------
 -- Table structure for migration
@@ -110,20 +117,24 @@ INSERT INTO `migration` VALUES ('m130524_201442_init', '1508434861');
 DROP TABLE IF EXISTS `products`;
 CREATE TABLE `products` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `pname` varchar(255) NOT NULL,
   `rate` float(4,2) NOT NULL,
   `buypoint` int(11) NOT NULL,
   `term` int(11) NOT NULL,
   `profit` float(11,2) NOT NULL,
-  `createtime` timestamp NOT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `createtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `status` bigint(20) unsigned NOT NULL,
   PRIMARY KEY (`id`),
   KEY `status` (`status`) USING BTREE,
-  KEY `id` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  KEY `id` (`id`),
+  CONSTRAINT `p_status` FOREIGN KEY (`status`) REFERENCES `syscode` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of products
 -- ----------------------------
+INSERT INTO `products` VALUES ('22', 'aaaaa', '11.00', '11', '11', '11.00', '2017-10-24 14:47:07', '8');
+INSERT INTO `products` VALUES ('23', 'bbb', '12.00', '12', '12', '12.00', '2017-10-24 15:01:16', '9');
 
 -- ----------------------------
 -- Table structure for syscode
@@ -141,11 +152,11 @@ CREATE TABLE `syscode` (
 -- ----------------------------
 -- Records of syscode
 -- ----------------------------
-INSERT INTO `syscode` VALUES ('5', 'whether', '00', '否');
-INSERT INTO `syscode` VALUES ('6', 'whether', '01', '是');
-INSERT INTO `syscode` VALUES ('7', 'status', '00', '停用');
-INSERT INTO `syscode` VALUES ('8', 'status', '01', '启用');
-INSERT INTO `syscode` VALUES ('9', 'status', '02', '发布');
+INSERT INTO `syscode` VALUES ('5', 'whether', '0', '否');
+INSERT INTO `syscode` VALUES ('6', 'whether', '1', '是');
+INSERT INTO `syscode` VALUES ('7', 'status', '0', '停用');
+INSERT INTO `syscode` VALUES ('8', 'status', '1', '启用');
+INSERT INTO `syscode` VALUES ('9', 'status', '2', '发布');
 
 -- ----------------------------
 -- Table structure for user
