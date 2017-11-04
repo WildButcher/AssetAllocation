@@ -3,6 +3,7 @@
 namespace common\models;
 
 use Yii;
+use yii\helpers\ArrayHelper;
 
 /**
  * This is the model class for table "syscode".
@@ -74,4 +75,11 @@ class Syscode extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Products::className(), ['status' => 'id']);
     }
+    
+    public static  function  get_type($majorcode){
+    	$cat = Syscode::find()->where(['majorcode'=>$majorcode])->all();
+    	$cat = ArrayHelper::map($cat, 'id', 'meaning');
+    	return $cat;
+    }
+
 }

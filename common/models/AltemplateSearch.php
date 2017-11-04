@@ -12,6 +12,12 @@ use common\models\Altemplate;
  */
 class AltemplateSearch extends Altemplate
 {
+	
+	public function attributes()
+	{
+		return array_merge(parent::attributes(),['oname']);
+	}
+	
     /**
      * @inheritdoc
      */
@@ -19,7 +25,7 @@ class AltemplateSearch extends Altemplate
     {
         return [
             [['id', 'isshare', 'oid', 'status'], 'integer'],
-            [['templatename', 'createtime', 'filecontent'], 'safe'],
+            [['templatename', 'createtime', 'filecontent','oname'], 'safe'],
         ];
     }
 
@@ -47,6 +53,12 @@ class AltemplateSearch extends Altemplate
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+        	'pagination' => ['pageSize' => 10],
+        	'sort' => [
+        				'defaultOrder' => [
+        									'id'=>SORT_DESC,
+        			  					  ],
+        	          ],
         ]);
 
         $this->load($params);
@@ -69,6 +81,16 @@ class AltemplateSearch extends Altemplate
         $query->andFilterWhere(['like', 'templatename', $this->templatename])
             ->andFilterWhere(['like', 'filecontent', $this->filecontent]);
 
+            
+        $query->join('INNER JOIN','Adviser','altemplate.oid = Adviser.id');
+        $query->andFilterWhere(['like','Adviser.xingming',$this->oname]);
+            
+        $dataProvider->sort->attributes['oname'] =
+            [
+            		'asc'=>['Adviser.xingming'=>SORT_ASC],
+            		'desc'=>['Adviser.xingming'=>SORT_DESC],
+            ];
+            
         return $dataProvider;
     }
 }

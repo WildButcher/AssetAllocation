@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use common\models\Allocation;
+use common\models\Syscode;
 
 /* @var $this yii\web\View */
 /* @var $searchModel common\models\AllocationSearch */
@@ -22,15 +24,18 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-
-            'id',
+        	[
+        		'attribute'=>'id',
+        		'contentOptions'=>['width'=>'30px'],
+        	],
             'filename',
             'createtime',
             'publictime',
         	[
-        		'attribute' => 'oid',
+        		'attribute' => 'oname',
+        		'label' => '所属投顾',
         		'value' => 'o.xingming',
+        		'contentOptions'=>['width'=>'180px'],
         	],
             //'downcount',
             // 'filelinks',
@@ -38,6 +43,8 @@ $this->params['breadcrumbs'][] = $this->title;
         	[
         		'attribute' => 'isshare',
         		'value' => 'isshare0.meaning',
+        		'filter' => Syscode::get_type('whether'),
+        		'contentOptions'=>['width'=>'120px'],
         	],
         	[
         		'attribute' => 'lid',
@@ -46,6 +53,8 @@ $this->params['breadcrumbs'][] = $this->title;
         	[
         		'attribute' => 'status',
         		'value' => 'status0.meaning',
+        		'filter' =>Syscode::get_type('status'),
+        		'contentOptions'=>['width'=>'100px'],
         	],
 
             ['class' => 'yii\grid\ActionColumn'],

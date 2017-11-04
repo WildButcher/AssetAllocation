@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use common\models\Syscode;
 
 /* @var $this yii\web\View */
 /* @var $searchModel common\models\ProductsSearch */
@@ -22,17 +23,22 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            'id',
+        		[
+        				'attribute'=>'id',
+        				'contentOptions'=>['width'=>'30px'],
+        		],
             'pname',
             'rate',
             'buypoint',
             'term',
             'profit',
             'createtime',
-        	[
-        		'attribute' => 'status',
-        		'value' => 'status0.meaning',
-        	],
+        		[
+        				'attribute' => 'status',
+        				'value' => 'status0.meaning',
+        				'filter' =>Syscode::get_type('status'),
+        				'contentOptions'=>['width'=>'100px'],
+        		],
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

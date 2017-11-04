@@ -12,6 +12,12 @@ use common\models\Allocation;
  */
 class AllocationSearch extends Allocation
 {
+	
+	public function attributes()
+	{
+		return array_merge(parent::attributes(),['oname']);
+	}
+	
     /**
      * @inheritdoc
      */
@@ -19,7 +25,7 @@ class AllocationSearch extends Allocation
     {
         return [
             [['id', 'downcount', 'isshare', 'lid', 'status', 'oid'], 'integer'],
-            [['filename', 'createtime', 'publictime', 'filelinks', 'filecontent'], 'safe'],
+            [['filename', 'createtime', 'publictime', 'filelinks', 'filecontent','oname'], 'safe'],
         ];
     }
 
@@ -47,6 +53,12 @@ class AllocationSearch extends Allocation
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+        	'pagination' => ['pageSize' => 10],
+        	'sort' => [
+        				'defaultOrder' => [
+        									'id'=>SORT_DESC,
+        								  ],
+        			  ],
         ]);
 
         $this->load($params);
@@ -72,6 +84,15 @@ class AllocationSearch extends Allocation
         $query->andFilterWhere(['like', 'filename', $this->filename])
             ->andFilterWhere(['like', 'filelinks', $this->filelinks])
             ->andFilterWhere(['like', 'filecontent', $this->filecontent]);
+        
+        $query->join('INNER JOIN','Adviser','allocation.oid = Adviser.id');
+        $query->andFilterWhere(['like','Adviser.xingming',$this->oname]);
+        
+        $dataProvider->sort->attributes['oname'] = 
+        [
+        	'asc'=>['Adviser.xingming'=>SORT_ASC],
+        	'desc'=>['Adviser.xingming'=>SORT_DESC],
+        ];
 
         return $dataProvider;
     }
