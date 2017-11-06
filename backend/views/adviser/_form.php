@@ -12,6 +12,12 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
+	<?= $form->field($model, 'username')->textInput(['maxlength' => true]) ?>
+	
+	<?= $form->field($model, 'password')->passwordInput(['maxlength' => true]) ?>
+	
+	<?= $form->field($model, 'password_repeat')->passwordInput(['maxlength' => true]) ?>
+	
     <?= $form->field($model, 'xingming')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'idnumber')->textInput(['maxlength' => true]) ?>
@@ -23,7 +29,7 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'dept')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? '保存' : '修改', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::submitButton('保存', ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

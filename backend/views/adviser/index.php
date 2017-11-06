@@ -26,13 +26,37 @@ $this->params['breadcrumbs'][] = $this->title;
         		'attribute'=>'id',
         		'contentOptions'=>['width'=>'30px'],
         	],
+        	'username',
             'xingming',
             'idnumber',
             'mobliephone',
             'email:email',
             'dept',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+            	'class' => 'yii\grid\ActionColumn',
+            	'template'=>'{view}{update}{resetpwd}{privilege}{delete}',
+            	'buttons'=>[
+	            				'resetpwd'=>function($url,$model,$key)
+		            			{
+		        					$options=[
+		        								'title'=>Yii::t('yii','重置密码'),
+		        								'aria-label'=>Yii::t('yii','重置密码'),
+		        								'data-pjax'=>'0',
+		        							];
+		        					return Html::a('<span class="glyphicon glyphicon-lock"></span>',$url,$options);
+		        				},
+		        				'privilege'=>function($url,$model,$key)
+		        				{
+		        					$options=[
+		        							'title'=>Yii::t('yii','权限'),
+		        							'aria-label'=>Yii::t('yii','权限'),
+		        							'data-pjax'=>'0',
+		        					];
+		        					return Html::a('<span class="glyphicon glyphicon-user"></span>',$url,$options);
+		        				},
+    						],
+    		],
         ],
     ]); ?>
 </div>

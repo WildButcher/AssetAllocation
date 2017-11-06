@@ -4,6 +4,7 @@ namespace backend\controllers;
 
 use Yii;
 use common\models\Adviser;
+use backend\models\SignupForm;
 use common\models\AdviserSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -63,15 +64,16 @@ class AdviserController extends Controller
      */
     public function actionCreate()
     {
-        $model = new Adviser();
+    	$model = new SignupForm();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
-        }
+        if ($model->load(Yii::$app->request->post())) 
+        {
+        	if($model= $model->signup())
+        	{
+        		return $this->redirect(['view', 'id' => $model->id]);
+        	}            
+        } 
+        return $this->render('create', ['model' => $model,]);
     }
 
     /**
@@ -85,6 +87,8 @@ class AdviserController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        	$model->password = $model->password_hash;
+        	
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [

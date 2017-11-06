@@ -19,7 +19,7 @@ class AdviserSearch extends Adviser
     {
         return [
             [['id'], 'integer'],
-            [['xingming', 'idnumber', 'mobliephone', 'email', 'dept'], 'safe'],
+            [['xingming', 'idnumber', 'mobliephone', 'email', 'dept','username'], 'safe'],
         ];
     }
 
