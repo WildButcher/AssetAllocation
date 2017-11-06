@@ -5874,3 +5874,1591 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1508940338.079
     'REQUEST_TIME' => 1508940338
 ]
+2017-11-06 15:20:54 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: option' in F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\index.php:47
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\grid\ActionColumn.php(227): ::call_user_func()
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\grid\ActionColumn.php(231): yii\grid\ActionColumn->yii\grid\{closure}()
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\grid\ActionColumn.php(231): ::preg_replace_callback()
+#3 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\grid\Column.php(110): yii\grid\ActionColumn->renderDataCellContent()
+#4 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\grid\GridView.php(507): yii\grid\Column->renderDataCell()
+#5 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\grid\GridView.php(476): yii\grid\GridView->renderTableRow()
+#6 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\grid\GridView.php(347): yii\grid\GridView->renderTableBody()
+#7 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\widgets\BaseListView.php(159): yii\grid\GridView->renderItems()
+#8 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\grid\GridView.php(316): yii\widgets\BaseListView->renderSection()
+#9 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\widgets\BaseListView.php(134): yii\grid\GridView->renderSection()
+#10 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\widgets\BaseListView.php(137): yii\widgets\BaseListView->yii\widgets\{closure}()
+#11 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\widgets\BaseListView.php(137): ::preg_replace_callback()
+#12 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\grid\GridView.php(291): yii\widgets\BaseListView->run()
+#13 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Widget.php(139): yii\grid\GridView->run()
+#14 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\index.php(61): yii\base\Widget::widget()
+#15 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): ::unknown()
+#16 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#17 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#18 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render()
+#19 F:\Myfiles\workspace\AssetAllocation\backend\controllers\AdviserController.php(44): yii\base\Controller->render()
+#20 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\AdviserController->actionIndex()
+#21 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array()
+#22 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#23 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#24 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#25 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#26 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#27 {main}
+2017-11-06 15:20:54 [::1][-][-][info][application] $_GET = [
+    'r' => 'adviser/index'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eÄh?ß*‹ã∂âQXü^Ÿ‡˛èP⁄ª¿ëÚÃR8€ƒ\";}'
+    'advanced-frontend' => '01ljs7e3kfabgo3490mqk82047'
+    '_csrf-backend' => 'c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"∞ı¶À˙TùM¸Il‚`Q$>ÎÓ–±ÃÇﬂÙûL Ò5\";}'
+    '_adviserCSRF' => '962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"d±6ô¡J,B7ªÆçô+<#@ërpß…ITÖ\";}'
+    'advanced-backend' => '4pfv93mk9atg5aodkbmp27bu35'
+    'frontendsession' => 'dar2in29cdtf6v47mt6oodi5a5'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=adviser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22e%80h%3F%A7%2A%DC%8B%B6%89%1BQX%9F%5E%D9%E0%FE%8F%0DP%DA%BB%C0%91%F2%CCR8%DB%1F%C4%22%3B%7D; advanced-frontend=01ljs7e3kfabgo3490mqk82047; _csrf-backend=c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%B0%F5%A6%CB%10%FAT%9DM%16%1E%FCIl%E2%60Q%24%3E%EB%EE%D0%B1%CC%82%DF%F4%9EL+%F15%22%3B%7D; _adviserCSRF=962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22d%B16%19%99%C1%02J%2CB7%19%BB%AE%8D%1C%99%2B%3C%23%40%91%05%1Frp%A7%C9I%13T%85%22%3B%7D; advanced-backend=4pfv93mk9atg5aodkbmp27bu35; frontendsession=dar2in29cdtf6v47mt6oodi5a5'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '63458'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adviser%2Findex'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser%2Findex'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509981654.706
+    'REQUEST_TIME' => 1509981654
+]
+2017-11-06 15:21:20 [::1][-][4pfv93mk9atg5aodkbmp27bu35][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: adviser/resetpwd' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('resetpwd', Array)
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adviser/resetpw...', Array)
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-06 15:21:20 [::1][-][4pfv93mk9atg5aodkbmp27bu35][info][application] $_GET = [
+    'r' => 'adviser/resetpwd'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eÄh?ß*‹ã∂âQXü^Ÿ‡˛èP⁄ª¿ëÚÃR8€ƒ\";}'
+    'advanced-frontend' => '01ljs7e3kfabgo3490mqk82047'
+    '_csrf-backend' => 'c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"∞ı¶À˙TùM¸Il‚`Q$>ÎÓ–±ÃÇﬂÙûL Ò5\";}'
+    '_adviserCSRF' => '962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"d±6ô¡J,B7ªÆçô+<#@ërpß…ITÖ\";}'
+    'advanced-backend' => '4pfv93mk9atg5aodkbmp27bu35'
+    'frontendsession' => 'dar2in29cdtf6v47mt6oodi5a5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=adviser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22e%80h%3F%A7%2A%DC%8B%B6%89%1BQX%9F%5E%D9%E0%FE%8F%0DP%DA%BB%C0%91%F2%CCR8%DB%1F%C4%22%3B%7D; advanced-frontend=01ljs7e3kfabgo3490mqk82047; _csrf-backend=c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%B0%F5%A6%CB%10%FAT%9DM%16%1E%FCIl%E2%60Q%24%3E%EB%EE%D0%B1%CC%82%DF%F4%9EL+%F15%22%3B%7D; _adviserCSRF=962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22d%B16%19%99%C1%02J%2CB7%19%BB%AE%8D%1C%99%2B%3C%23%40%91%05%1Frp%A7%C9I%13T%85%22%3B%7D; advanced-backend=4pfv93mk9atg5aodkbmp27bu35; frontendsession=dar2in29cdtf6v47mt6oodi5a5'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '63470'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adviser%2Fresetpwd&id=1'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser%2Fresetpwd&id=1'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509981680.24
+    'REQUEST_TIME' => 1509981680
+]
+2017-11-06 15:21:23 [::1][-][4pfv93mk9atg5aodkbmp27bu35][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: adviser/privilege' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('privilege', Array)
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adviser/privile...', Array)
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-06 15:21:23 [::1][-][4pfv93mk9atg5aodkbmp27bu35][info][application] $_GET = [
+    'r' => 'adviser/privilege'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eÄh?ß*‹ã∂âQXü^Ÿ‡˛èP⁄ª¿ëÚÃR8€ƒ\";}'
+    'advanced-frontend' => '01ljs7e3kfabgo3490mqk82047'
+    '_csrf-backend' => 'c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"∞ı¶À˙TùM¸Il‚`Q$>ÎÓ–±ÃÇﬂÙûL Ò5\";}'
+    '_adviserCSRF' => '962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"d±6ô¡J,B7ªÆçô+<#@ërpß…ITÖ\";}'
+    'advanced-backend' => '4pfv93mk9atg5aodkbmp27bu35'
+    'frontendsession' => 'dar2in29cdtf6v47mt6oodi5a5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=adviser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22e%80h%3F%A7%2A%DC%8B%B6%89%1BQX%9F%5E%D9%E0%FE%8F%0DP%DA%BB%C0%91%F2%CCR8%DB%1F%C4%22%3B%7D; advanced-frontend=01ljs7e3kfabgo3490mqk82047; _csrf-backend=c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%B0%F5%A6%CB%10%FAT%9DM%16%1E%FCIl%E2%60Q%24%3E%EB%EE%D0%B1%CC%82%DF%F4%9EL+%F15%22%3B%7D; _adviserCSRF=962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22d%B16%19%99%C1%02J%2CB7%19%BB%AE%8D%1C%99%2B%3C%23%40%91%05%1Frp%A7%C9I%13T%85%22%3B%7D; advanced-backend=4pfv93mk9atg5aodkbmp27bu35; frontendsession=dar2in29cdtf6v47mt6oodi5a5'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '63470'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adviser%2Fprivilege&id=1'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser%2Fprivilege&id=1'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509981683.863
+    'REQUEST_TIME' => 1509981683
+]
+2017-11-06 15:36:47 [::1][-][4pfv93mk9atg5aodkbmp27bu35][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: adviser/privilege' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('privilege', Array)
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adviser/privile...', Array)
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-06 15:36:47 [::1][-][4pfv93mk9atg5aodkbmp27bu35][info][application] $_GET = [
+    'r' => 'adviser/privilege'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eÄh?ß*‹ã∂âQXü^Ÿ‡˛èP⁄ª¿ëÚÃR8€ƒ\";}'
+    'advanced-frontend' => '01ljs7e3kfabgo3490mqk82047'
+    '_csrf-backend' => 'c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"∞ı¶À˙TùM¸Il‚`Q$>ÎÓ–±ÃÇﬂÙûL Ò5\";}'
+    '_adviserCSRF' => '962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"d±6ô¡J,B7ªÆçô+<#@ërpß…ITÖ\";}'
+    'advanced-backend' => '4pfv93mk9atg5aodkbmp27bu35'
+    'frontendsession' => 'dar2in29cdtf6v47mt6oodi5a5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=adviser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22e%80h%3F%A7%2A%DC%8B%B6%89%1BQX%9F%5E%D9%E0%FE%8F%0DP%DA%BB%C0%91%F2%CCR8%DB%1F%C4%22%3B%7D; advanced-frontend=01ljs7e3kfabgo3490mqk82047; _csrf-backend=c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%B0%F5%A6%CB%10%FAT%9DM%16%1E%FCIl%E2%60Q%24%3E%EB%EE%D0%B1%CC%82%DF%F4%9EL+%F15%22%3B%7D; _adviserCSRF=962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22d%B16%19%99%C1%02J%2CB7%19%BB%AE%8D%1C%99%2B%3C%23%40%91%05%1Frp%A7%C9I%13T%85%22%3B%7D; advanced-backend=4pfv93mk9atg5aodkbmp27bu35; frontendsession=dar2in29cdtf6v47mt6oodi5a5'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '64297'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adviser%2Fprivilege&id=1'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser%2Fprivilege&id=1'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509982607.652
+    'REQUEST_TIME' => 1509982607
+]
+2017-11-06 15:46:19 [::1][-][-][error][yii\base\InvalidCallException] exception 'yii\base\InvalidCallException' with message 'Getting write-only property: common\models\Adviser::password' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Component.php:144
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\db\BaseActiveRecord.php(285): yii\base\Component->__get('password')
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(2108): yii\db\BaseActiveRecord->__get('password')
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1287): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Adviser), 'password')
+#3 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1377): yii\helpers\BaseHtml::activeInput('password', Object(common\models\Adviser), 'password', Array)
+#4 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\widgets\ActiveField.php(441): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\Adviser), 'password', Array)
+#5 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\signup.php(26): yii\widgets\ActiveField->passwordInput()
+#6 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#7 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#8 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, NULL)
+#9 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\create.php(19): yii\base\View->render('signup', Array)
+#10 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#11 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#12 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, Object(backend\controllers\AdviserController))
+#13 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('create', Array, Object(backend\controllers\AdviserController))
+#14 F:\Myfiles\workspace\AssetAllocation\backend\controllers\AdviserController.php(73): yii\base\Controller->render('create', Array)
+#15 [internal function]: backend\controllers\AdviserController->actionCreate()
+#16 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#17 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#18 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#19 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adviser/create', Array)
+#20 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2017-11-06 15:46:19 [::1][-][-][info][application] $_GET = [
+    'r' => 'adviser/create'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eÄh?ß*‹ã∂âQXü^Ÿ‡˛èP⁄ª¿ëÚÃR8€ƒ\";}'
+    'advanced-frontend' => '01ljs7e3kfabgo3490mqk82047'
+    '_csrf-backend' => 'c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"∞ı¶À˙TùM¸Il‚`Q$>ÎÓ–±ÃÇﬂÙûL Ò5\";}'
+    '_adviserCSRF' => '962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"d±6ô¡J,B7ªÆçô+<#@ërpß…ITÖ\";}'
+    'frontendsession' => 'dar2in29cdtf6v47mt6oodi5a5'
+    'advanced-backend' => 'eedm31blojfu08pki6usnds7v4'
+    '_identity-backend' => 'd7eebe537036b430b05664fc8180953c82b5887a91370ee0e54cafdce8f4dbaaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=adviser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22e%80h%3F%A7%2A%DC%8B%B6%89%1BQX%9F%5E%D9%E0%FE%8F%0DP%DA%BB%C0%91%F2%CCR8%DB%1F%C4%22%3B%7D; advanced-frontend=01ljs7e3kfabgo3490mqk82047; _csrf-backend=c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%B0%F5%A6%CB%10%FAT%9DM%16%1E%FCIl%E2%60Q%24%3E%EB%EE%D0%B1%CC%82%DF%F4%9EL+%F15%22%3B%7D; _adviserCSRF=962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22d%B16%19%99%C1%02J%2CB7%19%BB%AE%8D%1C%99%2B%3C%23%40%91%05%1Frp%A7%C9I%13T%85%22%3B%7D; frontendsession=dar2in29cdtf6v47mt6oodi5a5; advanced-backend=eedm31blojfu08pki6usnds7v4; _identity-backend=d7eebe537036b430b05664fc8180953c82b5887a91370ee0e54cafdce8f4dbaaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '65108'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adviser%2Fcreate'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser%2Fcreate'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509983179.736
+    'REQUEST_TIME' => 1509983179
+]
+2017-11-06 16:18:10 [::1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'backend\models\SignupForm' in file: F:\Myfiles\workspace\AssetAllocation/backend/models/SignupForm.php. Namespace missing?' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\BaseYii.php:295
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\models\...')
+#1 F:\Myfiles\workspace\AssetAllocation\backend\controllers\AdviserController.php(67): spl_autoload_call('backend\models\...')
+#2 [internal function]: backend\controllers\AdviserController->actionCreate()
+#3 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#6 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adviser/create', Array)
+#7 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-11-06 16:18:09 [::1][-][-][info][application] $_GET = [
+    'r' => 'adviser/create'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eÄh?ß*‹ã∂âQXü^Ÿ‡˛èP⁄ª¿ëÚÃR8€ƒ\";}'
+    'advanced-frontend' => '01ljs7e3kfabgo3490mqk82047'
+    '_csrf-backend' => 'c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"∞ı¶À˙TùM¸Il‚`Q$>ÎÓ–±ÃÇﬂÙûL Ò5\";}'
+    '_adviserCSRF' => '962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"d±6ô¡J,B7ªÆçô+<#@ërpß…ITÖ\";}'
+    'frontendsession' => 'dar2in29cdtf6v47mt6oodi5a5'
+    'advanced-backend' => 'eedm31blojfu08pki6usnds7v4'
+    '_identity-backend' => 'd7eebe537036b430b05664fc8180953c82b5887a91370ee0e54cafdce8f4dbaaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=adviser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22e%80h%3F%A7%2A%DC%8B%B6%89%1BQX%9F%5E%D9%E0%FE%8F%0DP%DA%BB%C0%91%F2%CCR8%DB%1F%C4%22%3B%7D; advanced-frontend=01ljs7e3kfabgo3490mqk82047; _csrf-backend=c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%B0%F5%A6%CB%10%FAT%9DM%16%1E%FCIl%E2%60Q%24%3E%EB%EE%D0%B1%CC%82%DF%F4%9EL+%F15%22%3B%7D; _adviserCSRF=962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22d%B16%19%99%C1%02J%2CB7%19%BB%AE%8D%1C%99%2B%3C%23%40%91%05%1Frp%A7%C9I%13T%85%22%3B%7D; frontendsession=dar2in29cdtf6v47mt6oodi5a5; advanced-backend=eedm31blojfu08pki6usnds7v4; _identity-backend=d7eebe537036b430b05664fc8180953c82b5887a91370ee0e54cafdce8f4dbaaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '49956'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adviser%2Fcreate'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser%2Fcreate'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509985089.975
+    'REQUEST_TIME' => 1509985089
+]
+2017-11-06 16:18:50 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\SignupForm::xingming' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(2108): yii\base\Component->__get('xingming')
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1287): yii\helpers\BaseHtml::getAttributeValue(Object(backend\models\SignupForm), 'xingming')
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1336): yii\helpers\BaseHtml::activeInput('text', Object(backend\models\SignupForm), 'xingming', Array)
+#3 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\widgets\ActiveField.php(395): yii\helpers\BaseHtml::activeTextInput(Object(backend\models\SignupForm), 'xingming', Array)
+#4 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\_form.php(17): yii\widgets\ActiveField->textInput(Array)
+#5 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#6 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#7 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, NULL)
+#8 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\create.php(19): yii\base\View->render('_form', Array)
+#9 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#10 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#11 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, Object(backend\controllers\AdviserController))
+#12 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('create', Array, Object(backend\controllers\AdviserController))
+#13 F:\Myfiles\workspace\AssetAllocation\backend\controllers\AdviserController.php(78): yii\base\Controller->render('create', Array)
+#14 [internal function]: backend\controllers\AdviserController->actionCreate()
+#15 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#18 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adviser/create', Array)
+#19 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#21 {main}
+2017-11-06 16:18:49 [::1][-][-][info][application] $_GET = [
+    'r' => 'adviser/create'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eÄh?ß*‹ã∂âQXü^Ÿ‡˛èP⁄ª¿ëÚÃR8€ƒ\";}'
+    'advanced-frontend' => '01ljs7e3kfabgo3490mqk82047'
+    '_csrf-backend' => 'c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"∞ı¶À˙TùM¸Il‚`Q$>ÎÓ–±ÃÇﬂÙûL Ò5\";}'
+    '_adviserCSRF' => '962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"d±6ô¡J,B7ªÆçô+<#@ërpß…ITÖ\";}'
+    'frontendsession' => 'dar2in29cdtf6v47mt6oodi5a5'
+    'advanced-backend' => 'eedm31blojfu08pki6usnds7v4'
+    '_identity-backend' => 'd7eebe537036b430b05664fc8180953c82b5887a91370ee0e54cafdce8f4dbaaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=adviser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22e%80h%3F%A7%2A%DC%8B%B6%89%1BQX%9F%5E%D9%E0%FE%8F%0DP%DA%BB%C0%91%F2%CCR8%DB%1F%C4%22%3B%7D; advanced-frontend=01ljs7e3kfabgo3490mqk82047; _csrf-backend=c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%B0%F5%A6%CB%10%FAT%9DM%16%1E%FCIl%E2%60Q%24%3E%EB%EE%D0%B1%CC%82%DF%F4%9EL+%F15%22%3B%7D; _adviserCSRF=962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22d%B16%19%99%C1%02J%2CB7%19%BB%AE%8D%1C%99%2B%3C%23%40%91%05%1Frp%A7%C9I%13T%85%22%3B%7D; frontendsession=dar2in29cdtf6v47mt6oodi5a5; advanced-backend=eedm31blojfu08pki6usnds7v4; _identity-backend=d7eebe537036b430b05664fc8180953c82b5887a91370ee0e54cafdce8f4dbaaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '49977'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adviser%2Fcreate'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser%2Fcreate'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509985129.936
+    'REQUEST_TIME' => 1509985129
+]
+2017-11-06 16:23:20 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\SignupForm::password_repeat' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(2108): yii\base\Component->__get('password_repeat')
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1287): yii\helpers\BaseHtml::getAttributeValue(Object(backend\models\SignupForm), 'password_repeat')
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1377): yii\helpers\BaseHtml::activeInput('password', Object(backend\models\SignupForm), 'password_repeat', Array)
+#3 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\widgets\ActiveField.php(441): yii\helpers\BaseHtml::activePasswordInput(Object(backend\models\SignupForm), 'password_repeat', Array)
+#4 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\_form.php(19): yii\widgets\ActiveField->passwordInput(Array)
+#5 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#6 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#7 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, NULL)
+#8 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\create.php(19): yii\base\View->render('_form', Array)
+#9 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#10 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#11 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, Object(backend\controllers\AdviserController))
+#12 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('create', Array, Object(backend\controllers\AdviserController))
+#13 F:\Myfiles\workspace\AssetAllocation\backend\controllers\AdviserController.php(76): yii\base\Controller->render('create', Array)
+#14 [internal function]: backend\controllers\AdviserController->actionCreate()
+#15 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#18 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adviser/create', Array)
+#19 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#21 {main}
+2017-11-06 16:23:20 [::1][-][-][info][application] $_GET = [
+    'r' => 'adviser/create'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eÄh?ß*‹ã∂âQXü^Ÿ‡˛èP⁄ª¿ëÚÃR8€ƒ\";}'
+    'advanced-frontend' => '01ljs7e3kfabgo3490mqk82047'
+    '_csrf-backend' => 'c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"∞ı¶À˙TùM¸Il‚`Q$>ÎÓ–±ÃÇﬂÙûL Ò5\";}'
+    '_adviserCSRF' => '962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"d±6ô¡J,B7ªÆçô+<#@ërpß…ITÖ\";}'
+    'frontendsession' => 'dar2in29cdtf6v47mt6oodi5a5'
+    'advanced-backend' => 'eedm31blojfu08pki6usnds7v4'
+    '_identity-backend' => 'd7eebe537036b430b05664fc8180953c82b5887a91370ee0e54cafdce8f4dbaaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=adviser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22e%80h%3F%A7%2A%DC%8B%B6%89%1BQX%9F%5E%D9%E0%FE%8F%0DP%DA%BB%C0%91%F2%CCR8%DB%1F%C4%22%3B%7D; advanced-frontend=01ljs7e3kfabgo3490mqk82047; _csrf-backend=c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%B0%F5%A6%CB%10%FAT%9DM%16%1E%FCIl%E2%60Q%24%3E%EB%EE%D0%B1%CC%82%DF%F4%9EL+%F15%22%3B%7D; _adviserCSRF=962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22d%B16%19%99%C1%02J%2CB7%19%BB%AE%8D%1C%99%2B%3C%23%40%91%05%1Frp%A7%C9I%13T%85%22%3B%7D; frontendsession=dar2in29cdtf6v47mt6oodi5a5; advanced-backend=eedm31blojfu08pki6usnds7v4; _identity-backend=d7eebe537036b430b05664fc8180953c82b5887a91370ee0e54cafdce8f4dbaaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '50098'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adviser%2Fcreate'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser%2Fcreate'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509985400.841
+    'REQUEST_TIME' => 1509985400
+]
+2017-11-06 16:36:34 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\SignupForm::dept' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(2108): yii\base\Component->__get('dept')
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1287): yii\helpers\BaseHtml::getAttributeValue(Object(backend\models\SignupForm), 'dept')
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1336): yii\helpers\BaseHtml::activeInput('text', Object(backend\models\SignupForm), 'dept', Array)
+#3 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\widgets\ActiveField.php(395): yii\helpers\BaseHtml::activeTextInput(Object(backend\models\SignupForm), 'dept', Array)
+#4 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\_form.php(29): yii\widgets\ActiveField->textInput(Array)
+#5 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#6 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#7 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, NULL)
+#8 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\create.php(19): yii\base\View->render('_form', Array)
+#9 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#10 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#11 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, Object(backend\controllers\AdviserController))
+#12 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('create', Array, Object(backend\controllers\AdviserController))
+#13 F:\Myfiles\workspace\AssetAllocation\backend\controllers\AdviserController.php(76): yii\base\Controller->render('create', Array)
+#14 [internal function]: backend\controllers\AdviserController->actionCreate()
+#15 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#18 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adviser/create', Array)
+#19 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#21 {main}
+2017-11-06 16:36:33 [::1][-][-][info][application] $_GET = [
+    'r' => 'adviser/create'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eÄh?ß*‹ã∂âQXü^Ÿ‡˛èP⁄ª¿ëÚÃR8€ƒ\";}'
+    'advanced-frontend' => '01ljs7e3kfabgo3490mqk82047'
+    '_csrf-backend' => 'c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"∞ı¶À˙TùM¸Il‚`Q$>ÎÓ–±ÃÇﬂÙûL Ò5\";}'
+    '_adviserCSRF' => '962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"d±6ô¡J,B7ªÆçô+<#@ërpß…ITÖ\";}'
+    'frontendsession' => 'dar2in29cdtf6v47mt6oodi5a5'
+    'advanced-backend' => 'eedm31blojfu08pki6usnds7v4'
+    '_identity-backend' => 'd7eebe537036b430b05664fc8180953c82b5887a91370ee0e54cafdce8f4dbaaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=adviser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22e%80h%3F%A7%2A%DC%8B%B6%89%1BQX%9F%5E%D9%E0%FE%8F%0DP%DA%BB%C0%91%F2%CCR8%DB%1F%C4%22%3B%7D; advanced-frontend=01ljs7e3kfabgo3490mqk82047; _csrf-backend=c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%B0%F5%A6%CB%10%FAT%9DM%16%1E%FCIl%E2%60Q%24%3E%EB%EE%D0%B1%CC%82%DF%F4%9EL+%F15%22%3B%7D; _adviserCSRF=962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22d%B16%19%99%C1%02J%2CB7%19%BB%AE%8D%1C%99%2B%3C%23%40%91%05%1Frp%A7%C9I%13T%85%22%3B%7D; frontendsession=dar2in29cdtf6v47mt6oodi5a5; advanced-backend=eedm31blojfu08pki6usnds7v4; _identity-backend=d7eebe537036b430b05664fc8180953c82b5887a91370ee0e54cafdce8f4dbaaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '50536'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adviser%2Fcreate'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser%2Fcreate'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509986193.923
+    'REQUEST_TIME' => 1509986193
+]
+2017-11-06 16:36:53 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\SignupForm::isNewRecord' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\_form.php(32): yii\base\Component->__get('isNewRecord')
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#3 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, NULL)
+#4 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\create.php(19): yii\base\View->render('_form', Array)
+#5 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#6 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#7 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, Object(backend\controllers\AdviserController))
+#8 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('create', Array, Object(backend\controllers\AdviserController))
+#9 F:\Myfiles\workspace\AssetAllocation\backend\controllers\AdviserController.php(76): yii\base\Controller->render('create', Array)
+#10 [internal function]: backend\controllers\AdviserController->actionCreate()
+#11 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#14 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adviser/create', Array)
+#15 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2017-11-06 16:36:53 [::1][-][-][info][application] $_GET = [
+    'r' => 'adviser/create'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eÄh?ß*‹ã∂âQXü^Ÿ‡˛èP⁄ª¿ëÚÃR8€ƒ\";}'
+    'advanced-frontend' => '01ljs7e3kfabgo3490mqk82047'
+    '_csrf-backend' => 'c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"∞ı¶À˙TùM¸Il‚`Q$>ÎÓ–±ÃÇﬂÙûL Ò5\";}'
+    '_adviserCSRF' => '962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"d±6ô¡J,B7ªÆçô+<#@ërpß…ITÖ\";}'
+    'frontendsession' => 'dar2in29cdtf6v47mt6oodi5a5'
+    'advanced-backend' => 'eedm31blojfu08pki6usnds7v4'
+    '_identity-backend' => 'd7eebe537036b430b05664fc8180953c82b5887a91370ee0e54cafdce8f4dbaaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=adviser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22e%80h%3F%A7%2A%DC%8B%B6%89%1BQX%9F%5E%D9%E0%FE%8F%0DP%DA%BB%C0%91%F2%CCR8%DB%1F%C4%22%3B%7D; advanced-frontend=01ljs7e3kfabgo3490mqk82047; _csrf-backend=c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%B0%F5%A6%CB%10%FAT%9DM%16%1E%FCIl%E2%60Q%24%3E%EB%EE%D0%B1%CC%82%DF%F4%9EL+%F15%22%3B%7D; _adviserCSRF=962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22d%B16%19%99%C1%02J%2CB7%19%BB%AE%8D%1C%99%2B%3C%23%40%91%05%1Frp%A7%C9I%13T%85%22%3B%7D; frontendsession=dar2in29cdtf6v47mt6oodi5a5; advanced-backend=eedm31blojfu08pki6usnds7v4; _identity-backend=d7eebe537036b430b05664fc8180953c82b5887a91370ee0e54cafdce8f4dbaaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '50579'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adviser%2Fcreate'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser%2Fcreate'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509986213.647
+    'REQUEST_TIME' => 1509986213
+]
+2017-11-06 16:38:51 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\SignupForm::id' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\backend\controllers\AdviserController.php(73): yii\base\Component->__get('id')
+#1 [internal function]: backend\controllers\AdviserController->actionCreate()
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#5 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adviser/create', Array)
+#6 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-11-06 16:38:50 [::1][-][-][info][application] $_GET = [
+    'r' => 'adviser/create'
+]
+
+$_POST = [
+    '_csrf-backend' => 'hk067gpTB7sCC6yI4mSEvAwf_aG1eXv0rUeanqVYo2o2uJwlGqlTJk8dsnSrCGbcXTvDSlupyjgvmG4A6XhSXw=='
+    'SignupForm' => [
+        'username' => 'wfhou'
+        'password' => '123456'
+        'password_repeat' => '123456'
+        'xingming' => 'wf'
+        'idnumber' => '123'
+        'mobliephone' => '123'
+        'email' => 'wfhou@ronghuifeng.cn'
+        'dept' => ''
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eÄh?ß*‹ã∂âQXü^Ÿ‡˛èP⁄ª¿ëÚÃR8€ƒ\";}'
+    'advanced-frontend' => '01ljs7e3kfabgo3490mqk82047'
+    '_csrf-backend' => 'c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"∞ı¶À˙TùM¸Il‚`Q$>ÎÓ–±ÃÇﬂÙûL Ò5\";}'
+    '_adviserCSRF' => '962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"d±6ô¡J,B7ªÆçô+<#@ërpß…ITÖ\";}'
+    'frontendsession' => 'dar2in29cdtf6v47mt6oodi5a5'
+    'advanced-backend' => 'eedm31blojfu08pki6usnds7v4'
+    '_identity-backend' => 'd7eebe537036b430b05664fc8180953c82b5887a91370ee0e54cafdce8f4dbaaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '364'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=adviser%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22e%80h%3F%A7%2A%DC%8B%B6%89%1BQX%9F%5E%D9%E0%FE%8F%0DP%DA%BB%C0%91%F2%CCR8%DB%1F%C4%22%3B%7D; advanced-frontend=01ljs7e3kfabgo3490mqk82047; _csrf-backend=c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%B0%F5%A6%CB%10%FAT%9DM%16%1E%FCIl%E2%60Q%24%3E%EB%EE%D0%B1%CC%82%DF%F4%9EL+%F15%22%3B%7D; _adviserCSRF=962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22d%B16%19%99%C1%02J%2CB7%19%BB%AE%8D%1C%99%2B%3C%23%40%91%05%1Frp%A7%C9I%13T%85%22%3B%7D; frontendsession=dar2in29cdtf6v47mt6oodi5a5; advanced-backend=eedm31blojfu08pki6usnds7v4; _identity-backend=d7eebe537036b430b05664fc8180953c82b5887a91370ee0e54cafdce8f4dbaaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '50713'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=adviser%2Fcreate'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser%2Fcreate'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509986330.543
+    'REQUEST_TIME' => 1509986330
+]
+2017-11-06 16:43:08 [::1][-][-][error][yii\base\InvalidCallException] exception 'yii\base\InvalidCallException' with message 'Getting write-only property: common\models\Adviser::password' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Component.php:144
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\db\BaseActiveRecord.php(285): yii\base\Component->__get('password')
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(2108): yii\db\BaseActiveRecord->__get('password')
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1287): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Adviser), 'password')
+#3 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1377): yii\helpers\BaseHtml::activeInput('password', Object(common\models\Adviser), 'password', Array)
+#4 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\widgets\ActiveField.php(441): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\Adviser), 'password', Array)
+#5 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\_form.php(17): yii\widgets\ActiveField->passwordInput(Array)
+#6 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#7 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#8 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, NULL)
+#9 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\update.php(19): yii\base\View->render('_form', Array)
+#10 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#11 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#12 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, Object(backend\controllers\AdviserController))
+#13 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('update', Array, Object(backend\controllers\AdviserController))
+#14 F:\Myfiles\workspace\AssetAllocation\backend\controllers\AdviserController.php(94): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\AdviserController->actionUpdate('2')
+#16 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#17 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#18 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('update', Array)
+#19 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adviser/update', Array)
+#20 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2017-11-06 16:43:08 [::1][-][-][info][application] $_GET = [
+    'r' => 'adviser/update'
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eÄh?ß*‹ã∂âQXü^Ÿ‡˛èP⁄ª¿ëÚÃR8€ƒ\";}'
+    'advanced-frontend' => '01ljs7e3kfabgo3490mqk82047'
+    '_csrf-backend' => 'c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"∞ı¶À˙TùM¸Il‚`Q$>ÎÓ–±ÃÇﬂÙûL Ò5\";}'
+    '_adviserCSRF' => '962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"d±6ô¡J,B7ªÆçô+<#@ërpß…ITÖ\";}'
+    'frontendsession' => 'dar2in29cdtf6v47mt6oodi5a5'
+    'advanced-backend' => 'eedm31blojfu08pki6usnds7v4'
+    '_identity-backend' => 'd7eebe537036b430b05664fc8180953c82b5887a91370ee0e54cafdce8f4dbaaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=adviser%2Fview&id=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22e%80h%3F%A7%2A%DC%8B%B6%89%1BQX%9F%5E%D9%E0%FE%8F%0DP%DA%BB%C0%91%F2%CCR8%DB%1F%C4%22%3B%7D; advanced-frontend=01ljs7e3kfabgo3490mqk82047; _csrf-backend=c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%B0%F5%A6%CB%10%FAT%9DM%16%1E%FCIl%E2%60Q%24%3E%EB%EE%D0%B1%CC%82%DF%F4%9EL+%F15%22%3B%7D; _adviserCSRF=962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22d%B16%19%99%C1%02J%2CB7%19%BB%AE%8D%1C%99%2B%3C%23%40%91%05%1Frp%A7%C9I%13T%85%22%3B%7D; frontendsession=dar2in29cdtf6v47mt6oodi5a5; advanced-backend=eedm31blojfu08pki6usnds7v4; _identity-backend=d7eebe537036b430b05664fc8180953c82b5887a91370ee0e54cafdce8f4dbaaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '51052'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adviser%2Fupdate&id=2'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser%2Fupdate&id=2'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509986588.305
+    'REQUEST_TIME' => 1509986588
+]
+2017-11-06 16:46:12 [::1][-][-][error][yii\base\InvalidCallException] exception 'yii\base\InvalidCallException' with message 'Getting write-only property: common\models\Adviser::password' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Component.php:144
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\db\BaseActiveRecord.php(285): yii\base\Component->__get('password')
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(2108): yii\db\BaseActiveRecord->__get('password')
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1287): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Adviser), 'password')
+#3 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1377): yii\helpers\BaseHtml::activeInput('password', Object(common\models\Adviser), 'password', Array)
+#4 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\widgets\ActiveField.php(441): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\Adviser), 'password', Array)
+#5 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\_form.php(17): yii\widgets\ActiveField->passwordInput(Array)
+#6 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#7 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#8 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, NULL)
+#9 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\update.php(19): yii\base\View->render('_form', Array)
+#10 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#11 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#12 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, Object(backend\controllers\AdviserController))
+#13 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('update', Array, Object(backend\controllers\AdviserController))
+#14 F:\Myfiles\workspace\AssetAllocation\backend\controllers\AdviserController.php(94): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\AdviserController->actionUpdate('3')
+#16 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#17 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#18 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('update', Array)
+#19 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adviser/update', Array)
+#20 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2017-11-06 16:46:12 [::1][-][-][info][application] $_GET = [
+    'r' => 'adviser/update'
+    'id' => '3'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eÄh?ß*‹ã∂âQXü^Ÿ‡˛èP⁄ª¿ëÚÃR8€ƒ\";}'
+    'advanced-frontend' => '01ljs7e3kfabgo3490mqk82047'
+    '_csrf-backend' => 'c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"∞ı¶À˙TùM¸Il‚`Q$>ÎÓ–±ÃÇﬂÙûL Ò5\";}'
+    '_adviserCSRF' => '962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"d±6ô¡J,B7ªÆçô+<#@ërpß…ITÖ\";}'
+    'frontendsession' => 'dar2in29cdtf6v47mt6oodi5a5'
+    'advanced-backend' => 'ne9ql4ojgjgk76frr4e6a8ddu0'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=adviser%2Fview&id=3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22e%80h%3F%A7%2A%DC%8B%B6%89%1BQX%9F%5E%D9%E0%FE%8F%0DP%DA%BB%C0%91%F2%CCR8%DB%1F%C4%22%3B%7D; advanced-frontend=01ljs7e3kfabgo3490mqk82047; _csrf-backend=c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%B0%F5%A6%CB%10%FAT%9DM%16%1E%FCIl%E2%60Q%24%3E%EB%EE%D0%B1%CC%82%DF%F4%9EL+%F15%22%3B%7D; _adviserCSRF=962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22d%B16%19%99%C1%02J%2CB7%19%BB%AE%8D%1C%99%2B%3C%23%40%91%05%1Frp%A7%C9I%13T%85%22%3B%7D; frontendsession=dar2in29cdtf6v47mt6oodi5a5; advanced-backend=ne9ql4ojgjgk76frr4e6a8ddu0'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '51229'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adviser%2Fupdate&id=3'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser%2Fupdate&id=3'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509986772.673
+    'REQUEST_TIME' => 1509986772
+]
+2017-11-06 16:48:59 [::1][-][-][error][yii\base\InvalidCallException] exception 'yii\base\InvalidCallException' with message 'Getting write-only property: common\models\Adviser::password' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Component.php:144
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\db\BaseActiveRecord.php(285): yii\base\Component->__get('password')
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(2108): yii\db\BaseActiveRecord->__get('password')
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1287): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Adviser), 'password')
+#3 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1377): yii\helpers\BaseHtml::activeInput('password', Object(common\models\Adviser), 'password', Array)
+#4 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\widgets\ActiveField.php(441): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\Adviser), 'password', Array)
+#5 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\_form.php(17): yii\widgets\ActiveField->passwordInput(Array)
+#6 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#7 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#8 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, NULL)
+#9 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\update.php(19): yii\base\View->render('_form', Array)
+#10 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#11 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#12 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, Object(backend\controllers\AdviserController))
+#13 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('update', Array, Object(backend\controllers\AdviserController))
+#14 F:\Myfiles\workspace\AssetAllocation\backend\controllers\AdviserController.php(94): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\AdviserController->actionUpdate('5')
+#16 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#17 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#18 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('update', Array)
+#19 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adviser/update', Array)
+#20 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2017-11-06 16:48:58 [::1][-][-][info][application] $_GET = [
+    'r' => 'adviser/update'
+    'id' => '5'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eÄh?ß*‹ã∂âQXü^Ÿ‡˛èP⁄ª¿ëÚÃR8€ƒ\";}'
+    'advanced-frontend' => '01ljs7e3kfabgo3490mqk82047'
+    '_csrf-backend' => 'c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"∞ı¶À˙TùM¸Il‚`Q$>ÎÓ–±ÃÇﬂÙûL Ò5\";}'
+    '_adviserCSRF' => '962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"d±6ô¡J,B7ªÆçô+<#@ërpß…ITÖ\";}'
+    'frontendsession' => 'dar2in29cdtf6v47mt6oodi5a5'
+    'advanced-backend' => 'ne9ql4ojgjgk76frr4e6a8ddu0'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=adviser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22e%80h%3F%A7%2A%DC%8B%B6%89%1BQX%9F%5E%D9%E0%FE%8F%0DP%DA%BB%C0%91%F2%CCR8%DB%1F%C4%22%3B%7D; advanced-frontend=01ljs7e3kfabgo3490mqk82047; _csrf-backend=c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%B0%F5%A6%CB%10%FAT%9DM%16%1E%FCIl%E2%60Q%24%3E%EB%EE%D0%B1%CC%82%DF%F4%9EL+%F15%22%3B%7D; _adviserCSRF=962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22d%B16%19%99%C1%02J%2CB7%19%BB%AE%8D%1C%99%2B%3C%23%40%91%05%1Frp%A7%C9I%13T%85%22%3B%7D; frontendsession=dar2in29cdtf6v47mt6oodi5a5; advanced-backend=ne9ql4ojgjgk76frr4e6a8ddu0'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '51410'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adviser%2Fupdate&id=5'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser%2Fupdate&id=5'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509986938.93
+    'REQUEST_TIME' => 1509986938
+]
+2017-11-06 16:51:26 [::1][-][-][error][yii\base\InvalidCallException] exception 'yii\base\InvalidCallException' with message 'Getting write-only property: common\models\Adviser::password' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Component.php:144
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\db\BaseActiveRecord.php(285): yii\base\Component->__get('password')
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(2108): yii\db\BaseActiveRecord->__get('password')
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1287): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Adviser), 'password')
+#3 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1377): yii\helpers\BaseHtml::activeInput('password', Object(common\models\Adviser), 'password', Array)
+#4 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\widgets\ActiveField.php(441): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\Adviser), 'password', Array)
+#5 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\_form.php(17): yii\widgets\ActiveField->passwordInput(Array)
+#6 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#7 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#8 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, NULL)
+#9 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\update.php(19): yii\base\View->render('_form', Array)
+#10 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#11 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#12 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, Object(backend\controllers\AdviserController))
+#13 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('update', Array, Object(backend\controllers\AdviserController))
+#14 F:\Myfiles\workspace\AssetAllocation\backend\controllers\AdviserController.php(94): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\AdviserController->actionUpdate('5')
+#16 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#17 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#18 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('update', Array)
+#19 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adviser/update', Array)
+#20 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2017-11-06 16:51:26 [::1][-][-][info][application] $_GET = [
+    'r' => 'adviser/update'
+    'id' => '5'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eÄh?ß*‹ã∂âQXü^Ÿ‡˛èP⁄ª¿ëÚÃR8€ƒ\";}'
+    'advanced-frontend' => '01ljs7e3kfabgo3490mqk82047'
+    '_csrf-backend' => 'c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"∞ı¶À˙TùM¸Il‚`Q$>ÎÓ–±ÃÇﬂÙûL Ò5\";}'
+    '_adviserCSRF' => '962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"d±6ô¡J,B7ªÆçô+<#@ërpß…ITÖ\";}'
+    'frontendsession' => 'dar2in29cdtf6v47mt6oodi5a5'
+    'advanced-backend' => 'ne9ql4ojgjgk76frr4e6a8ddu0'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=adviser%2Fview&id=5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22e%80h%3F%A7%2A%DC%8B%B6%89%1BQX%9F%5E%D9%E0%FE%8F%0DP%DA%BB%C0%91%F2%CCR8%DB%1F%C4%22%3B%7D; advanced-frontend=01ljs7e3kfabgo3490mqk82047; _csrf-backend=c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%B0%F5%A6%CB%10%FAT%9DM%16%1E%FCIl%E2%60Q%24%3E%EB%EE%D0%B1%CC%82%DF%F4%9EL+%F15%22%3B%7D; _adviserCSRF=962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22d%B16%19%99%C1%02J%2CB7%19%BB%AE%8D%1C%99%2B%3C%23%40%91%05%1Frp%A7%C9I%13T%85%22%3B%7D; frontendsession=dar2in29cdtf6v47mt6oodi5a5; advanced-backend=ne9ql4ojgjgk76frr4e6a8ddu0'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '51517'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adviser%2Fupdate&id=5'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser%2Fupdate&id=5'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509987086.667
+    'REQUEST_TIME' => 1509987086
+]
+2017-11-06 16:52:02 [::1][-][-][error][yii\base\InvalidCallException] exception 'yii\base\InvalidCallException' with message 'Getting write-only property: common\models\Adviser::password' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Component.php:144
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\db\BaseActiveRecord.php(285): yii\base\Component->__get('password')
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(2108): yii\db\BaseActiveRecord->__get('password')
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1287): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Adviser), 'password')
+#3 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1377): yii\helpers\BaseHtml::activeInput('password', Object(common\models\Adviser), 'password', Array)
+#4 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\widgets\ActiveField.php(441): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\Adviser), 'password', Array)
+#5 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\_form.php(17): yii\widgets\ActiveField->passwordInput(Array)
+#6 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#7 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#8 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, NULL)
+#9 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\update.php(19): yii\base\View->render('_form', Array)
+#10 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#11 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#12 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, Object(backend\controllers\AdviserController))
+#13 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('update', Array, Object(backend\controllers\AdviserController))
+#14 F:\Myfiles\workspace\AssetAllocation\backend\controllers\AdviserController.php(94): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\AdviserController->actionUpdate('5')
+#16 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#17 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#18 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('update', Array)
+#19 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adviser/update', Array)
+#20 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2017-11-06 16:52:01 [::1][-][-][info][application] $_GET = [
+    'r' => 'adviser/update'
+    'id' => '5'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eÄh?ß*‹ã∂âQXü^Ÿ‡˛èP⁄ª¿ëÚÃR8€ƒ\";}'
+    'advanced-frontend' => '01ljs7e3kfabgo3490mqk82047'
+    '_csrf-backend' => 'c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"∞ı¶À˙TùM¸Il‚`Q$>ÎÓ–±ÃÇﬂÙûL Ò5\";}'
+    '_adviserCSRF' => '962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"d±6ô¡J,B7ªÆçô+<#@ërpß…ITÖ\";}'
+    'frontendsession' => 'dar2in29cdtf6v47mt6oodi5a5'
+    'advanced-backend' => 'ne9ql4ojgjgk76frr4e6a8ddu0'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=adviser%2Fview&id=5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22e%80h%3F%A7%2A%DC%8B%B6%89%1BQX%9F%5E%D9%E0%FE%8F%0DP%DA%BB%C0%91%F2%CCR8%DB%1F%C4%22%3B%7D; advanced-frontend=01ljs7e3kfabgo3490mqk82047; _csrf-backend=c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%B0%F5%A6%CB%10%FAT%9DM%16%1E%FCIl%E2%60Q%24%3E%EB%EE%D0%B1%CC%82%DF%F4%9EL+%F15%22%3B%7D; _adviserCSRF=962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22d%B16%19%99%C1%02J%2CB7%19%BB%AE%8D%1C%99%2B%3C%23%40%91%05%1Frp%A7%C9I%13T%85%22%3B%7D; frontendsession=dar2in29cdtf6v47mt6oodi5a5; advanced-backend=ne9ql4ojgjgk76frr4e6a8ddu0'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '51540'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adviser%2Fupdate&id=5'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser%2Fupdate&id=5'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509987121.915
+    'REQUEST_TIME' => 1509987121
+]
+2017-11-06 16:56:42 [::1][-][-][error][yii\base\InvalidCallException] exception 'yii\base\InvalidCallException' with message 'Getting write-only property: common\models\Adviser::password' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Component.php:144
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\db\BaseActiveRecord.php(285): yii\base\Component->__get('password')
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(2108): yii\db\BaseActiveRecord->__get('password')
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1287): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Adviser), 'password')
+#3 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1377): yii\helpers\BaseHtml::activeInput('password', Object(common\models\Adviser), 'password', Array)
+#4 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\widgets\ActiveField.php(441): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\Adviser), 'password', Array)
+#5 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\_form.php(17): yii\widgets\ActiveField->passwordInput(Array)
+#6 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#7 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#8 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, NULL)
+#9 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\update.php(19): yii\base\View->render('_form', Array)
+#10 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#11 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#12 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, Object(backend\controllers\AdviserController))
+#13 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('update', Array, Object(backend\controllers\AdviserController))
+#14 F:\Myfiles\workspace\AssetAllocation\backend\controllers\AdviserController.php(94): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\AdviserController->actionUpdate('6')
+#16 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#17 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#18 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('update', Array)
+#19 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adviser/update', Array)
+#20 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2017-11-06 16:56:42 [::1][-][-][info][application] $_GET = [
+    'r' => 'adviser/update'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eÄh?ß*‹ã∂âQXü^Ÿ‡˛èP⁄ª¿ëÚÃR8€ƒ\";}'
+    'advanced-frontend' => '01ljs7e3kfabgo3490mqk82047'
+    '_csrf-backend' => 'c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"∞ı¶À˙TùM¸Il‚`Q$>ÎÓ–±ÃÇﬂÙûL Ò5\";}'
+    '_adviserCSRF' => '962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"d±6ô¡J,B7ªÆçô+<#@ërpß…ITÖ\";}'
+    'frontendsession' => 'dar2in29cdtf6v47mt6oodi5a5'
+    'advanced-backend' => 'ne9ql4ojgjgk76frr4e6a8ddu0'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=adviser%2Fview&id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22e%80h%3F%A7%2A%DC%8B%B6%89%1BQX%9F%5E%D9%E0%FE%8F%0DP%DA%BB%C0%91%F2%CCR8%DB%1F%C4%22%3B%7D; advanced-frontend=01ljs7e3kfabgo3490mqk82047; _csrf-backend=c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%B0%F5%A6%CB%10%FAT%9DM%16%1E%FCIl%E2%60Q%24%3E%EB%EE%D0%B1%CC%82%DF%F4%9EL+%F15%22%3B%7D; _adviserCSRF=962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22d%B16%19%99%C1%02J%2CB7%19%BB%AE%8D%1C%99%2B%3C%23%40%91%05%1Frp%A7%C9I%13T%85%22%3B%7D; frontendsession=dar2in29cdtf6v47mt6oodi5a5; advanced-backend=ne9ql4ojgjgk76frr4e6a8ddu0'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '51795'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adviser%2Fupdate&id=6'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509987402.48
+    'REQUEST_TIME' => 1509987402
+]
+2017-11-06 17:05:01 [::1][-][-][error][yii\base\InvalidCallException] exception 'yii\base\InvalidCallException' with message 'Getting write-only property: common\models\Adviser::password' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Component.php:144
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\db\BaseActiveRecord.php(285): yii\base\Component->__get('password')
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(2108): yii\db\BaseActiveRecord->__get('password')
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1287): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Adviser), 'password')
+#3 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1377): yii\helpers\BaseHtml::activeInput('password', Object(common\models\Adviser), 'password', Array)
+#4 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\widgets\ActiveField.php(441): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\Adviser), 'password', Array)
+#5 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\_form.php(17): yii\widgets\ActiveField->passwordInput(Array)
+#6 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#7 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#8 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, NULL)
+#9 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\update.php(19): yii\base\View->render('_form', Array)
+#10 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#11 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#12 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, Object(backend\controllers\AdviserController))
+#13 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('update', Array, Object(backend\controllers\AdviserController))
+#14 F:\Myfiles\workspace\AssetAllocation\backend\controllers\AdviserController.php(94): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\AdviserController->actionUpdate('1')
+#16 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#17 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#18 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('update', Array)
+#19 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adviser/update', Array)
+#20 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2017-11-06 17:05:01 [::1][-][-][info][application] $_GET = [
+    'r' => 'adviser/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eÄh?ß*‹ã∂âQXü^Ÿ‡˛èP⁄ª¿ëÚÃR8€ƒ\";}'
+    'advanced-frontend' => '01ljs7e3kfabgo3490mqk82047'
+    '_csrf-backend' => 'c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"∞ı¶À˙TùM¸Il‚`Q$>ÎÓ–±ÃÇﬂÙûL Ò5\";}'
+    '_adviserCSRF' => '962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"d±6ô¡J,B7ªÆçô+<#@ërpß…ITÖ\";}'
+    'advanced-backend' => '7q4p11r8qlfec45tncp3a56f21'
+    'frontendsession' => '32m752esp9s6ts4g9ausb0r5g7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=adviser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22e%80h%3F%A7%2A%DC%8B%B6%89%1BQX%9F%5E%D9%E0%FE%8F%0DP%DA%BB%C0%91%F2%CCR8%DB%1F%C4%22%3B%7D; advanced-frontend=01ljs7e3kfabgo3490mqk82047; _csrf-backend=c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%B0%F5%A6%CB%10%FAT%9DM%16%1E%FCIl%E2%60Q%24%3E%EB%EE%D0%B1%CC%82%DF%F4%9EL+%F15%22%3B%7D; _adviserCSRF=962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22d%B16%19%99%C1%02J%2CB7%19%BB%AE%8D%1C%99%2B%3C%23%40%91%05%1Frp%A7%C9I%13T%85%22%3B%7D; advanced-backend=7q4p11r8qlfec45tncp3a56f21; frontendsession=32m752esp9s6ts4g9ausb0r5g7'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '52112'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adviser%2Fupdate&id=1'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509987901.022
+    'REQUEST_TIME' => 1509987901
+]
+2017-11-06 17:07:20 [::1][-][-][error][yii\base\InvalidCallException] exception 'yii\base\InvalidCallException' with message 'Getting write-only property: common\models\Adviser::password' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Component.php:144
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\db\BaseActiveRecord.php(285): yii\base\Component->__get('password')
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(2108): yii\db\BaseActiveRecord->__get('password')
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1287): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Adviser), 'password')
+#3 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1377): yii\helpers\BaseHtml::activeInput('password', Object(common\models\Adviser), 'password', Array)
+#4 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\widgets\ActiveField.php(441): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\Adviser), 'password', Array)
+#5 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\_form.php(17): yii\widgets\ActiveField->passwordInput(Array)
+#6 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#7 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#8 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, NULL)
+#9 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\update.php(19): yii\base\View->render('_form', Array)
+#10 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#11 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#12 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, Object(backend\controllers\AdviserController))
+#13 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('update', Array, Object(backend\controllers\AdviserController))
+#14 F:\Myfiles\workspace\AssetAllocation\backend\controllers\AdviserController.php(95): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\AdviserController->actionUpdate('1')
+#16 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#17 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#18 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('update', Array)
+#19 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adviser/update', Array)
+#20 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2017-11-06 17:07:20 [::1][-][-][info][application] $_GET = [
+    'r' => 'adviser/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eÄh?ß*‹ã∂âQXü^Ÿ‡˛èP⁄ª¿ëÚÃR8€ƒ\";}'
+    'advanced-frontend' => '01ljs7e3kfabgo3490mqk82047'
+    '_csrf-backend' => 'c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"∞ı¶À˙TùM¸Il‚`Q$>ÎÓ–±ÃÇﬂÙûL Ò5\";}'
+    '_adviserCSRF' => '962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"d±6ô¡J,B7ªÆçô+<#@ërpß…ITÖ\";}'
+    'advanced-backend' => '7q4p11r8qlfec45tncp3a56f21'
+    'frontendsession' => '32m752esp9s6ts4g9ausb0r5g7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=adviser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22e%80h%3F%A7%2A%DC%8B%B6%89%1BQX%9F%5E%D9%E0%FE%8F%0DP%DA%BB%C0%91%F2%CCR8%DB%1F%C4%22%3B%7D; advanced-frontend=01ljs7e3kfabgo3490mqk82047; _csrf-backend=c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%B0%F5%A6%CB%10%FAT%9DM%16%1E%FCIl%E2%60Q%24%3E%EB%EE%D0%B1%CC%82%DF%F4%9EL+%F15%22%3B%7D; _adviserCSRF=962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22d%B16%19%99%C1%02J%2CB7%19%BB%AE%8D%1C%99%2B%3C%23%40%91%05%1Frp%A7%C9I%13T%85%22%3B%7D; advanced-backend=7q4p11r8qlfec45tncp3a56f21; frontendsession=32m752esp9s6ts4g9ausb0r5g7'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '52160'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adviser%2Fupdate&id=1'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509988040.122
+    'REQUEST_TIME' => 1509988040
+]
+2017-11-06 17:07:28 [::1][-][-][error][yii\base\InvalidCallException] exception 'yii\base\InvalidCallException' with message 'Getting write-only property: common\models\Adviser::password' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Component.php:144
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\db\BaseActiveRecord.php(285): yii\base\Component->__get('password')
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(2108): yii\db\BaseActiveRecord->__get('password')
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1287): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Adviser), 'password')
+#3 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1377): yii\helpers\BaseHtml::activeInput('password', Object(common\models\Adviser), 'password', Array)
+#4 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\widgets\ActiveField.php(441): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\Adviser), 'password', Array)
+#5 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\_form.php(17): yii\widgets\ActiveField->passwordInput(Array)
+#6 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#7 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#8 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, NULL)
+#9 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\update.php(19): yii\base\View->render('_form', Array)
+#10 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#11 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#12 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, Object(backend\controllers\AdviserController))
+#13 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('update', Array, Object(backend\controllers\AdviserController))
+#14 F:\Myfiles\workspace\AssetAllocation\backend\controllers\AdviserController.php(95): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\AdviserController->actionUpdate('1')
+#16 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#17 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#18 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('update', Array)
+#19 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adviser/update', Array)
+#20 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2017-11-06 17:07:28 [::1][-][-][info][application] $_GET = [
+    'r' => 'adviser/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eÄh?ß*‹ã∂âQXü^Ÿ‡˛èP⁄ª¿ëÚÃR8€ƒ\";}'
+    'advanced-frontend' => '01ljs7e3kfabgo3490mqk82047'
+    '_csrf-backend' => 'c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"∞ı¶À˙TùM¸Il‚`Q$>ÎÓ–±ÃÇﬂÙûL Ò5\";}'
+    '_adviserCSRF' => '962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"d±6ô¡J,B7ªÆçô+<#@ërpß…ITÖ\";}'
+    'advanced-backend' => '7q4p11r8qlfec45tncp3a56f21'
+    'frontendsession' => '32m752esp9s6ts4g9ausb0r5g7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=adviser%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22e%80h%3F%A7%2A%DC%8B%B6%89%1BQX%9F%5E%D9%E0%FE%8F%0DP%DA%BB%C0%91%F2%CCR8%DB%1F%C4%22%3B%7D; advanced-frontend=01ljs7e3kfabgo3490mqk82047; _csrf-backend=c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%B0%F5%A6%CB%10%FAT%9DM%16%1E%FCIl%E2%60Q%24%3E%EB%EE%D0%B1%CC%82%DF%F4%9EL+%F15%22%3B%7D; _adviserCSRF=962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22d%B16%19%99%C1%02J%2CB7%19%BB%AE%8D%1C%99%2B%3C%23%40%91%05%1Frp%A7%C9I%13T%85%22%3B%7D; advanced-backend=7q4p11r8qlfec45tncp3a56f21; frontendsession=32m752esp9s6ts4g9ausb0r5g7'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '52162'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adviser%2Fupdate&id=1'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509988048.045
+    'REQUEST_TIME' => 1509988048
+]
+2017-11-06 17:10:56 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\Adviser::password_repeat' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\db\BaseActiveRecord.php(285): yii\base\Component->__get('password_repeat')
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(2108): yii\db\BaseActiveRecord->__get('password_repeat')
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1287): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Adviser), 'password_repeat')
+#3 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\helpers\BaseHtml.php(1377): yii\helpers\BaseHtml::activeInput('password', Object(common\models\Adviser), 'password_repeat', Array)
+#4 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\widgets\ActiveField.php(441): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\Adviser), 'password_repeat', Array)
+#5 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\_form.php(19): yii\widgets\ActiveField->passwordInput(Array)
+#6 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#7 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#8 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, NULL)
+#9 F:\Myfiles\workspace\AssetAllocation\backend\views\adviser\update.php(19): yii\base\View->render('_form', Array)
+#10 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): require('F:\Myfiles\work...')
+#11 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\Myfiles\work...', Array)
+#12 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\Myfiles\work...', Array, Object(backend\controllers\AdviserController))
+#13 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('update', Array, Object(backend\controllers\AdviserController))
+#14 F:\Myfiles\workspace\AssetAllocation\backend\controllers\AdviserController.php(96): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\AdviserController->actionUpdate('1')
+#16 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#17 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#18 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('update', Array)
+#19 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adviser/update', Array)
+#20 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2017-11-06 17:10:56 [::1][-][-][info][application] $_GET = [
+    'r' => 'adviser/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eÄh?ß*‹ã∂âQXü^Ÿ‡˛èP⁄ª¿ëÚÃR8€ƒ\";}'
+    'advanced-frontend' => '01ljs7e3kfabgo3490mqk82047'
+    '_csrf-backend' => 'c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"∞ı¶À˙TùM¸Il‚`Q$>ÎÓ–±ÃÇﬂÙûL Ò5\";}'
+    '_adviserCSRF' => '962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"d±6ô¡J,B7ªÆçô+<#@ërpß…ITÖ\";}'
+    'advanced-backend' => '7q4p11r8qlfec45tncp3a56f21'
+    'frontendsession' => '32m752esp9s6ts4g9ausb0r5g7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=adviser%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-frontend=1616a90f1d6bce148e1e7fabdb74f758a2a962530169dadbfa88d10150f6b30fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22e%80h%3F%A7%2A%DC%8B%B6%89%1BQX%9F%5E%D9%E0%FE%8F%0DP%DA%BB%C0%91%F2%CCR8%DB%1F%C4%22%3B%7D; advanced-frontend=01ljs7e3kfabgo3490mqk82047; _csrf-backend=c3d4f63d8e32ffed43e9dd235bfb0d887a7ae305183122eec3fc5bd38dc0c638a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%B0%F5%A6%CB%10%FAT%9DM%16%1E%FCIl%E2%60Q%24%3E%EB%EE%D0%B1%CC%82%DF%F4%9EL+%F15%22%3B%7D; _adviserCSRF=962140dff6f90193c9be8dc8c98e1f3c0e87a77c0cd8d4df84cc7c82f5811040a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22d%B16%19%99%C1%02J%2CB7%19%BB%AE%8D%1C%99%2B%3C%23%40%91%05%1Frp%A7%C9I%13T%85%22%3B%7D; advanced-backend=7q4p11r8qlfec45tncp3a56f21; frontendsession=32m752esp9s6ts4g9ausb0r5g7'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '52321'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adviser%2Fupdate&id=1'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509988256.82
+    'REQUEST_TIME' => 1509988256
+]
