@@ -57,7 +57,22 @@ $this->params['breadcrumbs'][] = $this->title;
         		'contentOptions'=>['width'=>'100px'],
         	],
 
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+            		'class' => 'yii\grid\ActionColumn',
+            		'template'=>'{view}{update}{privilege}{delete}',
+            		'buttons'=>[            				
+            		'privilege'=>function($url,$model,$key)
+            		{
+            			$options=[
+            					'title'=>Yii::t('yii','发布'),
+            					'aria-label'=>Yii::t('yii','发布'),
+            					'data-pjax'=>'0',
+            					'data-confirm'=>'是否需要发布？',
+            			];
+            			return Html::a('<span class="glyphicon glyphicon-check"></span>',$url,$options);
+            		},
+            		],
+        	],
         ],
     ]); ?>
 </div>

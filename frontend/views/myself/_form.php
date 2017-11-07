@@ -36,7 +36,7 @@ use yii\helpers\ArrayHelper;
 		                                ['prompt'=>'请选择状态...'])?>
 
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? '保存' : '修改', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::submitButton('修改', ['class' => 'btn btn-primary']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

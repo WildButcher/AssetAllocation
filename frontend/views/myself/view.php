@@ -28,16 +28,13 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
             'filename',
         	[
         		'attribute' => 'oid',
         		'value' => $model->o->xingming,
         	],
-            'createtime',
             'publictime',
             'downcount',
-            'filelinks',
             'filecontent:ntext',
         	[
         		'attribute' => 'isshare',

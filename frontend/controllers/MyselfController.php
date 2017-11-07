@@ -2,12 +2,13 @@
 
 namespace frontend\controllers;
 
-use Yii;
 use common\models\Allocation;
 use common\models\AllocationSearch;
+use common\models\Syscode;
+use Yii;
+use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
-use yii\filters\VerbFilter;
 
 /**
  * AllocationController implements the CRUD actions for Allocation model.
@@ -67,6 +68,8 @@ class MyselfController extends Controller
 
         if ($model->load(Yii::$app->request->post())) {
         	$model->oid = Yii::$app->getUser()->id;
+//         	VarDumper::dump(Yii::$app->request->post('arrpro'));
+//         	exit(0);
         	$model->save();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
@@ -74,6 +77,22 @@ class MyselfController extends Controller
                 'model' => $model,
             ]);
         }
+    }
+    
+    public function actionPrivilege($id)
+    {
+    	$model = $this->findModel($id);
+    	$syscode = Syscode::find()->where(['majorcode'=>'status','minicode'=>'2'])->one();
+    	if($model->status <> $syscode->id)
+    	{	    	
+	    	$model->status = $syscode->id;
+	    	$model->publictime = date('Y-m-d H:i:s',time() + 8 * 3600);
+	    	if($model->save())
+	    	{
+	    		return $this->redirect(['index']);
+	    	}
+    	}
+    	return $this->redirect(['index']);
     }
 
     /**
