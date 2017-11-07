@@ -4,10 +4,12 @@ namespace frontend\controllers;
 
 use Yii;
 use common\models\Adviser;
+use common\models\SignupForm;
 use common\models\AdviserSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 
 /**
  * AdviserController implements the CRUD actions for Adviser model.
@@ -20,12 +22,30 @@ class AdviserController extends Controller
     public function behaviors()
     {
         return [
+        	'access'=>[
+        			'class' => AccessControl::className (),
+        			'rules' => [
+        					[
+        							'actions' => [
+        									'index',
+        									'view',
+        									'create',
+        									'update',
+        									'delete',
+        							],
+        							'allow' => true,
+        							'roles' => [
+        									'@'
+        							]
+        					]
+        			]
+        	],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
+                    			'delete' => ['POST'],                	
+                			 ],            	
+            ],        	
         ];
     }
 
@@ -63,15 +83,16 @@ class AdviserController extends Controller
      */
     public function actionCreate()
     {
-        $model = new Adviser();
+    	$model = new SignupForm();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
-        }
+        if ($model->load(Yii::$app->request->post())) 
+        {
+        	if($model= $model->signup())
+        	{
+        		return $this->redirect(['view', 'id' => $model->id]);
+        	}            
+        } 
+        return $this->render('create', ['model' => $model,]);
     }
 
     /**
@@ -85,6 +106,8 @@ class AdviserController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        	$model->password = $model->password_hash;
+        	
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [

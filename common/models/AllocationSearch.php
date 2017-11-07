@@ -3,9 +3,9 @@
 namespace common\models;
 
 use Yii;
+use common\models\Allocation;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use common\models\Allocation;
 
 /**
  * AllocationSearch represents the model behind the search form about `common\models\Allocation`.
@@ -48,7 +48,6 @@ class AllocationSearch extends Allocation
     public function search($params)
     {
         $query = Allocation::find();
-
         // add conditions that should always apply here
 
         $dataProvider = new ActiveDataProvider([
@@ -95,5 +94,56 @@ class AllocationSearch extends Allocation
         ];
 
         return $dataProvider;
+    }
+    
+    public function searchmyself($params)
+    {
+    	$query = Allocation::find()->where(['oid'=>Yii::$app->getUser()->id]);
+    	// add conditions that should always apply here
+    	
+    	$dataProvider = new ActiveDataProvider([
+    			'query' => $query,
+    			'pagination' => ['pageSize' => 10],
+    			'sort' => [
+    					'defaultOrder' => [
+    							'id'=>SORT_DESC,
+    					],
+    			],
+    	]);
+    	
+    	$this->load($params);
+    	
+    	if (!$this->validate()) {
+    		// uncomment the following line if you do not want to return any records when validation fails
+    		// $query->where('0=1');
+    		return $dataProvider;
+    	}
+    	
+    	// grid filtering conditions
+    	$query->andFilterWhere([
+    			'id' => $this->id,
+    			'createtime' => $this->createtime,
+    			'publictime' => $this->publictime,
+    			'downcount' => $this->downcount,
+    			'isshare' => $this->isshare,
+    			'lid' => $this->lid,
+    			'status' => $this->status,
+    			'oid' => $this->oid,
+    	]);
+    	
+    	$query->andFilterWhere(['like', 'filename', $this->filename])
+    	->andFilterWhere(['like', 'filelinks', $this->filelinks])
+    	->andFilterWhere(['like', 'filecontent', $this->filecontent]);
+    	
+    	$query->join('INNER JOIN','Adviser','allocation.oid = Adviser.id');
+    	$query->andFilterWhere(['like','Adviser.xingming',$this->oname]);
+    	
+    	$dataProvider->sort->attributes['oname'] =
+    	[
+    			'asc'=>['Adviser.xingming'=>SORT_ASC],
+    			'desc'=>['Adviser.xingming'=>SORT_DESC],
+    	];
+    	
+    	return $dataProvider;
     }
 }

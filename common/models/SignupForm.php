@@ -1,9 +1,8 @@
 <?php
-namespace backend\models;
+namespace common\models;
 
 use yii\base\Model;
 use common\models\Adviser;
-use yii\helpers\VarDumper;
 
 /**
  * Signup form

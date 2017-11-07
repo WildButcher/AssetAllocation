@@ -8,6 +8,7 @@ use common\models\SyscodeSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 
 /**
  * SyscodeController implements the CRUD actions for Syscode model.
@@ -20,6 +21,24 @@ class SyscodeController extends Controller
     public function behaviors()
     {
         return [
+        		'access'=>[
+        				'class' => AccessControl::className (),
+        				'rules' => [
+        						[
+        								'actions' => [
+        										'index',
+        										'view',
+        										'create',
+        										'update',
+        										'delete',
+        								],
+        								'allow' => true,
+        								'roles' => [
+        										'@'
+        								]
+        						]
+        				]
+        		],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [

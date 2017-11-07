@@ -4,11 +4,12 @@ namespace backend\controllers;
 
 use Yii;
 use common\models\Adviser;
-use backend\models\SignupForm;
+use common\models\SignupForm;
 use common\models\AdviserSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 
 /**
  * AdviserController implements the CRUD actions for Adviser model.
@@ -21,12 +22,30 @@ class AdviserController extends Controller
     public function behaviors()
     {
         return [
+        	'access'=>[
+        			'class' => AccessControl::className (),
+        			'rules' => [
+        					[
+        							'actions' => [
+        									'index',
+        									'view',
+        									'create',
+        									'update',
+        									'delete',
+        							],
+        							'allow' => true,
+        							'roles' => [
+        									'@'
+        							]
+        					]
+        			]
+        	],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
+                    			'delete' => ['POST'],                	
+                			 ],            	
+            ],        	
         ];
     }
 

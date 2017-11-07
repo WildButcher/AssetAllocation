@@ -2,12 +2,13 @@
 
 namespace backend\controllers;
 
-use Yii;
 use common\models\Allocation;
 use common\models\AllocationSearch;
+use Yii;
+use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
-use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 
 /**
  * AllocationController implements the CRUD actions for Allocation model.
@@ -20,6 +21,24 @@ class AllocationController extends Controller
     public function behaviors()
     {
         return [
+        		'access'=>[
+        				'class' => AccessControl::className (),
+        				'rules' => [
+        						[
+        								'actions' => [
+        										'index',
+        										'view',
+        										'create',
+        										'update',
+        										'delete',
+        								],
+        								'allow' => true,
+        								'roles' => [
+        										'@'
+        								]
+        						]
+        				]
+        		],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [

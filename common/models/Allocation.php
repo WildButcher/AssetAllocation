@@ -103,4 +103,18 @@ class Allocation extends \yii\db\ActiveRecord
     {
     	return $this->hasOne(Altemplate::className(), ['id' => 'lid']);
     }
+    
+    public function getUrl()
+    {
+    	return Yii::$app->urlManager->createUrl(
+    			['allocation/detail','id'=>$this->id,'filename'=>$this->filename]
+    			);
+    }
+    
+    public function getDownUrl()
+    {
+    	return Yii::$app->urlManager->createUrl(
+    			['allocation/detail','id'=>$this->id,'filename'=>$this->filename]
+    			);
+    }
 }

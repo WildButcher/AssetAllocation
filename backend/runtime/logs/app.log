@@ -7462,3 +7462,325 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1509988256.82
     'REQUEST_TIME' => 1509988256
 ]
+2017-11-07 03:04:06 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\AccessControl' not found' in F:\Myfiles\workspace\AssetAllocation\backend\controllers\AdviserController.php:25
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Component.php(533): yii\base\Component->ensureBehaviors()
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger()
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction()
+#3 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction()
+#4 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#5 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#6 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#7 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-11-07 03:04:06 [::1][-][-][info][application] $_GET = [
+    'r' => 'adviser'
+]
+
+$_COOKIE = [
+    'frontendsession' => '9ek7hmlcgusu4vn4ab833ane73'
+    '_adviserCSRF' => '618af668b9c7095495e5d04b175e955b6c309ed9862a92a0a7802d5b86b2ffb2a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"ÃÑÕ™É}…J|Zº€	7rëº.wÂ÷3kŽn_\";}'
+    'advanced-backend' => '7aulj0fh3obkrtstgpa9u1mhh1'
+    '_csrf-backend' => '62fc2c340e3bdc0066645c9d74621f527eb6cc33c6bdc3d0fb4560ad76971307a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"3B²ŸÃ¹6ˆ*9@]{ËlÃPR7½569B¯ÜÎ*òN\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'frontendsession=9ek7hmlcgusu4vn4ab833ane73; _adviserCSRF=618af668b9c7095495e5d04b175e955b6c309ed9862a92a0a7802d5b86b2ffb2a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22%C3%D1%D5%99%C9%7D%90%85%1EJ%7CZ%BA%8F%80%09%1F7%17r%EB%BA.w%C2%F73k%8E%8Fn_%22%3B%7D; advanced-backend=7aulj0fh3obkrtstgpa9u1mhh1; _csrf-backend=62fc2c340e3bdc0066645c9d74621f527eb6cc33c6bdc3d0fb4560ad76971307a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%223B%B2%9F%C3%B96%88%2A9%40%10%5D%13%7B%CBl%C3PR7%BD569B%AF%DC%CE%2A%F2N%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '54136'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adviser'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1510023846.212
+    'REQUEST_TIME' => 1510023846
+]
+2017-11-07 03:04:40 [::1][-][7aulj0fh3obkrtstgpa9u1mhh1][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Controller.php:149
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('view', Array)
+#3 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('syscode/view', Array)
+#4 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2017-11-07 03:04:40 [::1][-][7aulj0fh3obkrtstgpa9u1mhh1][info][application] $_GET = [
+    'r' => 'syscode/view'
+]
+
+$_COOKIE = [
+    'frontendsession' => '9ek7hmlcgusu4vn4ab833ane73'
+    '_adviserCSRF' => '618af668b9c7095495e5d04b175e955b6c309ed9862a92a0a7802d5b86b2ffb2a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"ÃÑÕ™É}…J|Zº€	7rëº.wÂ÷3kŽn_\";}'
+    'advanced-backend' => '7aulj0fh3obkrtstgpa9u1mhh1'
+    '_csrf-backend' => '62fc2c340e3bdc0066645c9d74621f527eb6cc33c6bdc3d0fb4560ad76971307a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"3B²ŸÃ¹6ˆ*9@]{ËlÃPR7½569B¯ÜÎ*òN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/index.php?r=adviser'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'frontendsession=9ek7hmlcgusu4vn4ab833ane73; _adviserCSRF=618af668b9c7095495e5d04b175e955b6c309ed9862a92a0a7802d5b86b2ffb2a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22%C3%D1%D5%99%C9%7D%90%85%1EJ%7CZ%BA%8F%80%09%1F7%17r%EB%BA.w%C2%F73k%8E%8Fn_%22%3B%7D; advanced-backend=7aulj0fh3obkrtstgpa9u1mhh1; _csrf-backend=62fc2c340e3bdc0066645c9d74621f527eb6cc33c6bdc3d0fb4560ad76971307a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%223B%B2%9F%C3%B96%88%2A9%40%10%5D%13%7B%CBl%C3PR7%BD569B%AF%DC%CE%2A%F2N%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '54150'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=syscode/view'
+    'REQUEST_URI' => '/backend/web/index.php?r=syscode/view'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1510023880.738
+    'REQUEST_TIME' => 1510023880
+]
+2017-11-07 03:07:52 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\AccessControl' not found' in F:\Myfiles\workspace\AssetAllocation\backend\controllers\SyscodeController.php:24
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Component.php(533): yii\base\Component->ensureBehaviors()
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger()
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction()
+#3 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction()
+#4 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#5 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#6 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#7 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-11-07 03:07:52 [::1][-][-][info][application] $_GET = [
+    'r' => 'syscode'
+]
+
+$_COOKIE = [
+    'frontendsession' => '9ek7hmlcgusu4vn4ab833ane73'
+    '_adviserCSRF' => '618af668b9c7095495e5d04b175e955b6c309ed9862a92a0a7802d5b86b2ffb2a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"ÃÑÕ™É}…J|Zº€	7rëº.wÂ÷3kŽn_\";}'
+    '_csrf-backend' => '62fc2c340e3bdc0066645c9d74621f527eb6cc33c6bdc3d0fb4560ad76971307a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"3B²ŸÃ¹6ˆ*9@]{ËlÃPR7½569B¯ÜÎ*òN\";}'
+    'advanced-backend' => 'hkbsm94n8d0lj2b7if7pl9hpt0'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'frontendsession=9ek7hmlcgusu4vn4ab833ane73; _adviserCSRF=618af668b9c7095495e5d04b175e955b6c309ed9862a92a0a7802d5b86b2ffb2a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22%C3%D1%D5%99%C9%7D%90%85%1EJ%7CZ%BA%8F%80%09%1F7%17r%EB%BA.w%C2%F73k%8E%8Fn_%22%3B%7D; _csrf-backend=62fc2c340e3bdc0066645c9d74621f527eb6cc33c6bdc3d0fb4560ad76971307a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%223B%B2%9F%C3%B96%88%2A9%40%10%5D%13%7B%CBl%C3PR7%BD569B%AF%DC%CE%2A%F2N%22%3B%7D; advanced-backend=hkbsm94n8d0lj2b7if7pl9hpt0'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '54274'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=syscode'
+    'REQUEST_URI' => '/backend/web/index.php?r=syscode'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1510024072.296
+    'REQUEST_TIME' => 1510024072
+]
+2017-11-07 12:02:39 [::1][1][hcdj7n489ml8duoscd9f9raud5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: adviser/resetpwd' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('resetpwd', Array)
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adviser/resetpw...', Array)
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-07 12:02:39 [::1][1][hcdj7n489ml8duoscd9f9raud5][info][application] $_GET = [
+    'r' => 'adviser/resetpwd'
+    'id' => '13'
+]
+
+$_COOKIE = [
+    '_adviserCSRF' => '618af668b9c7095495e5d04b175e955b6c309ed9862a92a0a7802d5b86b2ffb2a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"ÃÑÕ™É}…J|Zº€	7rëº.wÂ÷3kŽn_\";}'
+    '_csrf-backend' => '62fc2c340e3bdc0066645c9d74621f527eb6cc33c6bdc3d0fb4560ad76971307a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"3B²ŸÃ¹6ˆ*9@]{ËlÃPR7½569B¯ÜÎ*òN\";}'
+    'frontendsession' => 'nnhbrkmmcaoct5rfrmqo6c6n62'
+    'advanced-backend' => 'hcdj7n489ml8duoscd9f9raud5'
+    '_identity-frontend' => '2d206cef29767f7d50d1b800f70d7ec093245175d5ea34c45e759c6bde0a49baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:49:\"[\"11\",\"E-9Oun19f4-Y4dhTYTsjanbT134XnRJF\",2592000]\";}'
+    '_identity-backend' => 'd7eebe537036b430b05664fc8180953c82b5887a91370ee0e54cafdce8f4dbaaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=adviser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_adviserCSRF=618af668b9c7095495e5d04b175e955b6c309ed9862a92a0a7802d5b86b2ffb2a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22%C3%D1%D5%99%C9%7D%90%85%1EJ%7CZ%BA%8F%80%09%1F7%17r%EB%BA.w%C2%F73k%8E%8Fn_%22%3B%7D; _csrf-backend=62fc2c340e3bdc0066645c9d74621f527eb6cc33c6bdc3d0fb4560ad76971307a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%223B%B2%9F%C3%B96%88%2A9%40%10%5D%13%7B%CBl%C3PR7%BD569B%AF%DC%CE%2A%F2N%22%3B%7D; frontendsession=nnhbrkmmcaoct5rfrmqo6c6n62; advanced-backend=hcdj7n489ml8duoscd9f9raud5; _identity-frontend=2d206cef29767f7d50d1b800f70d7ec093245175d5ea34c45e759c6bde0a49baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A49%3A%22%5B%2211%22%2C%22E-9Oun19f4-Y4dhTYTsjanbT134XnRJF%22%2C2592000%5D%22%3B%7D; _identity-backend=d7eebe537036b430b05664fc8180953c82b5887a91370ee0e54cafdce8f4dbaaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '63776'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adviser%2Fresetpwd&id=13'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser%2Fresetpwd&id=13'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1510056159.909
+    'REQUEST_TIME' => 1510056159
+]
+2017-11-07 12:02:44 [::1][1][hcdj7n489ml8duoscd9f9raud5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: adviser/privilege' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('privilege', Array)
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adviser/privile...', Array)
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-07 12:02:44 [::1][1][hcdj7n489ml8duoscd9f9raud5][info][application] $_GET = [
+    'r' => 'adviser/privilege'
+    'id' => '13'
+]
+
+$_COOKIE = [
+    '_adviserCSRF' => '618af668b9c7095495e5d04b175e955b6c309ed9862a92a0a7802d5b86b2ffb2a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"ÃÑÕ™É}…J|Zº€	7rëº.wÂ÷3kŽn_\";}'
+    '_csrf-backend' => '62fc2c340e3bdc0066645c9d74621f527eb6cc33c6bdc3d0fb4560ad76971307a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"3B²ŸÃ¹6ˆ*9@]{ËlÃPR7½569B¯ÜÎ*òN\";}'
+    'frontendsession' => 'nnhbrkmmcaoct5rfrmqo6c6n62'
+    'advanced-backend' => 'hcdj7n489ml8duoscd9f9raud5'
+    '_identity-frontend' => '2d206cef29767f7d50d1b800f70d7ec093245175d5ea34c45e759c6bde0a49baa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:49:\"[\"11\",\"E-9Oun19f4-Y4dhTYTsjanbT134XnRJF\",2592000]\";}'
+    '_identity-backend' => 'd7eebe537036b430b05664fc8180953c82b5887a91370ee0e54cafdce8f4dbaaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=adviser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_adviserCSRF=618af668b9c7095495e5d04b175e955b6c309ed9862a92a0a7802d5b86b2ffb2a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22%C3%D1%D5%99%C9%7D%90%85%1EJ%7CZ%BA%8F%80%09%1F7%17r%EB%BA.w%C2%F73k%8E%8Fn_%22%3B%7D; _csrf-backend=62fc2c340e3bdc0066645c9d74621f527eb6cc33c6bdc3d0fb4560ad76971307a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%223B%B2%9F%C3%B96%88%2A9%40%10%5D%13%7B%CBl%C3PR7%BD569B%AF%DC%CE%2A%F2N%22%3B%7D; frontendsession=nnhbrkmmcaoct5rfrmqo6c6n62; advanced-backend=hcdj7n489ml8duoscd9f9raud5; _identity-frontend=2d206cef29767f7d50d1b800f70d7ec093245175d5ea34c45e759c6bde0a49baa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A49%3A%22%5B%2211%22%2C%22E-9Oun19f4-Y4dhTYTsjanbT134XnRJF%22%2C2592000%5D%22%3B%7D; _identity-backend=d7eebe537036b430b05664fc8180953c82b5887a91370ee0e54cafdce8f4dbaaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '63776'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adviser%2Fprivilege&id=13'
+    'REQUEST_URI' => '/backend/web/index.php?r=adviser%2Fprivilege&id=13'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1510056164.108
+    'REQUEST_TIME' => 1510056164
+]

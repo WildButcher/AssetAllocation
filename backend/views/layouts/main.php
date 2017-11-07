@@ -35,16 +35,17 @@ AppAsset::register($this);
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
-    $menuItems = [
-        ['label' => '资产配置单管理', 'url' => ['/allocation/index']],
-        ['label' => '配置模板管理', 'url' => ['/altemplate/index']],
-        ['label' => '理财产品管理', 'url' => ['/products/index']],
-        ['label' => '投顾信息管理', 'url' => ['/adviser/index']],
-        ['label' => '系统代码管理', 'url' => ['/syscode/index']],
-    ];
+    
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+        $menuItems[] = ['label' => '登录', 'url' => ['/site/login']];
     } else {
+    	$menuItems = [
+    			['label' => '资产配置单管理', 'url' => ['/allocation/index']],
+    			['label' => '配置模板管理', 'url' => ['/altemplate/index']],
+    			['label' => '理财产品管理', 'url' => ['/products/index']],
+    			['label' => '投顾信息管理', 'url' => ['/adviser/index']],
+    			['label' => '系统代码管理', 'url' => ['/syscode/index']],
+    	];
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post')
             . Html::submitButton(

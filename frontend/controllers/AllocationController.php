@@ -43,6 +43,13 @@ class AllocationController extends Controller
             'dataProvider' => $dataProvider,
         ]);
     }
+    
+    public function actionDetail($id)
+    {
+    	return $this->render('detail', [
+    			'model' => $this->findModel($id),
+    	]);
+    }
 
     /**
      * Displays a single Allocation model.
