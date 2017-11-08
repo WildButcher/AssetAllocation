@@ -4,8 +4,11 @@ namespace frontend\controllers;
 
 use common\models\Allocation;
 use common\models\AllocationSearch;
+use common\models\Altemplate;
+use common\models\Products;
 use common\models\Syscode;
 use Yii;
+use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -20,7 +23,24 @@ class MyselfController extends Controller
      */
     public function behaviors()
     {
-        return [
+    	return [
+    		'access'=>[
+    				'class' => AccessControl::className (),
+    				'rules' => [
+    								[
+    								'actions' => [
+		    										'index',
+    												'view',
+		    										'create',
+		    										'update',
+		    										'delete',
+		    										'privilege',
+    											 ],
+    								'allow' => true,
+    								'roles' => ['@'],    								
+    						],    						
+    				]
+    		],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -67,9 +87,33 @@ class MyselfController extends Controller
         $model = new Allocation();
 
         if ($model->load(Yii::$app->request->post())) {
+        	$syscode = Syscode::find()->where(['majorcode'=>'status','minicode'=>'1'])->one();
+        	$model->status = $syscode->id;
         	$model->oid = Yii::$app->getUser()->id;
+        	//以下为读取模板内容填充文件内容
+        	$tempmodel = Altemplate::find()->where(['id'=>$model->lid])->one();
+        	$altemplate= $tempmodel->filecontent;
+        	
+        	
+        	//以下为读取理财产品，替换模板文件中的内容
+        	$procontent = '<table class=table table-striped><thead><tr><th>理财产品名称</th><th>年利率</th><th>起购点</th></tr></thead><tbody>';
+        	$arrpro = Yii::$app->request->post('arrpro');
+        	$products = Products::find()->where(['id'=>$arrpro])->all();
+        	foreach ($products as $p)
+        	{
+        		$procontent = $procontent.'<tr>'.
+        								  '<td>'.$p->pname.'</td>'.
+        								  '<td>'.$p->rate.'</td>'.
+        								  '<td>'.$p->buypoint.'</td>'.
+										  '</tr>';
+        	};
+        	$procontent = $procontent.'</tbody></table>';
+        	$altemplate = str_ireplace('#ppp#',$procontent,$altemplate);
+       	
 //         	VarDumper::dump(Yii::$app->request->post('arrpro'));
 //         	exit(0);
+        	
+        	$model->filecontent = $altemplate;
         	$model->save();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {

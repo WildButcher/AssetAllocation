@@ -1,9 +1,10 @@
 <?php
 
+use common\models\Syscode;
+use common\models\Altemplate;
+use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use common\models\Syscode;
-use yii\helpers\ArrayHelper;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Allocation */
@@ -23,13 +24,17 @@ use yii\helpers\ArrayHelper;
     	$arrStatus = ArrayHelper::map($status,'id','meaning');
     	$isshare = Syscode::find()->where(['majorcode'=>'whether'])->all();
     	$arrIsshare = ArrayHelper::map($isshare,'id','meaning');
+    	$lid = Altemplate::find()->all();
+    	$arrLid = ArrayHelper::map($lid,'id','templatename');
     ?>
     
     <?= $form->field($model, 'isshare')->dropDownList(
 	    								$arrIsshare, 
 	                                	['prompt'=>'请选择状态...'])?>
 
-    <?= $form->field($model, 'lid')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'lid')->dropDownList(
+    									$arrLid, 
+	                                	['prompt'=>'请选择状态...'])?>
 
     <?= $form->field($model, 'status')->dropDownList(
 		    							$arrStatus, 

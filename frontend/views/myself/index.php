@@ -56,10 +56,9 @@ $this->params['breadcrumbs'][] = $this->title;
         		'filter' =>Syscode::get_type('status'),
         		'contentOptions'=>['width'=>'100px'],
         	],
-
             [
             		'class' => 'yii\grid\ActionColumn',
-            		'template'=>'{view}{update}{privilege}{delete}',
+            		'template'=>' {view}  {update}  {privilege}  {delete}',
             		'buttons'=>[            				
             		'privilege'=>function($url,$model,$key)
             		{

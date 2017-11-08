@@ -2,12 +2,13 @@
 
 namespace frontend\controllers;
 
-use Yii;
 use common\models\Allocation;
 use common\models\AllocationSearch;
+use Yii;
+use yii\filters\AccessControl;
+use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
-use yii\filters\VerbFilter;
 
 /**
  * AllocationController implements the CRUD actions for Allocation model.
@@ -19,7 +20,36 @@ class AllocationController extends Controller
      */
     public function behaviors()
     {
-        return [
+    	return [
+    			'access'=>[
+    					'class' => AccessControl::className (),
+    					'rules' => [
+    							[
+    									'actions' => [
+    											'index',
+    											'view',
+    											'create',
+    											'update',
+    											'delete',
+    											'detail',
+    									],
+    									'allow' => true,
+    									'roles' => [
+    											'@'
+    									]
+    							],
+    							[
+    									'actions' => [
+    											'index',
+    											'detail',
+    									],
+    									'allow' => true,
+    									'roles' => [
+    											'?'
+    									]
+    							],
+    					]
+    			],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -27,6 +57,11 @@ class AllocationController extends Controller
                 ],
             ],
         ];
+    }
+    
+    public function actionDownLoad($id)
+    {
+    	
     }
 
     /**
@@ -36,10 +71,9 @@ class AllocationController extends Controller
     public function actionIndex()
     {
         $searchModel = new AllocationSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $dataProvider = $searchModel->search2(Yii::$app->request->queryParams);
 
         return $this->render('index', [
-            'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
     }
@@ -72,7 +106,11 @@ class AllocationController extends Controller
     {
         $model = new Allocation();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())) {
+        	$syscode = Syscode::find()->where(['majorcode'=>'status','minicode'=>'1'])->one();
+        	$model->status = $syscode->id;
+        	$model->oid = Yii::$app->getUser()->id;        	
+        	$model->save();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
@@ -81,6 +119,7 @@ class AllocationController extends Controller
         }
     }
 
+    
     /**
      * Updates an existing Allocation model.
      * If update is successful, the browser will be redirected to the 'view' page.

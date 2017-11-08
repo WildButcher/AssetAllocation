@@ -20,21 +20,14 @@ $this->params['breadcrumbs'][] = $this->title;
         	[
         		'attribute' => 'oid',
         		'value' => $model->o->xingming,
+        		'contentOptions'=>['width'=>'85%'],
         	],
             'publictime',
             'downcount',
-            'filecontent:ntext',
         	[
-        		'attribute' => 'isshare',
-        		'value' => $model->isshare0->meaning,
-        	],
-        	[
-        		'attribute' => 'lid',
-        		'value' => $model->l->templatename,
-        	],
-        	[
-        		'attribute' => 'status',
-        		'value' => $model->status0->meaning,
+        		'attribute' => 'filecontent',
+        		'value' => $model->filecontent,
+        		'format' => 'html',
         	],
         ],
     ])      	

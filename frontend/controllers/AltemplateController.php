@@ -2,12 +2,13 @@
 
 namespace frontend\controllers;
 
-use Yii;
 use common\models\Altemplate;
+use common\models\Syscode;
 use common\models\AltemplateSearch;
+use Yii;
+use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
-use yii\filters\VerbFilter;
 
 /**
  * AltemplateController implements the CRUD actions for Altemplate model.
@@ -43,7 +44,22 @@ class AltemplateController extends Controller
             'dataProvider' => $dataProvider,
         ]);
     }
-
+    
+    public function actionPrivilege($id)
+    {
+    	$model = $this->findModel($id);
+    	$syscode = Syscode::find()->where(['majorcode'=>'status','minicode'=>'2'])->one();
+    	if($model->status <> $syscode->id)
+    	{
+    		$model->status = $syscode->id;
+    		if($model->save())
+    		{
+    			return $this->redirect(['index']);
+    		}
+    	}
+    	return $this->redirect(['index']);
+    }
+    
     /**
      * Displays a single Altemplate model.
      * @param string $id
@@ -65,12 +81,16 @@ class AltemplateController extends Controller
     {
         $model = new Altemplate();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load(Yii::$app->request->post())) {
+        	$syscode = Syscode::find()->where(['majorcode'=>'status','minicode'=>'1'])->one();
+        	$model->status = $syscode->id;
+        	$model->oid = Yii::$app->getUser()->id;
+        	$model->save();
+        	return $this->redirect(['view', 'id' => $model->id]);
         } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
+        	return $this->render('create', [
+        			'model' => $model,
+        	]);
         }
     }
 
