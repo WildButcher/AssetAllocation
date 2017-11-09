@@ -24,7 +24,7 @@ use yii\helpers\VarDumper;
     	$arrIsshare = ArrayHelper::map($isshare,'id','meaning');
     	
     	$lid = Altemplate::find()
-    						->join('INNER JOIN','Syscode','syscode.id = altemplate.status and Syscode.majorcode = \'status\' and Syscode.minicode = 2')
+    						->join('INNER JOIN','Syscode','syscode.id = altemplate.status and Syscode.majorcode = \'status\' and Syscode.minicode = 2')   						
     						->all();
     	$arrLid = ArrayHelper::map($lid,'id','templatename');
     	

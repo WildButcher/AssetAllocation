@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model common\models\Altemplate */
 
-$this->title = '模板详细内容:' . $model->id;
+$this->title = '模板详细内容:' . $model->templatename;
 $this->params['breadcrumbs'][] = ['label' => '模板管理', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

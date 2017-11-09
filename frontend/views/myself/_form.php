@@ -16,8 +16,14 @@ use yii\widgets\ActiveForm;
     <?php $form = ActiveForm::begin(); ?>
 
     <?= $form->field($model, 'filename')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'filecontent')->textarea(['rows' => 6]) ?>
+    
+    <?= $form->field($model, 'filecontent')->widget('common\widgets\ueditor\Ueditor',[
+        'options'=>[
+        		'autoHeightEnabled'=> true,
+        		'autoFloatEnabled'=>true,
+        		'initialFrameHeight'=>500,
+        ]
+    ]) ?>
     
     <?php
     	$status = Syscode::find()->where(['majorcode'=>'status'])->all();

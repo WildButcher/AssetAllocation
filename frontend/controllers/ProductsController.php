@@ -8,6 +8,7 @@ use common\models\ProductsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 
 /**
  * ProductsController implements the CRUD actions for Products model.
@@ -19,7 +20,25 @@ class ProductsController extends Controller
      */
     public function behaviors()
     {
-        return [
+    	return [
+    			'access'=>[
+    					'class' => AccessControl::className (),
+    					'rules' => [
+    							[
+    									'actions' => [
+    											'index',
+    											'view',
+    											'create',
+    											'update',
+    											'delete',
+    									],
+    									'allow' => true,
+    									'roles' => [
+    											'@'
+    									]
+    							]
+    					]
+    			],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [

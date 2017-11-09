@@ -30,8 +30,12 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'id',
             'templatename',
-            'createtime',
-            'filecontent:ntext',
+        		'createtime',
+        		[
+        				'attribute' => 'filecontent',
+        				'value' => $model->filecontent,
+        				'format' => 'html',
+        		],
         		[
         				'attribute' => 'isshare',
         				'value' => $model->isshare0->meaning,

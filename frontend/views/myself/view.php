@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model common\models\Allocation */
 
-$this->title = '查看资产配置单: ' . $model->id;
+$this->title = '查看资产配置单: ' . $model->filename;
 $this->params['breadcrumbs'][] = ['label' => '资产配置单管理', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

@@ -29,7 +29,6 @@ $this->params['breadcrumbs'][] = $this->title;
         	],
             'templatename',
             'createtime',
-            'filecontent:ntext',
         	[
         		'attribute' => 'isshare',
         		'value' => 'isshare0.meaning',

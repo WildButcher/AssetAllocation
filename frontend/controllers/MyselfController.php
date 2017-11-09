@@ -7,9 +7,11 @@ use common\models\AllocationSearch;
 use common\models\Altemplate;
 use common\models\Products;
 use common\models\Syscode;
+use TCPDF;
 use Yii;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
+use yii\helpers\VarDumper;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 
@@ -35,6 +37,7 @@ class MyselfController extends Controller
 		    										'update',
 		    										'delete',
 		    										'privilege',
+    												'download',
     											 ],
     								'allow' => true,
     								'roles' => ['@'],    								
@@ -48,6 +51,27 @@ class MyselfController extends Controller
                 ],
             ],
         ];
+    }
+    /**
+     * download pdf files
+     * @param string $id
+     * @return download url
+     */
+    public function actionDownload($id)
+    {
+    	$model = $this->findModel($id);
+    	$model->downcount = $model->downcount + 1;
+    	$storagePath = dirname(dirname(__DIR__)).'/downloadfiles';
+    	$filename = $model->filelinks;
+    	if(!$filename)
+    	{
+    		return $this->redirect(['/allocation/index']);
+    	}
+    	if($model->save())
+    	{
+    		return Yii::$app->response->sendFile("$storagePath/$filename");
+    	}
+    	return $this->redirect(['index']);
     }
 
     /**
@@ -95,10 +119,10 @@ class MyselfController extends Controller
         	$altemplate= $tempmodel->filecontent;
         	
         	
-        	//以下为读取理财产品，替换模板文件中的内容
-        	$procontent = '<table class=table table-striped><thead><tr><th>理财产品名称</th><th>年利率</th><th>起购点</th></tr></thead><tbody>';
+        	//以下为读取理财产品，替换模板文件中的内容        	
         	$arrpro = Yii::$app->request->post('arrpro');
         	$products = Products::find()->where(['id'=>$arrpro])->all();
+        	$procontent = '<table class=table table-striped><thead><tr><th>理财产品名称</th><th>年利率</th><th>起购点</th></tr></thead><tbody>';
         	foreach ($products as $p)
         	{
         		$procontent = $procontent.'<tr>'.
@@ -109,9 +133,6 @@ class MyselfController extends Controller
         	};
         	$procontent = $procontent.'</tbody></table>';
         	$altemplate = str_ireplace('#ppp#',$procontent,$altemplate);
-       	
-//         	VarDumper::dump(Yii::$app->request->post('arrpro'));
-//         	exit(0);
         	
         	$model->filecontent = $altemplate;
         	$model->save();
@@ -131,8 +152,44 @@ class MyselfController extends Controller
     	{	    	
 	    	$model->status = $syscode->id;
 	    	$model->publictime = date('Y-m-d H:i:s',time() + 8 * 3600);
-	    	if($model->save())
+	    	
+	    	//以下开始保存内容到文件，并生成连接，保存到数据库。
+	    	$dir = date('Ymd',time() + 8 * 3600);
+	    	$filename = time().'.pdf';
+	    	$storagePath= dirname(dirname(__DIR__)).'/downloadfiles/'.$dir;
+	    	//判断是否有现成的目录，没有则创建
+	    	if(!is_dir($storagePath))
 	    	{
+	    		mkdir($storagePath);
+	    	}
+			//保存文件地址到数据库
+	    	$model->filelinks = $dir.'/'.$filename;
+	    	//实例化pdf类
+	    	$pdf = new TCPDF('P', 'mm', 'A4', true, 'UTF-8', false); 
+	    	// 设置默认等宽字体
+	    	$pdf->SetDefaultMonospacedFont('courier'); 
+	    	// 设置间距
+	    	$pdf->SetMargins(15, 27, 15);
+	    	$pdf->SetHeaderMargin(5);
+	    	$pdf->SetFooterMargin(10);	    	
+	    	// 设置分页
+	    	$pdf->SetAutoPageBreak(TRUE, 25);	    	
+	    	// set image scale factor
+	    	$pdf->setImageScale(1.25);	    	
+	    	// set default font subsetting mode
+	    	$pdf->setFontSubsetting(true);
+	    	//设置字体
+	    	$pdf->SetFont('stsongstdlight', '', 14);
+	    	$pdf->AddPage(); 
+	    	//输出文件内容
+	    	$pdf->writeHTML($model->filecontent, true, 0, true, true);
+	    	$pdf->lastPage(); 
+	    	//输出PDF
+	    	$pdf->Output($storagePath.'/'.$filename, 'f');
+	    	
+	    	
+	    	if($model->save())
+	    	{	    		
 	    		return $this->redirect(['index']);
 	    	}
     	}

@@ -58,7 +58,7 @@ $this->params['breadcrumbs'][] = $this->title;
         	],
             [
             		'class' => 'yii\grid\ActionColumn',
-            		'template'=>' {view}  {update}  {privilege}  {delete}',
+            		'template'=>' {view}  {update}  {privilege}  {download}  {delete}',
             		'buttons'=>[            				
             		'privilege'=>function($url,$model,$key)
             		{
@@ -69,6 +69,16 @@ $this->params['breadcrumbs'][] = $this->title;
             					'data-confirm'=>'是否需要发布？',
             			];
             			return Html::a('<span class="glyphicon glyphicon-check"></span>',$url,$options);
+            		},
+            		'download'=>function($url,$model,$key)
+            		{
+            			$options=[
+            					'title'=>Yii::t('yii','下载'),
+            					'aria-label'=>Yii::t('yii','下载'),
+            					'data-pjax'=>'0',
+            					'data-confirm'=>'是否下载此文件？',
+            			];
+            			return Html::a('<span class="glyphicon glyphicon-download"></span>',$url,$options);
             		},
             		],
         	],

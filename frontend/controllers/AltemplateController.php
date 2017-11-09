@@ -3,12 +3,14 @@
 namespace frontend\controllers;
 
 use common\models\Altemplate;
-use common\models\Syscode;
 use common\models\AltemplateSearch;
+use common\models\Syscode;
 use Yii;
+use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
+use yii\helpers\VarDumper;
 
 /**
  * AltemplateController implements the CRUD actions for Altemplate model.
@@ -20,7 +22,27 @@ class AltemplateController extends Controller
      */
     public function behaviors()
     {
-        return [
+    	return [
+    			'access'=>[
+    					'class' => AccessControl::className (),
+    					'rules' => [
+    							[
+    									'actions' => [
+    											'index',
+    											'view',
+    											'create',
+    											'update',
+    											'delete',
+    											'ueditor',
+    											'privilege',
+    									],
+    									'allow' => true,
+    									'roles' => [
+    											'@'
+    									]
+    							],
+    					]
+    			],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -29,7 +51,20 @@ class AltemplateController extends Controller
             ],
         ];
     }
-
+    
+    public function actions(){
+    	return [
+    			'ueditor'=>[
+    					'class' => 'common\widgets\ueditor\UeditorAction',
+    					'config'=>[
+    							//上传图片配置
+    							'imageUrlPrefix' => "", /* 图片访问路径前缀 */
+    							'imagePathFormat' => "/image/{yyyy}{mm}{dd}/{time}{rand:6}", /* 上传保存路径,可以自定义保存路径和文件名格式 */
+    					]
+    			]
+    	];
+    }
+    
     /**
      * Lists all Altemplate models.
      * @return mixed

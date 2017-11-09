@@ -19,7 +19,9 @@ use yii\widgets\ActiveForm;
     
     <?= $form->field($model, 'filecontent')->widget('common\widgets\ueditor\Ueditor',[
         'options'=>[
-            'initialFrameWidth' => 850,
+        		'autoHeightEnabled'=> true,
+        		'autoFloatEnabled'=>true,
+        		'initialFrameHeight'=>500,
         ]
     ]) ?>
     <?php

@@ -114,7 +114,7 @@ class Allocation extends \yii\db\ActiveRecord
     public function getDownUrl()
     {
     	return Yii::$app->urlManager->createUrl(
-    			['allocation/detail','id'=>$this->id,'filename'=>$this->filename]
+    			['myself/download','id'=>$this->id]
     			);
     }
 }

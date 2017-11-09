@@ -38,7 +38,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'publictime',
             'downcount',
             'filelinks',
-            'filecontent:ntext',
+        		[
+        				'attribute' => 'filecontent',
+        				'value' => $model->filecontent,
+        				'format' => 'html',
+        		],
         	[
         		'attribute' => 'isshare',
         		'value' => $model->isshare0->meaning,

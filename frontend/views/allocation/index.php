@@ -6,7 +6,7 @@ use yii\base\Widget;
 /* @var $this yii\web\View */
 /* @var $searchModel common\models\AllocationSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
-
+$this->title = '资产配置辅助平台->首页';
 ?>
 <div class="container">
 	
