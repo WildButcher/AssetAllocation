@@ -14,6 +14,7 @@ use yii\filters\VerbFilter;
 use yii\helpers\VarDumper;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
+use common\models\Adviser;
 
 /**
  * AllocationController implements the CRUD actions for Allocation model.
@@ -112,12 +113,13 @@ class MyselfController extends Controller
 
         if ($model->load(Yii::$app->request->post())) {
         	$syscode = Syscode::find()->where(['majorcode'=>'status','minicode'=>'1'])->one();
-        	$model->status = $syscode->id;
+        	$model->status = $syscode->id;        	
+        	$adviser = Adviser::findOne(Yii::$app->getUser()->id);
+        	
         	$model->oid = Yii::$app->getUser()->id;
         	//以下为读取模板内容填充文件内容
         	$tempmodel = Altemplate::find()->where(['id'=>$model->lid])->one();
-        	$altemplate= $tempmodel->filecontent;
-        	
+        	$altemplate= $tempmodel->filecontent;        	
         	
         	//以下为读取理财产品，替换模板文件中的内容        	
         	$arrpro = Yii::$app->request->post('arrpro');
@@ -132,7 +134,16 @@ class MyselfController extends Controller
 										  '</tr>';
         	};
         	$procontent = $procontent.'</tbody></table>';
+        	// 替换产品标记部分
         	$altemplate = str_ireplace('#ppp#',$procontent,$altemplate);
+        	// 页尾投顾信息
+        	$adinfo = '<br/>'
+					 .'<b>投顾姓名:</b>'.$adviser->xingming.'<br/>'
+        			 .'<b>从业证书号:</b>'.$adviser->xingming.'<br/>'
+        			 .'<b>联系方式:</b>'.$adviser->mobliephone.'<br/>'
+        			 .'<b>所属营业部:</b>'.$adviser->dept;
+        	// 替换投顾标记部分
+        	$altemplate = str_ireplace('#adinfo#',$adinfo,$altemplate);
         	
         	$model->filecontent = $altemplate;
         	$model->save();
@@ -148,6 +159,7 @@ class MyselfController extends Controller
     {
     	$model = $this->findModel($id);
     	$syscode = Syscode::find()->where(['majorcode'=>'status','minicode'=>'2'])->one();
+    	
     	if($model->status <> $syscode->id)
     	{	    	
 	    	$model->status = $syscode->id;
@@ -162,9 +174,9 @@ class MyselfController extends Controller
 	    	{
 	    		mkdir($storagePath);
 	    	}
-			//保存文件地址到数据库
+			// 保存文件地址到数据库
 	    	$model->filelinks = $dir.'/'.$filename;
-	    	//实例化pdf类
+	    	// 实例化pdf类
 	    	$pdf = new TCPDF('P', 'mm', 'A4', true, 'UTF-8', false); 
 	    	// 设置默认等宽字体
 	    	$pdf->SetDefaultMonospacedFont('courier'); 
@@ -178,13 +190,13 @@ class MyselfController extends Controller
 	    	$pdf->setImageScale(1.25);	    	
 	    	// set default font subsetting mode
 	    	$pdf->setFontSubsetting(true);
-	    	//设置字体
+	    	// 设置字体
 	    	$pdf->SetFont('stsongstdlight', '', 14);
 	    	$pdf->AddPage(); 
-	    	//输出文件内容
+	    	// 输出文件内容
 	    	$pdf->writeHTML($model->filecontent, true, 0, true, true);
 	    	$pdf->lastPage(); 
-	    	//输出PDF
+	    	// 输出PDF
 	    	$pdf->Output($storagePath.'/'.$filename, 'f');
 	    	
 	    	

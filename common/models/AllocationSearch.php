@@ -6,6 +6,7 @@ use Yii;
 use common\models\Allocation;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
+use yii\helpers\VarDumper;
 
 /**
  * AllocationSearch represents the model behind the search form about `common\models\Allocation`.
@@ -119,7 +120,12 @@ class AllocationSearch extends Allocation
     		// $query->where('0=1');
     		return $dataProvider;
     	}
+    	// grid filtering conditions
     	
+    	$query->andFilterWhere(['like', 'filename', $this->filename])
+    	->andFilterWhere(['like', 'filelinks', $this->filelinks])
+    	->andFilterWhere(['like', 'filecontent', $this->filecontent]);
+    	   	
     	return $dataProvider;
     }
     

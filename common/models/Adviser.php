@@ -16,6 +16,7 @@ use yii\web\IdentityInterface;
  * @property string $mobliephone
  * @property string $email
  * @property string $dept
+ * @property string $headurl 
  * @property string $username
  * @property string $password_hash
  * @property string $password_reset_token
@@ -42,7 +43,7 @@ class Adviser extends \yii\db\ActiveRecord implements IdentityInterface
             [['xingming', 'idnumber', 'mobliephone'], 'required'],
        		[['auth_key', 'password_hash', 'username', 'xingming', 'idnumber', 'mobliephone', 'email'], 'required'],
        		[['auth_key'], 'string', 'max' => 32],
-       		[['password_reset_token', 'password_hash', 'username', 'email', 'dept'], 'string', 'max' => 255],
+        	[['password_reset_token', 'password_hash', 'username', 'headurl', 'email', 'dept'], 'string', 'max' => 255],
             [['xingming'], 'string', 'max' => 10],
             [['idnumber'], 'string', 'max' => 14],
             [['mobliephone'], 'string', 'max' => 11],
@@ -60,7 +61,8 @@ class Adviser extends \yii\db\ActiveRecord implements IdentityInterface
             'xingming' => '真实姓名',
             'idnumber' => '从业资格证',
             'mobliephone' => '手机',
-            'email' => 'Email',        		
+        	'email' => 'Email',
+        	'headurl' => '头像',
         	'auth_key' => 'Auth Key',
         	'password_reset_token' => 'Password Reset Token',
         	'password_hash' => '密码',
