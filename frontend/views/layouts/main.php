@@ -45,6 +45,7 @@ AppAsset::register($this);
     	$menuItems[] = ['label' => '我的资产配置单', 'url' => ['/myself/index']];
     	$menuItems[] = ['label' => '配置模板管理', 'url' => ['/altemplate/index']];
     	$menuItems[] = ['label' => '理财产品管理', 'url' => ['/products/index']];
+    	$menuItems[] = ['label' => '我的个人信息', 'url' => ['/settings/index']];
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post')
             . Html::submitButton(

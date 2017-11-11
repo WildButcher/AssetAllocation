@@ -19,6 +19,7 @@ use yii\web\IdentityInterface;
  * @property string $headurl 
  * @property string $username
  * @property string $password_hash
+ * @property string $password
  * @property string $password_reset_token
  * @property string $auth_key
  * @property Allocation[] $allocations
@@ -66,11 +67,16 @@ class Adviser extends \yii\db\ActiveRecord implements IdentityInterface
         	'auth_key' => 'Auth Key',
         	'password_reset_token' => 'Password Reset Token',
         	'password_hash' => '密码',
+        	'password' => '',
         	'username' => '登录帐号',
             'dept' => '所属营业部',
         ];
     }
 
+    public function getPassword()
+    {
+    	return "**********";
+    }
     /**
      * @return \yii\db\ActiveQuery
      */

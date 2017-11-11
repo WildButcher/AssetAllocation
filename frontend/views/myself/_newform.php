@@ -39,10 +39,48 @@ use yii\helpers\VarDumper;
     <?= $form->field($model, 'lid')->dropDownList(
     									$arrLid, 
 	                                	['prompt'=>'请选择状态...'])?>
-
 		                                
-	<?= Html::label('选择理财产品')?>
-	<?= Html::CheckboxList('arrpro', 'aaa', $arrPro)?>
+	<div id="productslist" class="">
+		<div class="">
+			<div class="">
+				<span><?= Html::label('选择理财产品')?></span>
+			</div>
+		</div>
+		<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#chooseProducts">
+		  选择...
+		</button>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>理财产品名称</th>
+					<th>年利率</th>
+					<th>起购点</th>
+					<th>持有周期</th>
+					<th>到期获利</th>					
+				</tr>
+			</thead>
+			<tbody id="insertPoint">
+			</tbody>
+		</table>
+		<!-- Modal -->
+		<div class="modal fade" id="chooseProducts" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">理财产品选择</h4>
+		      </div>
+		      <div class="modal-body">
+		        <?= $this->render('_items')?>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="chanleAll()">关闭</button>
+		        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="insertProducts()">确定</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>		
+	</div>
 
     <div class="form-group">
         <?= Html::submitButton('保存', ['class' => 'btn btn-success']) ?>

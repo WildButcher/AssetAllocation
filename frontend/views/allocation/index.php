@@ -8,14 +8,12 @@ use yii\base\Widget;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 $this->title = '资产配置辅助平台->首页';
 ?>
-<div class="container">
-	
-	<div class="row">
-	
-		<div class="col-md-9">		
+<div class="container">	
+	<div class="row">	
+		<div class="col-md-9">
 			<ol class="breadcrumb">
 				<li><a href="<?= Yii::$app->homeUrl; ?>">首页</a></li><li>资产配置单列表</li>
-			</ol>
+			</ol>		
 		<?= ListView::widget([
 				'id'=>'allocationList',
 				'dataProvider'=>$dataProvider,

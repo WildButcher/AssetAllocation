@@ -2,13 +2,14 @@
 
 namespace frontend\controllers;
 
-use Yii;
 use common\models\Products;
 use common\models\ProductsSearch;
+use common\models\Syscode;
+use Yii;
+use yii\filters\AccessControl;
+use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
-use yii\filters\VerbFilter;
-use yii\filters\AccessControl;
 
 /**
  * ProductsController implements the CRUD actions for Products model.
@@ -83,7 +84,8 @@ class ProductsController extends Controller
     public function actionCreate()
     {
         $model = new Products();
-
+//         $syscode = Syscode::find()->where(['majorcode'=>'status','minicode'=>'2'])->one();
+//         $model->status = $syscode->id;
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
@@ -120,9 +122,14 @@ class ProductsController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
-
-        return $this->redirect(['index']);
+    	$model = $this->findModel($id);
+    	$syscode = Syscode::find()->where(['majorcode'=>'status','minicode'=>'2'])->one();
+    	if($model->status == $syscode->id){
+    		Yii::$app->session->setFlash('error', '不能删除已经发布的数据!');
+    		return $this->redirect(['index']);
+    	}
+    	$model->delete();
+    	return $this->redirect(['index']);
     }
 
     /**

@@ -156,9 +156,14 @@ class AltemplateController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
-
-        return $this->redirect(['index']);
+    	$model = $this->findModel($id);
+    	$syscode = Syscode::find()->where(['majorcode'=>'status','minicode'=>'2'])->one();
+    	if($model->status == $syscode->id){
+    		Yii::$app->session->setFlash('error', '不能删除已经发布的数据!');
+    		return $this->redirect(['index']);
+    	}
+    	$model->delete();
+    	return $this->redirect(['index']);
     }
 
     /**

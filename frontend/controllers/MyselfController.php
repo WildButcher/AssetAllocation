@@ -124,13 +124,15 @@ class MyselfController extends Controller
         	//以下为读取理财产品，替换模板文件中的内容        	
         	$arrpro = Yii::$app->request->post('arrpro');
         	$products = Products::find()->where(['id'=>$arrpro])->all();
-        	$procontent = '<table class=table table-striped><thead><tr><th>理财产品名称</th><th>年利率</th><th>起购点</th></tr></thead><tbody>';
+        	$procontent = '<table class=table table-striped><thead><tr><th>理财产品名称</th><th>年利率</th><th>起购点</th><th>产品周期</th><th>到期获利</th></tr></thead><tbody>';
         	foreach ($products as $p)
         	{
         		$procontent = $procontent.'<tr>'.
         								  '<td>'.$p->pname.'</td>'.
         								  '<td>'.$p->rate.'</td>'.
         								  '<td>'.$p->buypoint.'</td>'.
+        								  '<td>'.$p->term.'</td>'.
+        								  '<td>'.$p->profit.'</td>'.
 										  '</tr>';
         	};
         	$procontent = $procontent.'</tbody></table>';
@@ -139,7 +141,7 @@ class MyselfController extends Controller
         	// 页尾投顾信息
         	$adinfo = '<br/>'
 					 .'<b>投顾姓名:</b>'.$adviser->xingming.'<br/>'
-        			 .'<b>从业证书号:</b>'.$adviser->xingming.'<br/>'
+					 .'<b>从业证书号:</b>'.$adviser->idnumber.'<br/>'
         			 .'<b>联系方式:</b>'.$adviser->mobliephone.'<br/>'
         			 .'<b>所属营业部:</b>'.$adviser->dept;
         	// 替换投顾标记部分
@@ -235,8 +237,13 @@ class MyselfController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
-
+    	$model = $this->findModel($id);
+    	$syscode = Syscode::find()->where(['majorcode'=>'status','minicode'=>'2'])->one();
+    	if($model->status == $syscode->id){
+    		Yii::$app->session->setFlash('error', '不能删除已经发布的数据!');   
+    		return $this->redirect(['index']);
+    	}
+    	$model->delete();
         return $this->redirect(['index']);
     }
 
