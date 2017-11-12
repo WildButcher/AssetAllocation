@@ -4,13 +4,12 @@ namespace frontend\controllers;
 
 use common\models\Adviser;
 use common\models\Products;
+use frontend\models\ResetPasswordForm;
 use Yii;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
-use yii\helpers\VarDumper;
-use frontend\models\ResetPasswordForm;
 
 /**
  * ProductsController implements the CRUD actions for Products model.

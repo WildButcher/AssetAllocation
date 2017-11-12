@@ -6,6 +6,7 @@ use Yii;
 use common\models\Adviser;
 use common\models\SignupForm;
 use common\models\AdviserSearch;
+use backend\models\ResetPasswordForm;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -29,7 +30,9 @@ class AdviserController extends Controller
         							'actions' => [
         									'index',
         									'view',
+        									'reset-password',
         									'create',
+        									'privilege',
         									'update',
         									'delete',
         							],
@@ -105,9 +108,7 @@ class AdviserController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-        	$model->password = $model->password_hash;
-        	
+        if ($model->load(Yii::$app->request->post()) && $model->save(false)) {        	        	
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
@@ -143,5 +144,33 @@ class AdviserController extends Controller
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
+    }
+    
+    public function actionResetPassword($id)
+    {
+    	$model = new ResetPasswordForm();
+    	if ($model->load(Yii::$app->request->post()) && $model->resetAvPassword($id)) {
+    		Yii::$app->session->setFlash('success', '密码已更新!');
+    		return $this->redirect(['index']);
+    	}
+    	
+    	return $this->render('resetPassword', [
+    			'model' => $model,
+    	]);
+    }
+    
+    public function actionPrivilege($id)
+    {
+    	$model = $this->findModel($id);
+    	if($model->ischeck){
+    		Yii::$app->session->setFlash('error', '帐号已审核无需再次审核!');
+    		return $this->redirect(['index']);
+    	}
+    	$model->ischeck = 1;
+    	if($model->save(false))
+    	{
+    		Yii::$app->session->setFlash('success', $model->xingming.'登录帐号审核通过!');
+    		return $this->redirect(['index']);
+    	}
     }
 }

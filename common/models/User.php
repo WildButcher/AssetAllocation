@@ -6,12 +6,15 @@ use yii\base\NotSupportedException;
 use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
 use yii\web\IdentityInterface;
+use yii\helpers\VarDumper;
 
 /**
  * User model
  *
  * @property integer $id
  * @property string $username
+ * @property string $password
+ * @property string $password_repeat 
  * @property string $password_hash
  * @property string $password_reset_token
  * @property string $email
@@ -25,6 +28,8 @@ class User extends ActiveRecord implements IdentityInterface
 {
     const STATUS_DELETED = 0;
     const STATUS_ACTIVE = 10;
+    public $password;
+    public $password_repeat;
 
 
     /**
@@ -50,12 +55,41 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public function rules()
     {
-        return [
-            ['status', 'default', 'value' => self::STATUS_ACTIVE],
-            ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
+    	return [
+    			['username', 'trim'],
+    			['username', 'required'],
+    			['username', 'unique', 'targetClass' => '\common\models\User', 'message' => '用户名已经存在！'],
+    			['username', 'string', 'min' => 2, 'max' => 255],
+    			
+    			['email', 'trim'],
+    			['email', 'required'],
+    			['email', 'email'],
+    			['email', 'string', 'max' => 255],
+    			['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'Email地址已经存在！'],
+    			
+    			['password', 'required'],
+    			['password', 'string', 'min' => 6],
+    			['password_repeat', 'compare', 'compareAttribute' => 'password', 'message' => '两次输入的密码不一致！'],
+    			
+    		[['username','email','password','password_repeat'], 'required'],
         ];
     }
 
+    /**
+     * @inheritdoc
+     */
+    public function attributeLabels()
+    {
+    	return [
+    			'id' => 'ID',
+    			'username' => '登录帐号',
+    			'email' => '电子邮件',
+    			'password'=>'密码',
+    			'password_repeat'=>'重复密码',
+    			'created_at' => '建立时间',
+    	];
+    }
+    
     /**
      * @inheritdoc
      */
@@ -186,4 +220,28 @@ class User extends ActiveRecord implements IdentityInterface
     {
         $this->password_reset_token = null;
     }
+    
+    /**
+     * Signs user up.
+     *
+     * @return User|null the saved model or null if saving fails
+     */
+    public function signup()
+    {
+    	if (!$this->validate()) {
+    		return null;
+    	}
+    	
+    	$user = new User();
+    	$nowtime = time() + 8 * 3600;
+    	$user->username = $this->username;
+    	$user->email = $this->email;
+    	$user->created_at = $nowtime;
+    	$user->updated_at = $nowtime;
+    	$user->status = 10;
+    	$user->setPassword($this->password);
+    	$user->generateAuthKey();
+    	return $user->save(false) ? $user : null;
+    }
 }
+

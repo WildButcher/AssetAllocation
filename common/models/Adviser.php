@@ -47,7 +47,7 @@ class Adviser extends \yii\db\ActiveRecord implements IdentityInterface
         	[['password_reset_token', 'password_hash', 'username', 'headurl', 'email', 'dept'], 'string', 'max' => 255],
             [['xingming'], 'string', 'max' => 10],
             [['idnumber'], 'string', 'max' => 14],
-            [['mobliephone'], 'string', 'max' => 11],
+        	[['mobliephone'], 'string', 'max' => 11],
             [['email', 'dept'], 'string', 'max' => 255],
         ];
     }
@@ -70,6 +70,7 @@ class Adviser extends \yii\db\ActiveRecord implements IdentityInterface
         	'password' => '',
         	'username' => '登录帐号',
             'dept' => '所属营业部',
+        	'ischeck'=>'审核',
         ];
     }
 

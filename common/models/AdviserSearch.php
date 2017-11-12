@@ -19,7 +19,7 @@ class AdviserSearch extends Adviser
     {
         return [
             [['id'], 'integer'],
-            [['xingming', 'idnumber', 'mobliephone', 'email', 'dept','username'], 'safe'],
+            [['xingming', 'idnumber', 'mobliephone', 'email', 'dept','username','ischeck'], 'safe'],
         ];
     }
 
@@ -50,6 +50,7 @@ class AdviserSearch extends Adviser
         	'pagination' => ['pageSize' => 10],
         	'sort' => [
         				'defaultOrder' => [
+        						'ischeck'=>SORT_ASC,
         						'id'=>SORT_DESC,
         				],
         		],

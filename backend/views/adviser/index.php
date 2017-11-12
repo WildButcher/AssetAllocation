@@ -32,12 +32,21 @@ $this->params['breadcrumbs'][] = $this->title;
             'mobliephone',
             'email:email',
             'dept',
-
+        	[
+        		'attribute'=>'ischeck',
+        		'value'=>function($model){
+        					$arr = ['未审核','已审核'];
+        					return $arr[$model->ischeck];
+        				},
+        		'contentOptions'=>function($model){
+        				return ['style' => $model->ischeck % 2 == 1 ? 'color:green' : 'color:red'];
+        				},
+        	],
             [
             	'class' => 'yii\grid\ActionColumn',
-            	'template'=>'{view}{update}{resetpwd}{privilege}{delete}',
+            	'template'=>'{view}{update}{reset-password}{privilege}{delete}',
             	'buttons'=>[
-	            				'resetpwd'=>function($url,$model,$key)
+	            				'reset-password'=>function($url,$model,$key)
 		            			{
 		        					$options=[
 		        								'title'=>Yii::t('yii','重置密码'),
@@ -49,8 +58,8 @@ $this->params['breadcrumbs'][] = $this->title;
 		        				'privilege'=>function($url,$model,$key)
 		        				{
 		        					$options=[
-		        							'title'=>Yii::t('yii','权限'),
-		        							'aria-label'=>Yii::t('yii','权限'),
+		        							'title'=>Yii::t('yii','审核'),
+		        							'aria-label'=>Yii::t('yii','审核'),
 		        							'data-pjax'=>'0',
 		        					];
 		        					return Html::a('<span class="glyphicon glyphicon-user"></span>',$url,$options);

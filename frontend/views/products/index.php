@@ -39,8 +39,6 @@ $this->params['breadcrumbs'][] = $this->title;
         				'filter' =>Syscode::get_type('status'),
         				'contentOptions'=>['width'=>'100px'],
         		],
-
-            ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
 </div>

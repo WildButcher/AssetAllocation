@@ -11,6 +11,8 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use common\models\SignupForm;
 use frontend\models\AdviserLoginForm;
+use common\models\Adviser;
+use yii\helpers\VarDumper;
 
 /**
  * Site controller
@@ -84,10 +86,17 @@ class SiteController extends Controller
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
-
         $model = new AdviserLoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
+        	$loginUser = Adviser::findByUsername($model->username);
+        	if($loginUser->ischeck ==0){
+        		Yii::$app->user->logout();
+        		return $this->render('error',['message'=>'您的帐号尚未通过审核，请耐心等待！','name'=>'登录出错啦！']);
+        	}
+        	else
+        	{
+        		return $this->goHome();
+        	}
         } else {
             return $this->render('login', [
                 'model' => $model,
@@ -115,13 +124,9 @@ class SiteController extends Controller
     public function actionSignup()
     {
         $model = new SignupForm();
-        if ($model->load(Yii::$app->request->post())) {
-            if ($user = $model->signup()) {
-                if (Yii::$app->getUser()->login($user)) {
-                    return $this->goHome();
-                }
+        if ($model->load(Yii::$app->request->post()) && $model->signup()) {
+            	return $this->render('error',['message'=>'您已经注册成功，请耐心等待管理员审核！','name'=>'注册成功！']);
             }
-        }
         return $this->render('signup', [
             'model' => $model,
         ]);

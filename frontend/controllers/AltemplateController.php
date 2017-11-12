@@ -138,7 +138,9 @@ class AltemplateController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
+        if ($model->oid != Yii::$app->getUser()->id){
+        	return $this->render('..\site\error',['message'=>'不能修改不属于您的模板！','name'=>'出错啦！']);
+        }
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
@@ -157,6 +159,9 @@ class AltemplateController extends Controller
     public function actionDelete($id)
     {
     	$model = $this->findModel($id);
+    	if ($model->oid != Yii::$app->getUser()->id){
+    		return $this->render('..\site\error',['message'=>'不能删除不属于您的模板！','name'=>'出错啦！']);
+    	}
     	$syscode = Syscode::find()->where(['majorcode'=>'status','minicode'=>'2'])->one();
     	if($model->status == $syscode->id){
     		Yii::$app->session->setFlash('error', '不能删除已经发布的数据!');

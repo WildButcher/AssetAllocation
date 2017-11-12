@@ -44,6 +44,7 @@ AppAsset::register($this);
     			['label' => '配置模板管理', 'url' => ['/altemplate/index']],
     			['label' => '理财产品管理', 'url' => ['/products/index']],
     			['label' => '投顾信息管理', 'url' => ['/adviser/index']],
+    			['label' => '后台人员管理', 'url' => ['/admin/index']],
     			['label' => '系统代码管理', 'url' => ['/syscode/index']],
     	];
         $menuItems[] = '<li>'
