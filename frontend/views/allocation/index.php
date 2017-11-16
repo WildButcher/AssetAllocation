@@ -2,6 +2,7 @@
 
 use yii\widgets\ListView;
 use yii\base\Widget;
+use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 /* @var $searchModel common\models\AllocationSearch */
@@ -11,9 +12,7 @@ $this->title = '资产配置辅助平台->首页';
 <div class="container">	
 	<div class="row">	
 		<div class="col-md-9">
-			<ol class="breadcrumb">
-				<li><a href="<?= Yii::$app->homeUrl; ?>">首页</a></li><li>资产配置单列表</li>
-			</ol>		
+	
 		<?= ListView::widget([
 				'id'=>'allocationList',
 				'dataProvider'=>$dataProvider,
@@ -35,7 +34,7 @@ $this->title = '资产配置辅助平台->首页';
 						<span class="glyphicon glyphicon-search" aria-hidden="true"></span>查找
 					</li>
 					<li class="list-group-item">
-						<form class="form-inline" action="index.php?r=allocation/index" id="w0" method="get">
+						<form class="form-inline" action="<?= Url::to(['allocation/index',])?>" id="w0" method="get">
 						  <div class="form-group">						    
 						    <input type="text" class="form-control" name="AllocationSearch[filename]" id="w0input" placeholder="按标题">
 						  </div>

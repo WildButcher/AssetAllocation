@@ -18,5 +18,15 @@ version
 遇到的问题并解决：
 1、rules规则里写的password当做了数据库字段，必须要保存的。但是实际表里没有这个字段
 解决办法:
-一 是去掉跟password有关的规则
-二 就是在save的时候把属性设置为false。即$user->save(false)
+一 是去掉跟password有关的规则。二 就是在save的时候把属性设置为false。即$user->save(false)
+
+2、HTML2PDF。采用的tcpdf库类。其中tcpdf的中文支持解决办法采用Droid Sans Fallback字体。将解压后的3个文件：droidsansfallback.php、droidsansfallback.z以及droidsansfallback.ctg.z放到 TCPDF\fonts 下面即可。
+然后配置tcpdf：
+中文的解决方法为：tcpdf\config\tcpdf_config.php
+define ('PDF_FONT_NAME_MAIN', 'helvetica');
+改为： define ('PDF_FONT_NAME_MAIN', 'stsongstdlight');
+define ('PDF_FONT_NAME_DATA', 'helvetica');
+改为： define ('PDF_FONT_NAME_DATA', 'stsongstdlight');
+注意：将数据交给TCPDF类处理时，一定要UTF8编码，否则也会出现乱码的情况发生的。
+
+3、富文本编辑器用的百度的ueditor简单快捷。redactor这些网上介绍的很模糊不好搞，UE简单。

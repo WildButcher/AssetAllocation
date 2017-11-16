@@ -1,7 +1,7 @@
 <?php
 
 use yii\helpers\Html;
-use yii\widgets\DetailView;
+use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Allocation */
@@ -12,7 +12,7 @@ use yii\widgets\DetailView;
     
     	<div class="col-md-9">
 			<ol class="breadcrumb">
-				<li><a href="<?= Yii::$app->homeUrl; ?>">首页</a></li><li>资产配置单列表</li>
+				<li><a href="<?= Yii::$app->homeUrl; ?>">首页</a></li><li><?= Html::encode($model->filename)?></li>
 			</ol>    	
     		<div class="detailbox">
     			<ul class="list-group">
@@ -36,7 +36,7 @@ use yii\widgets\DetailView;
 						<span class="glyphicon glyphicon-search" aria-hidden="true"></span>查找
 					</li>
 					<li class="list-group-item">
-						<form class="form-inline" action="index.php?r=allocation/index" id="w0" method="get">
+						<form class="form-inline" action="<?= Url::to(['allocation/index',])?>" id="w0" method="get">
 						  <div class="form-group">						    
 						    <input type="text" class="form-control" name="AllocationSearch[filename]" id="w0input" placeholder="按标题">
 						  </div>

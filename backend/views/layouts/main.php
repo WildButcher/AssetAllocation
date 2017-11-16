@@ -9,6 +9,7 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use common\widgets\Alert;
+use common\models\Adviser;
 
 AppAsset::register($this);
 ?>
@@ -40,12 +41,13 @@ AppAsset::register($this);
         $menuItems[] = ['label' => '登录', 'url' => ['/site/login']];
     } else {
     	$menuItems = [
-    			['label' => '资产配置单管理', 'url' => ['/allocation/index']],
-    			['label' => '配置模板管理', 'url' => ['/altemplate/index']],
-    			['label' => '理财产品管理', 'url' => ['/products/index']],
-    			['label' => '投顾信息管理', 'url' => ['/adviser/index']],
-    			['label' => '后台人员管理', 'url' => ['/admin/index']],
-    			['label' => '系统代码管理', 'url' => ['/syscode/index']],
+    			['label' => '资产配置单', 'url' => ['/allocation/index']],
+    			['label' => '配置模板', 'url' => ['/altemplate/index']],
+    			['label' => '理财产品', 'url' => ['/products/index']],
+    			['label' => '投顾信息', 'url' => ['/adviser/index']],
+    			'<li><span class="badge badge-inverse">'.Adviser::getPengdingAdviserCount().'</span></li>',
+    			['label' => '后台人员', 'url' => ['/admin/index']],
+    			['label' => '系统代码', 'url' => ['/syscode/index']],
     	];
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post')
@@ -74,9 +76,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p class="pull-left">后台管理员可以维护系统代码，前台用户不能！</p>
     </div>
 </footer>
 

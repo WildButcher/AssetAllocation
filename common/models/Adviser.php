@@ -223,4 +223,10 @@ class Adviser extends \yii\db\ActiveRecord implements IdentityInterface
     {
     	$this->password_reset_token = null;
     }
+    
+    public static function getPengdingAdviserCount(){
+    	return Adviser::find()
+			    		->where(['ischeck'=>0,])
+			    		->count();
+    }
 }
