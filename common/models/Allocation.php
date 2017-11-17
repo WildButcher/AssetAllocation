@@ -117,4 +117,18 @@ class Allocation extends \yii\db\ActiveRecord
     			['myself/download','id'=>$this->id]
     			);
     }
+    
+    public function getShortName($length=15){
+    	$tmpStr = strip_tags($this->filename);
+    	$tmpLen = mb_strlen($tmpStr);    	
+    	$tmpStr = mb_substr($tmpStr,0,$length,'utf-8');
+    	return $tmpStr.($tmpLen>$length?'...':'');
+    }
+    
+    public function getShortContent($length=228){
+    	$tmpStr = strip_tags($this->filecontent);
+    	$tmpLen = mb_strlen($tmpStr);
+    	$tmpStr = mb_substr($tmpStr,0,$length,'utf-8');
+    	return $tmpStr.($tmpLen>$length?'...':'');
+    }
 }

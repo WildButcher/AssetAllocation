@@ -1,8 +1,9 @@
 <?php
 
-use yii\widgets\ListView;
 use yii\base\Widget;
 use yii\helpers\Url;
+use yii\widgets\ListView;
+use frontend\componens\RankingListWidget;
 
 /* @var $this yii\web\View */
 /* @var $searchModel common\models\AllocationSearch */
@@ -48,7 +49,7 @@ $this->title = '资产配置辅助平台->首页';
 					<li class="list-group-item">
 						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>最受欢迎
 					</li>
-					<li class="list-group-item">下载排行榜</li>
+					<?= RankingListWidget::widget();?>
 				</ul>
 			</div>			
 		</div>		

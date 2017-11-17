@@ -11347,3 +11347,903 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1510511620.248
     'REQUEST_TIME' => 1510511620
 ]
+2017-11-14 03:10:10 [::1][1][at43gdb870pgme1qsbqda5f0f0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: allocation/ueditor' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('ueditor', Array)
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('allocation/uedi...', Array)
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-14 03:10:10 [::1][1][at43gdb870pgme1qsbqda5f0f0][info][application] $_GET = [
+    'r' => 'allocation/ueditor'
+    'action' => 'config'
+    'noCache' => '1510629010305'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'at43gdb870pgme1qsbqda5f0f0'
+    '_csrf-backend' => '74f9561a7ef2157e216c29d4f306857aaf2521d3ed7edcf36bc2718bef4f2514a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\">µ»CîÂþžRf–”à«¸8®Ý“Í=õYÒÏß9d\";}'
+    '_identity-backend' => '965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=allocation%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=at43gdb870pgme1qsbqda5f0f0; _csrf-backend=74f9561a7ef2157e216c29d4f306857aaf2521d3ed7edcf36bc2718bef4f2514a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%3E%B5%BBC%EE%C2%FE%9ERf%96%1C%94%E0%1A%AB%11%B88%AE%DD%93%CD%3D%F5Y%D2%CF%DF%079d%22%3B%7D; _identity-backend=965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '63730'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=allocation%2Fueditor&action=config&&noCache=1510629010305'
+    'REQUEST_URI' => '/backend/web/index.php?r=allocation%2Fueditor&action=config&&noCache=1510629010305'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1510629010.308
+    'REQUEST_TIME' => 1510629010
+]
+2017-11-14 03:39:50 [::1][1][at43gdb870pgme1qsbqda5f0f0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: altemplate/ueditor' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('ueditor', Array)
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('altemplate/uedi...', Array)
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-14 03:39:50 [::1][1][at43gdb870pgme1qsbqda5f0f0][info][application] $_GET = [
+    'r' => 'altemplate/ueditor'
+    'action' => 'config'
+    'noCache' => '1510630790862'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'at43gdb870pgme1qsbqda5f0f0'
+    '_csrf-backend' => '74f9561a7ef2157e216c29d4f306857aaf2521d3ed7edcf36bc2718bef4f2514a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\">µ»CîÂþžRf–”à«¸8®Ý“Í=õYÒÏß9d\";}'
+    '_adviserCSRF' => '32c932522004d02bc76e8b9d89b694f6276872fa042ac04b5f048af8d9cc186fa:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"kŽLY\0¡h¯ßýÈSy0ü¯6‘ŸWloÓˆÂS}\'—Û\";}'
+    'frontendsession' => 'gdf8pcgmlclbdenlag4lh6gkd4'
+    '_identity-frontend' => '2255e7804b060bfff5b7b97493ccb2eb3ae5b4ed2e562c9b760345aec41954fda:2:{i:0;s:18:\"_identity-frontend\";i:1;s:49:\"[\"16\",\"i_8x3_mUXX7st0CvUgzTPVOzCrkuug2_\",2592000]\";}'
+    '_identity-backend' => '965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/backend/web/index.php?r=altemplate%2Fupdate&id=5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=at43gdb870pgme1qsbqda5f0f0; _csrf-backend=74f9561a7ef2157e216c29d4f306857aaf2521d3ed7edcf36bc2718bef4f2514a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%3E%B5%BBC%EE%C2%FE%9ERf%96%1C%94%E0%1A%AB%11%B88%AE%DD%93%CD%3D%F5Y%D2%CF%DF%079d%22%3B%7D; _adviserCSRF=32c932522004d02bc76e8b9d89b694f6276872fa042ac04b5f048af8d9cc186fa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22k%1F%8ELY%00%A1h%AF%DF%FD%C8Sy0%FC%AF6%91%9F%8FWlo%D3%88%C2S%7D%27%97%DB%22%3B%7D; frontendsession=gdf8pcgmlclbdenlag4lh6gkd4; _identity-frontend=2255e7804b060bfff5b7b97493ccb2eb3ae5b4ed2e562c9b760345aec41954fda%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A49%3A%22%5B%2216%22%2C%22i_8x3_mUXX7st0CvUgzTPVOzCrkuug2_%22%2C2592000%5D%22%3B%7D; _identity-backend=965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '64773'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=altemplate%2Fueditor&action=config&&noCache=1510630790862'
+    'REQUEST_URI' => '/backend/web/index.php?r=altemplate%2Fueditor&action=config&&noCache=1510630790862'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1510630790.867
+    'REQUEST_TIME' => 1510630790
+]
+2017-11-16 11:23:17 [::1][1][7ju9s773qb45pc74rigu6322u7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Using $this when not in object context' in F:\Myfiles\workspace\AssetAllocation\common\models\Adviser.php:228
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(330): ::unknown()
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile()
+#3 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent()
+#4 F:\Myfiles\workspace\AssetAllocation\backend\controllers\SiteController.php(70): yii\base\Controller->render()
+#5 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\SiteController->actionIndex()
+#6 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array()
+#7 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#8 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#9 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#10 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#11 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2017-11-16 11:23:17 [::1][1][7ju9s773qb45pc74rigu6322u7][info][application] $_COOKIE = [
+    '_identity-backend' => '965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+    '_adviserCSRF' => '197566e38a9a1e559b2e265b957de10a015a008153d6d06fdf330570ef10d5e4a:2:{i:0;s:12:\"_adviserCSRF\";i:1;s:32:\"”ÐÍ?•8tcMÒV4¡O­½ƒ~–sº³À¦Æ \";}'
+    'frontendsession' => 'lm7in2d9tsi5cbnvp9g8fdm3p1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_identity-backend=965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D; _adviserCSRF=197566e38a9a1e559b2e265b957de10a015a008153d6d06fdf330570ef10d5e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_adviserCSRF%22%3Bi%3A1%3Bs%3A32%3A%22%94%8F%1E%D0%CD%3F%95%028t%1AcM%D2V%074%A1O%AD%BD%83%7E%96s%BA%0D%B3%C0%A6%C6%A0%22%3B%7D; frontendsession=lm7in2d9tsi5cbnvp9g8fdm3p1'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '52224'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/web/'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1510831397.281
+    'REQUEST_TIME' => 1510831397
+]
+2017-11-16 13:29:05 [127.0.0.1][1][vjtcatlggluu2ks3qstlc34fd4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: allocation/ueditor' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('ueditor', Array)
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('allocation/uedi...', Array)
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-16 13:29:05 [127.0.0.1][1][vjtcatlggluu2ks3qstlc34fd4][info][application] $_GET = [
+    'action' => 'config'
+    'noCache' => '1510838945136'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '33e499829eddf41326c2315a466e504be577427e36b71bc436910c9b854ccfc1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"‚5—ƒ)(v©\"Á-zOK¡ID!}÷ËcË?(Û&\";}'
+    'advanced-backend' => 'vjtcatlggluu2ks3qstlc34fd4'
+    '_identity-backend' => '965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'admin.aa.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.aa.com/allocation/create.jsp'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=33e499829eddf41326c2315a466e504be577427e36b71bc436910c9b854ccfc1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%825%97%83%29%28v%A9%18%22%C1-zOK%A1%0BID%21%7D%F7%CBc%CB%3F%8D%06%28%DB%26%0B%22%3B%7D; advanced-backend=vjtcatlggluu2ks3qstlc34fd4; _identity-backend=965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'admin.aa.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '56174'
+    'REDIRECT_QUERY_STRING' => 'action=config&&noCache=1510838945136'
+    'REDIRECT_URL' => '/allocation/ueditor.jsp'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'action=config&&noCache=1510838945136'
+    'REQUEST_URI' => '/allocation/ueditor.jsp?action=config&&noCache=1510838945136'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510838945.14
+    'REQUEST_TIME' => 1510838945
+]
+2017-11-16 13:29:10 [127.0.0.1][1][vjtcatlggluu2ks3qstlc34fd4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: allocation/ueditor' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('ueditor', Array)
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('allocation/uedi...', Array)
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-16 13:29:10 [127.0.0.1][1][vjtcatlggluu2ks3qstlc34fd4][info][application] $_GET = [
+    'action' => 'config'
+    'noCache' => '1510838950014'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '33e499829eddf41326c2315a466e504be577427e36b71bc436910c9b854ccfc1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"‚5—ƒ)(v©\"Á-zOK¡ID!}÷ËcË?(Û&\";}'
+    'advanced-backend' => 'vjtcatlggluu2ks3qstlc34fd4'
+    '_identity-backend' => '965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'admin.aa.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.aa.com/allocation/45.jsp'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=33e499829eddf41326c2315a466e504be577427e36b71bc436910c9b854ccfc1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%825%97%83%29%28v%A9%18%22%C1-zOK%A1%0BID%21%7D%F7%CBc%CB%3F%8D%06%28%DB%26%0B%22%3B%7D; advanced-backend=vjtcatlggluu2ks3qstlc34fd4; _identity-backend=965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'admin.aa.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '56178'
+    'REDIRECT_QUERY_STRING' => 'action=config&&noCache=1510838950014'
+    'REDIRECT_URL' => '/allocation/ueditor.jsp'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'action=config&&noCache=1510838950014'
+    'REQUEST_URI' => '/allocation/ueditor.jsp?action=config&&noCache=1510838950014'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510838950.019
+    'REQUEST_TIME' => 1510838950
+]
+2017-11-16 13:34:55 [127.0.0.1][1][vjtcatlggluu2ks3qstlc34fd4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: altemplate/ueditor' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('ueditor', Array)
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('altemplate/uedi...', Array)
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-16 13:34:55 [127.0.0.1][1][vjtcatlggluu2ks3qstlc34fd4][info][application] $_GET = [
+    'action' => 'config'
+    'noCache' => '1510839295914'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '33e499829eddf41326c2315a466e504be577427e36b71bc436910c9b854ccfc1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"‚5—ƒ)(v©\"Á-zOK¡ID!}÷ËcË?(Û&\";}'
+    'advanced-backend' => 'vjtcatlggluu2ks3qstlc34fd4'
+    '_identity-backend' => '965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'admin.aa.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.aa.com/altemplate/6.jsp'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=33e499829eddf41326c2315a466e504be577427e36b71bc436910c9b854ccfc1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%825%97%83%29%28v%A9%18%22%C1-zOK%A1%0BID%21%7D%F7%CBc%CB%3F%8D%06%28%DB%26%0B%22%3B%7D; advanced-backend=vjtcatlggluu2ks3qstlc34fd4; _identity-backend=965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'admin.aa.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '56408'
+    'REDIRECT_QUERY_STRING' => 'action=config&&noCache=1510839295914'
+    'REDIRECT_URL' => '/altemplate/ueditor.jsp'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'action=config&&noCache=1510839295914'
+    'REQUEST_URI' => '/altemplate/ueditor.jsp?action=config&&noCache=1510839295914'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510839295.919
+    'REQUEST_TIME' => 1510839295
+]
+2017-11-16 13:35:34 [127.0.0.1][1][vjtcatlggluu2ks3qstlc34fd4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: altemplate/ueditor' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('ueditor', Array)
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('altemplate/uedi...', Array)
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-16 13:35:33 [127.0.0.1][1][vjtcatlggluu2ks3qstlc34fd4][info][application] $_GET = [
+    'action' => 'config'
+    'noCache' => '1510839333977'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '33e499829eddf41326c2315a466e504be577427e36b71bc436910c9b854ccfc1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"‚5—ƒ)(v©\"Á-zOK¡ID!}÷ËcË?(Û&\";}'
+    'advanced-backend' => 'vjtcatlggluu2ks3qstlc34fd4'
+    '_identity-backend' => '965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'admin.aa.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.aa.com/altemplate/update.jsp?id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=33e499829eddf41326c2315a466e504be577427e36b71bc436910c9b854ccfc1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%825%97%83%29%28v%A9%18%22%C1-zOK%A1%0BID%21%7D%F7%CBc%CB%3F%8D%06%28%DB%26%0B%22%3B%7D; advanced-backend=vjtcatlggluu2ks3qstlc34fd4; _identity-backend=965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'admin.aa.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '56432'
+    'REDIRECT_QUERY_STRING' => 'action=config&&noCache=1510839333977'
+    'REDIRECT_URL' => '/altemplate/ueditor.jsp'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'action=config&&noCache=1510839333977'
+    'REQUEST_URI' => '/altemplate/ueditor.jsp?action=config&&noCache=1510839333977'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510839333.985
+    'REQUEST_TIME' => 1510839333
+]
+2017-11-16 13:39:07 [127.0.0.1][1][vjtcatlggluu2ks3qstlc34fd4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: allocation/ueditor' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('ueditor', Array)
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('allocation/uedi...', Array)
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-16 13:39:07 [127.0.0.1][1][vjtcatlggluu2ks3qstlc34fd4][info][application] $_GET = [
+    'action' => 'config'
+    'noCache' => '1510839547483'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '33e499829eddf41326c2315a466e504be577427e36b71bc436910c9b854ccfc1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"‚5—ƒ)(v©\"Á-zOK¡ID!}÷ËcË?(Û&\";}'
+    'advanced-backend' => 'vjtcatlggluu2ks3qstlc34fd4'
+    '_identity-backend' => '965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'admin.aa.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.aa.com/allocation/create.jsp'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=33e499829eddf41326c2315a466e504be577427e36b71bc436910c9b854ccfc1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%825%97%83%29%28v%A9%18%22%C1-zOK%A1%0BID%21%7D%F7%CBc%CB%3F%8D%06%28%DB%26%0B%22%3B%7D; advanced-backend=vjtcatlggluu2ks3qstlc34fd4; _identity-backend=965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'admin.aa.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '56546'
+    'REDIRECT_QUERY_STRING' => 'action=config&&noCache=1510839547483'
+    'REDIRECT_URL' => '/allocation/ueditor.jsp'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'action=config&&noCache=1510839547483'
+    'REQUEST_URI' => '/allocation/ueditor.jsp?action=config&&noCache=1510839547483'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510839547.488
+    'REQUEST_TIME' => 1510839547
+]
+2017-11-16 13:39:16 [127.0.0.1][1][vjtcatlggluu2ks3qstlc34fd4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: allocation/ueditor' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('ueditor', Array)
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('allocation/uedi...', Array)
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-16 13:39:16 [127.0.0.1][1][vjtcatlggluu2ks3qstlc34fd4][info][application] $_GET = [
+    'action' => 'config'
+    'noCache' => '1510839556424'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '33e499829eddf41326c2315a466e504be577427e36b71bc436910c9b854ccfc1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"‚5—ƒ)(v©\"Á-zOK¡ID!}÷ËcË?(Û&\";}'
+    'advanced-backend' => 'vjtcatlggluu2ks3qstlc34fd4'
+    '_identity-backend' => '965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'admin.aa.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.aa.com/allocation/45/update.jsp'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=33e499829eddf41326c2315a466e504be577427e36b71bc436910c9b854ccfc1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%825%97%83%29%28v%A9%18%22%C1-zOK%A1%0BID%21%7D%F7%CBc%CB%3F%8D%06%28%DB%26%0B%22%3B%7D; advanced-backend=vjtcatlggluu2ks3qstlc34fd4; _identity-backend=965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'admin.aa.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '56546'
+    'REDIRECT_QUERY_STRING' => 'action=config&&noCache=1510839556424'
+    'REDIRECT_URL' => '/allocation/ueditor.jsp'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'action=config&&noCache=1510839556424'
+    'REQUEST_URI' => '/allocation/ueditor.jsp?action=config&&noCache=1510839556424'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510839556.43
+    'REQUEST_TIME' => 1510839556
+]
+2017-11-16 13:39:45 [127.0.0.1][1][vjtcatlggluu2ks3qstlc34fd4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: allocation/ueditor' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('ueditor', Array)
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('allocation/uedi...', Array)
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-16 13:39:45 [127.0.0.1][1][vjtcatlggluu2ks3qstlc34fd4][info][application] $_GET = [
+    'action' => 'config'
+    'noCache' => '1510839585365'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '33e499829eddf41326c2315a466e504be577427e36b71bc436910c9b854ccfc1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"‚5—ƒ)(v©\"Á-zOK¡ID!}÷ËcË?(Û&\";}'
+    'advanced-backend' => 'vjtcatlggluu2ks3qstlc34fd4'
+    '_identity-backend' => '965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'admin.aa.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.aa.com/allocation/45/update.jsp'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=33e499829eddf41326c2315a466e504be577427e36b71bc436910c9b854ccfc1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%825%97%83%29%28v%A9%18%22%C1-zOK%A1%0BID%21%7D%F7%CBc%CB%3F%8D%06%28%DB%26%0B%22%3B%7D; advanced-backend=vjtcatlggluu2ks3qstlc34fd4; _identity-backend=965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'admin.aa.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '56571'
+    'REDIRECT_QUERY_STRING' => 'action=config&&noCache=1510839585365'
+    'REDIRECT_URL' => '/allocation/ueditor.jsp'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'action=config&&noCache=1510839585365'
+    'REQUEST_URI' => '/allocation/ueditor.jsp?action=config&&noCache=1510839585365'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510839585.372
+    'REQUEST_TIME' => 1510839585
+]
+2017-11-17 14:39:50 [127.0.0.1][1][75e8iji8b9v0js7rigjelf20b1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: allocation/ueditor' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('ueditor', Array)
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('allocation/uedi...', Array)
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'é¡µé¢æœªæ‰¾åˆ°ã€‚' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-17 14:39:50 [127.0.0.1][1][75e8iji8b9v0js7rigjelf20b1][info][application] $_GET = [
+    'action' => 'config'
+    'noCache' => '1510929590385'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '632d1d52d76923cdfa18bcba633fbeb0659a92a801ca80106fb46dcb8fc9715ba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"7ÙŽš—*DÞ;„ÍOÑd¦u0H\'Ô‹Ê±‘\0iÝ‘Þ2x\";}'
+    'advanced-backend' => '75e8iji8b9v0js7rigjelf20b1'
+    '_identity-backend' => '965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'admin.aa.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.aa.com/allocation/45/update.jsp'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=632d1d52d76923cdfa18bcba633fbeb0659a92a801ca80106fb46dcb8fc9715ba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%227%D9%8E%9A%97%2AD%DE%3B%84%CDO%D1d%A6u0H%27%D4%1B%8B%CA%B1%91%00i%DD%91%DE2x%22%3B%7D; advanced-backend=75e8iji8b9v0js7rigjelf20b1; _identity-backend=965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'admin.aa.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '57470'
+    'REDIRECT_QUERY_STRING' => 'action=config&&noCache=1510929590385'
+    'REDIRECT_URL' => '/allocation/ueditor.jsp'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'action=config&&noCache=1510929590385'
+    'REQUEST_URI' => '/allocation/ueditor.jsp?action=config&&noCache=1510929590385'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510929590.422
+    'REQUEST_TIME' => 1510929590
+]
+2017-11-17 14:40:28 [127.0.0.1][1][75e8iji8b9v0js7rigjelf20b1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: allocation/ueditor' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('ueditor', Array)
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('allocation/uedi...', Array)
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'é¡µé¢æœªæ‰¾åˆ°ã€‚' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-17 14:40:28 [127.0.0.1][1][75e8iji8b9v0js7rigjelf20b1][info][application] $_GET = [
+    'action' => 'config'
+    'noCache' => '1510929628312'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '632d1d52d76923cdfa18bcba633fbeb0659a92a801ca80106fb46dcb8fc9715ba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"7ÙŽš—*DÞ;„ÍOÑd¦u0H\'Ô‹Ê±‘\0iÝ‘Þ2x\";}'
+    'advanced-backend' => '75e8iji8b9v0js7rigjelf20b1'
+    '_identity-backend' => '965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'admin.aa.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.aa.com/allocation/45/update.jsp'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=632d1d52d76923cdfa18bcba633fbeb0659a92a801ca80106fb46dcb8fc9715ba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%227%D9%8E%9A%97%2AD%DE%3B%84%CDO%D1d%A6u0H%27%D4%1B%8B%CA%B1%91%00i%DD%91%DE2x%22%3B%7D; advanced-backend=75e8iji8b9v0js7rigjelf20b1; _identity-backend=965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'admin.aa.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '57509'
+    'REDIRECT_QUERY_STRING' => 'action=config&&noCache=1510929628312'
+    'REDIRECT_URL' => '/allocation/ueditor.jsp'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'action=config&&noCache=1510929628312'
+    'REQUEST_URI' => '/allocation/ueditor.jsp?action=config&&noCache=1510929628312'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510929628.367
+    'REQUEST_TIME' => 1510929628
+]
+2017-11-17 14:40:40 [127.0.0.1][1][75e8iji8b9v0js7rigjelf20b1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: allocation/ueditor' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('ueditor', Array)
+#1 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('allocation/uedi...', Array)
+#2 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'é¡µé¢æœªæ‰¾åˆ°ã€‚' in F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 F:\Myfiles\workspace\AssetAllocation\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\Myfiles\workspace\AssetAllocation\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-17 14:40:40 [127.0.0.1][1][75e8iji8b9v0js7rigjelf20b1][info][application] $_GET = [
+    'action' => 'config'
+    'noCache' => '1510929640156'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '632d1d52d76923cdfa18bcba633fbeb0659a92a801ca80106fb46dcb8fc9715ba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"7ÙŽš—*DÞ;„ÍOÑd¦u0H\'Ô‹Ê±‘\0iÝ‘Þ2x\";}'
+    'advanced-backend' => '75e8iji8b9v0js7rigjelf20b1'
+    '_identity-backend' => '965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"9zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'admin.aa.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.3 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.aa.com/allocation/45/update.jsp'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=632d1d52d76923cdfa18bcba633fbeb0659a92a801ca80106fb46dcb8fc9715ba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%227%D9%8E%9A%97%2AD%DE%3B%84%CDO%D1d%A6u0H%27%D4%1B%8B%CA%B1%91%00i%DD%91%DE2x%22%3B%7D; advanced-backend=75e8iji8b9v0js7rigjelf20b1; _identity-backend=965adfd88eb7bc35bce236bfdc2b9554a2a2c6025c2f9e71485ff1b45fda1daca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%229zLWiEf1mhdH3p7Uj1_W7gGqGets_ABn%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\wamp\\bin\\php\\php5.4.16;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Java\\jdk1.8.0_101;C:\\Program Files\\Java\\jdk1.8.0_101\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16'
+    'SERVER_NAME' => 'admin.aa.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/Myfiles/workspace/AssetAllocation/backend/web/index.php'
+    'REMOTE_PORT' => '57529'
+    'REDIRECT_QUERY_STRING' => 'action=config&&noCache=1510929640156'
+    'REDIRECT_URL' => '/allocation/ueditor.jsp'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'action=config&&noCache=1510929640156'
+    'REQUEST_URI' => '/allocation/ueditor.jsp?action=config&&noCache=1510929640156'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510929640.165
+    'REQUEST_TIME' => 1510929640
+]

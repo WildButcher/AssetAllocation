@@ -1,5 +1,7 @@
 <?php
 
+use frontend\componens\RankingListWidget;
+use yii\base\Widget;
 use yii\helpers\Html;
 use yii\helpers\Url;
 
@@ -50,7 +52,7 @@ use yii\helpers\Url;
 					<li class="list-group-item">
 						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>最受欢迎
 					</li>
-					<li class="list-group-item">下载排行榜</li>
+					<?= RankingListWidget::widget();?>
 				</ul>
 			</div>
     	</div>
