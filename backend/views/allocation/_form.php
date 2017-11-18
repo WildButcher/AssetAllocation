@@ -31,7 +31,7 @@ use yii\helpers\ArrayHelper;
     	$arrStatus = ArrayHelper::map($status,'id','meaning');
     	
     	$lid = Altemplate::find()
-    	->join('INNER JOIN','Syscode','syscode.id = altemplate.status and Syscode.majorcode = \'status\' and Syscode.minicode = 2')
+    	->join('INNER JOIN','syscode','syscode.id = altemplate.status and syscode.majorcode = \'status\' and syscode.minicode = 2')
     	->all();
     	$arrLid = ArrayHelper::map($lid,'id','templatename');
     	

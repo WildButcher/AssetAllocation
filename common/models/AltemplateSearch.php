@@ -82,13 +82,13 @@ class AltemplateSearch extends Altemplate
             ->andFilterWhere(['like', 'filecontent', $this->filecontent]);
 
             
-        $query->join('INNER JOIN','Adviser','altemplate.oid = Adviser.id');
-        $query->andFilterWhere(['like','Adviser.xingming',$this->oname]);
+        $query->join('INNER JOIN','adviser','altemplate.oid = adviser.id');
+        $query->andFilterWhere(['like','adviser.xingming',$this->oname]);
             
         $dataProvider->sort->attributes['oname'] =
             [
-            		'asc'=>['Adviser.xingming'=>SORT_ASC],
-            		'desc'=>['Adviser.xingming'=>SORT_DESC],
+            		'asc'=>['adviser.xingming'=>SORT_ASC],
+            		'desc'=>['adviser.xingming'=>SORT_DESC],
             ];
             
         return $dataProvider;

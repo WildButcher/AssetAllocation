@@ -124,7 +124,7 @@ class MyselfController extends Controller
         	//以下为读取理财产品，替换模板文件中的内容        	
         	$arrpro = Yii::$app->request->post('arrpro');
         	$products = Products::find()->where(['id'=>$arrpro])->all();
-        	$procontent = '<table class=table table-striped><thead><tr><th>理财产品名称</th><th>年利率</th><th>起购点</th><th>产品周期</th><th>到期获利</th></tr></thead><tbody>';
+        	$procontent = '<table border=1 class="table-bordered"><thead><tr><th>理财产品名称</th><th>年利率</th><th>起购点</th><th>产品周期</th><th>到期获利</th></tr></thead><tbody>';
         	foreach ($products as $p)
         	{
         		$procontent = $procontent.'<tr>'.

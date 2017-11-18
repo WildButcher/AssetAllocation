@@ -24,7 +24,7 @@ use yii\helpers\VarDumper;
     	$arrIsshare = ArrayHelper::map($isshare,'id','meaning');
     	
     	$lid = Altemplate::find()
-    						->join('INNER JOIN','Syscode','syscode.id = altemplate.status and Syscode.majorcode = \'status\' and Syscode.minicode = 2')   						
+    						->join('INNER JOIN','syscode','syscode.id = altemplate.status and syscode.majorcode = \'status\' and syscode.minicode = 2')   						
     						->all();
     	$arrLid = ArrayHelper::map($lid,'id','templatename');
     	
@@ -49,14 +49,14 @@ use yii\helpers\VarDumper;
 		<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#chooseProducts">
 		  选择...
 		</button>
-		<table class="table">
+		<table class="table table-bordered">
 			<thead>
 				<tr>
-					<th>理财产品名称</th>
-					<th>年利率</th>
-					<th>起购点</th>
-					<th>持有周期</th>
-					<th>到期获利</th>					
+					<th width="20%">理财产品名称</th>
+					<th width="20%">年利率</th>
+					<th width="20%">起购点</th>
+					<th width="20%">持有周期</th>
+					<th width="20%">到期获利</th>					
 				</tr>
 			</thead>
 			<tbody id="insertPoint">

@@ -85,13 +85,13 @@ class AllocationSearch extends Allocation
             ->andFilterWhere(['like', 'filelinks', $this->filelinks])
             ->andFilterWhere(['like', 'filecontent', $this->filecontent]);
         
-        $query->join('INNER JOIN','Adviser','allocation.oid = Adviser.id');
-        $query->andFilterWhere(['like','Adviser.xingming',$this->oname]);
+        $query->join('INNER JOIN','adviser','allocation.oid = adviser.id');
+        $query->andFilterWhere(['like','adviser.xingming',$this->oname]);
         
         $dataProvider->sort->attributes['oname'] = 
         [
-        	'asc'=>['Adviser.xingming'=>SORT_ASC],
-        	'desc'=>['Adviser.xingming'=>SORT_DESC],
+        	'asc'=>['adviser.xingming'=>SORT_ASC],
+        	'desc'=>['adviser.xingming'=>SORT_DESC],
         ];
 
         return $dataProvider;
@@ -100,7 +100,7 @@ class AllocationSearch extends Allocation
     public function search2($params)
     {
     	$query = Allocation::find();
-    	$query->join('INNER JOIN','Syscode','Syscode.id = allocation.status and Syscode.majorcode = \'status\' and Syscode.minicode = 2');
+    	$query->join('INNER JOIN','syscode','syscode.id = allocation.status and syscode.majorcode = \'status\' and syscode.minicode = 2');
     	// add conditions that should always apply here
     	
     	$dataProvider = new ActiveDataProvider([
@@ -169,13 +169,13 @@ class AllocationSearch extends Allocation
     	->andFilterWhere(['like', 'filelinks', $this->filelinks])
     	->andFilterWhere(['like', 'filecontent', $this->filecontent]);
     	
-    	$query->join('INNER JOIN','Adviser','allocation.oid = Adviser.id');
-    	$query->andFilterWhere(['like','Adviser.xingming',$this->oname]);
+    	$query->join('INNER JOIN','adviser','allocation.oid = adviser.id');
+    	$query->andFilterWhere(['like','adviser.xingming',$this->oname]);
     	
     	$dataProvider->sort->attributes['oname'] =
     	[
-    			'asc'=>['Adviser.xingming'=>SORT_ASC],
-    			'desc'=>['Adviser.xingming'=>SORT_DESC],
+    			'asc'=>['adviser.xingming'=>SORT_ASC],
+    			'desc'=>['adviser.xingming'=>SORT_DESC],
     	];
     	
     	return $dataProvider;

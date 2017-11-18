@@ -4,7 +4,7 @@ use yii\data\ActiveDataProvider;
 use yii\grid\GridView;
 
 $pro = Products::find()
-				->join('INNER JOIN','Syscode','Syscode.id = Products.status and Syscode.majorcode=\'status\' and Syscode.minicode = 2');
+				->join('INNER JOIN','syscode','syscode.id = products.status and syscode.majorcode=\'status\' and syscode.minicode = 2');
 $dataProvider = new ActiveDataProvider([ "query" => $pro, ]); 
 ?>
 <script>

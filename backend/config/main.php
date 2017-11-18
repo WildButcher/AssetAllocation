@@ -41,16 +41,16 @@ return [
 				'errorHandler' => [ 
 						'errorAction' => 'site/error' 
 				], 
-				'urlManager' => [
-				'enablePrettyUrl' => true,
-				'showScriptName' => false,
-				'suffix'=>'.jsp',
-				'rules' => [							
-							'<controller:\w+>/<id:\d+>' => '<controller>/detail',
-							'<controller:\w+>/<id:\d+>/<action:(create|update|delete|view|privilege)>'=>'<controller>/<action>',
-							'<controller:>s' => '<controller>/index',
-				 		],
-		 		],		 
+// 				'urlManager' => [
+// 				'enablePrettyUrl' => true,
+// 				'showScriptName' => false,
+// 				'suffix'=>'.jsp',
+// 				'rules' => [							
+// 							'<controller:\w+>/<id:\d+>' => '<controller>/detail',
+// 							'<controller:\w+>/<id:\d+>/<action:(create|update|delete|view|privilege)>'=>'<controller>/<action>',
+// 							'<controller:>s' => '<controller>/index',
+// 				 		],
+// 		 		],		 
 		],
 		'params' => $params 
 ];
